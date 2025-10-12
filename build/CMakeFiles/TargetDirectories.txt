@@ -1,0 +1,3 @@
+/home/mariatomain/CG_prj2/build/CMakeFiles/CG_prj2.dir
+/home/mariatomain/CG_prj2/build/CMakeFiles/edit_cache.dir
+/home/mariatomain/CG_prj2/build/CMakeFiles/rebuild_cache.dir
