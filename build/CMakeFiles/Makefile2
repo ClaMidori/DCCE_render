@@ -63,7 +63,7 @@ CMAKE_BINARY_DIR = /home/mariatomain/CG_prj2/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/CG_prj2.dir/all
+all: CMakeFiles/dcce.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,34 +71,34 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/CG_prj2.dir/clean
+clean: CMakeFiles/dcce.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/CG_prj2.dir
+# Target rules for target CMakeFiles/dcce.dir
 
 # All Build rule for target.
-CMakeFiles/CG_prj2.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target CG_prj2"
-.PHONY : CMakeFiles/CG_prj2.dir/all
+CMakeFiles/dcce.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=1,2,3,4,5,6,7 "Built target dcce"
+.PHONY : CMakeFiles/dcce.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/CG_prj2.dir/rule: cmake_check_build_system
+CMakeFiles/dcce.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mariatomain/CG_prj2/build/CMakeFiles 7
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/CG_prj2.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dcce.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/mariatomain/CG_prj2/build/CMakeFiles 0
-.PHONY : CMakeFiles/CG_prj2.dir/rule
+.PHONY : CMakeFiles/dcce.dir/rule
 
 # Convenience name for target.
-CG_prj2: CMakeFiles/CG_prj2.dir/rule
-.PHONY : CG_prj2
+dcce: CMakeFiles/dcce.dir/rule
+.PHONY : dcce
 
 # clean rule for target.
-CMakeFiles/CG_prj2.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/clean
-.PHONY : CMakeFiles/CG_prj2.dir/clean
+CMakeFiles/dcce.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/clean
+.PHONY : CMakeFiles/dcce.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

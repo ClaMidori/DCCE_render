@@ -117,24 +117,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CG_prj2
+# Target rules for targets named dcce
 
 # Build rule for target.
-CG_prj2: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CG_prj2
-.PHONY : CG_prj2
+dcce: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dcce
+.PHONY : dcce
 
 # fast build rule for target.
-CG_prj2/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/build
-.PHONY : CG_prj2/fast
+dcce/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/build
+.PHONY : dcce/fast
 
 src/building.o: src/building.c.o
 .PHONY : src/building.o
 
 # target to build an object file
 src/building.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/building.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/building.c.o
 .PHONY : src/building.c.o
 
 src/building.i: src/building.c.i
@@ -142,7 +142,7 @@ src/building.i: src/building.c.i
 
 # target to preprocess a source file
 src/building.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/building.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/building.c.i
 .PHONY : src/building.c.i
 
 src/building.s: src/building.c.s
@@ -150,7 +150,7 @@ src/building.s: src/building.c.s
 
 # target to generate assembly for a file
 src/building.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/building.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/building.c.s
 .PHONY : src/building.c.s
 
 src/controls.o: src/controls.c.o
@@ -158,7 +158,7 @@ src/controls.o: src/controls.c.o
 
 # target to build an object file
 src/controls.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/controls.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/controls.c.o
 .PHONY : src/controls.c.o
 
 src/controls.i: src/controls.c.i
@@ -166,7 +166,7 @@ src/controls.i: src/controls.c.i
 
 # target to preprocess a source file
 src/controls.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/controls.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/controls.c.i
 .PHONY : src/controls.c.i
 
 src/controls.s: src/controls.c.s
@@ -174,7 +174,7 @@ src/controls.s: src/controls.c.s
 
 # target to generate assembly for a file
 src/controls.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/controls.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/controls.c.s
 .PHONY : src/controls.c.s
 
 src/keyboard.o: src/keyboard.c.o
@@ -182,7 +182,7 @@ src/keyboard.o: src/keyboard.c.o
 
 # target to build an object file
 src/keyboard.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/keyboard.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/keyboard.c.o
 .PHONY : src/keyboard.c.o
 
 src/keyboard.i: src/keyboard.c.i
@@ -190,7 +190,7 @@ src/keyboard.i: src/keyboard.c.i
 
 # target to preprocess a source file
 src/keyboard.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/keyboard.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/keyboard.c.i
 .PHONY : src/keyboard.c.i
 
 src/keyboard.s: src/keyboard.c.s
@@ -198,7 +198,7 @@ src/keyboard.s: src/keyboard.c.s
 
 # target to generate assembly for a file
 src/keyboard.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/keyboard.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/keyboard.c.s
 .PHONY : src/keyboard.c.s
 
 src/main.o: src/main.c.o
@@ -206,7 +206,7 @@ src/main.o: src/main.c.o
 
 # target to build an object file
 src/main.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/main.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/main.c.o
 .PHONY : src/main.c.o
 
 src/main.i: src/main.c.i
@@ -214,7 +214,7 @@ src/main.i: src/main.c.i
 
 # target to preprocess a source file
 src/main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/main.c.i
 .PHONY : src/main.c.i
 
 src/main.s: src/main.c.s
@@ -222,7 +222,7 @@ src/main.s: src/main.c.s
 
 # target to generate assembly for a file
 src/main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/main.c.s
 .PHONY : src/main.c.s
 
 src/mouse.o: src/mouse.c.o
@@ -230,7 +230,7 @@ src/mouse.o: src/mouse.c.o
 
 # target to build an object file
 src/mouse.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/mouse.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/mouse.c.o
 .PHONY : src/mouse.c.o
 
 src/mouse.i: src/mouse.c.i
@@ -238,7 +238,7 @@ src/mouse.i: src/mouse.c.i
 
 # target to preprocess a source file
 src/mouse.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/mouse.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/mouse.c.i
 .PHONY : src/mouse.c.i
 
 src/mouse.s: src/mouse.c.s
@@ -246,7 +246,7 @@ src/mouse.s: src/mouse.c.s
 
 # target to generate assembly for a file
 src/mouse.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/mouse.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/mouse.c.s
 .PHONY : src/mouse.c.s
 
 src/room.o: src/room.c.o
@@ -254,7 +254,7 @@ src/room.o: src/room.c.o
 
 # target to build an object file
 src/room.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/room.c.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/room.c.o
 .PHONY : src/room.c.o
 
 src/room.i: src/room.c.i
@@ -262,7 +262,7 @@ src/room.i: src/room.c.i
 
 # target to preprocess a source file
 src/room.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/room.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/room.c.i
 .PHONY : src/room.c.i
 
 src/room.s: src/room.c.s
@@ -270,7 +270,7 @@ src/room.s: src/room.c.s
 
 # target to generate assembly for a file
 src/room.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/CG_prj2.dir/build.make CMakeFiles/CG_prj2.dir/src/room.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/room.c.s
 .PHONY : src/room.c.s
 
 # Help Target
@@ -281,7 +281,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... CG_prj2"
+	@echo "... dcce"
 	@echo "... src/building.o"
 	@echo "... src/building.i"
 	@echo "... src/building.s"

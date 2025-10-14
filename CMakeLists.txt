@@ -28,11 +28,11 @@ set(SOURCES
 include_directories(include)
 
 # Cria o executável a partir dos seus arquivos-fonte
-add_executable(CG_prj2 ${SOURCES})
+add_executable(dcce ${SOURCES})
 
 # Linka as bibliotecas necessárias com o nosso executável.
 # A mágica acontece aqui: adicionamos "m" para a biblioteca matemática.
-target_link_libraries(CG_prj2 PRIVATE
+target_link_libraries(dcce PRIVATE
     ${OPENGL_LIBRARIES}
     ${GLUT_LIBRARIES}
     m # <-- ESSA É A LINHA QUE FALTAVA

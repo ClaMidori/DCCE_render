@@ -52,5 +52,10 @@ void ground_floor(){
     //glTranslatef(-10*base,0,3*base);
     room(3,4);
     glPopMatrix();
+   //room(2,2);
 
+}
+
+void first_floor(){
+    
 }

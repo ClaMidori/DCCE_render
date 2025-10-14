@@ -46,5 +46,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/CG_prj2.dir/DependInfo.cmake"
+  "CMakeFiles/dcce.dir/DependInfo.cmake"
   )
