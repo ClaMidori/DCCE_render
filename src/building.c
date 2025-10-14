@@ -42,7 +42,7 @@ void ground_floor(){
     glRotatef(90,0,1,0);
     glTranslatef(0,0,6*base);
     //glTranslatef(-10*base,0,3*base);
-    room(3,1);
+    room_entrance(3,1);
     glPopMatrix();
 
     //fundos

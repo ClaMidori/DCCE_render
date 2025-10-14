@@ -15,6 +15,21 @@ void parede(float tx, float ty, float tz,float angulo, float rx, float ry, float
    glPopMatrix();
 }
 
+//cria uma parede com metade do tamanhao - da pra alterar depois e passar como paremetro o tamanho da parede
+void parede_short(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(0,0,1); //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( base/2, base);
+      glVertex2f( base/2,0);
+   glEnd();
+   glPopMatrix();
+}
+
 // cria uma parede com uma janela gradeada - default janela inferior lateral do dcce 
 void parede_with_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
    float coefx = 0.3;
@@ -192,7 +207,7 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
 
 }
 
-//cria uma parede com janela pequena no canto superior
+//cria uma parede com janela pequena no canto superior - janela inferior lateral 2 do dcce
 void parede_with_small_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
    float coefx = 0.6;
    float coefy = 0.1;
@@ -315,58 +330,126 @@ void parede_with_small_window(float tx, float ty, float tz,float angulo, float r
 
 }
 
-void telhado(){
-   glColor3f(0,1,0); 
-   glBegin(GL_TRIANGLES); //define as linhas da janela
-      glVertex3f(0, 50,0);
-      glVertex3f(50, 50,0);
-      glVertex3f(25, 75,-25);
+// cria as duas paredes com janelas verticais - default da frente do dcce
+void parede_front_with_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(0,1,0); //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( base, base);
+      glVertex2f( base,0);
    glEnd();
+   glPopMatrix();
 }
 
+// cria uma parede com duas portas - default da frente do dcce
+void parede_with_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   float fy = 0.15;
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,1); //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,base);
+      glVertex2f(0, base-base*fy);
+      glVertex2f( base, base-base*fy);
+      glVertex2f( base,base);
+   glEnd();
+   glPopMatrix();
+
+      glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   door(0);
+   glPopMatrix();
+
+      glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glTranslatef(base/2,0,0);
+   door(0);
+   glPopMatrix();
+}
+
+// cria uma porta - default da entrada do dcce
 void door(float angulo){
-    glPushMatrix();
-    glRotatef(angulo,0,1,0);
-    glTranslatef(0,0,0);
-    	//Define uma casinha composta por um quadrado e um triângulo.
+   float fx = 0.85;
+   float fy = 0.1;
+   float offset_superior = 0.05;
+   float newbase = base/2;
+   // min = 0 
+   // max = base/2
+
+   //coluna esquerda
+   glPushMatrix();
+   glRotatef(angulo,0,1,0);
    glColor3f(1,0,0); //Define cor como azul
    glBegin(GL_QUADS);
       glVertex2f(0,0);
-      glVertex2f(0,40);
-      glVertex2f(15,40);
-      glVertex2f(15,0);
+      glVertex2f(0,base*fx);
+      glVertex2f(newbase*fy,base*fx);
+      glVertex2f(newbase*fy,0);
    glEnd();
-}
+   glPopMatrix();
 
-
-void parede_with_door(){
-	//Define uma casinha composta por um quadrado e um triângulo.
-   glColor3f(0,0,1); //Define cor como azul
-   glBegin(GL_QUADS); //quadrado
+   //coluna direita
+   glPushMatrix();
+   glRotatef(angulo,0,1,0);
+   glColor3f(1,0,0); 
+   glTranslatef(newbase*(1-fy),0,0);
+   glBegin(GL_QUADS);
       glVertex2f(0,0);
-      glVertex2f(0, 50); 
-      glVertex2f(20,50);
-      glVertex2f(20,0);
+      glVertex2f(0,base*fx);
+      glVertex2f(newbase*fy,base*fx);
+      glVertex2f(newbase*fy,0);
+   glEnd();
+   glPopMatrix();
 
-   glEnd();
-   
+   //parte superior
+   glPushMatrix();
+   glRotatef(angulo,0,1,0);
+   glColor3f(1,0,0); 
    glBegin(GL_QUADS);
-      glVertex2f(20,40);
-      glVertex2f(20,50);
-      glVertex2f(35,50);
-      glVertex2f(35,40);
+      glVertex2f(newbase*fy,base*fx);
+      glVertex2f(newbase*fy,base*fx-base*fx*offset_superior);
+      glVertex2f(newbase - newbase*fy,base*fx-base*fx*offset_superior);
+      glVertex2f(newbase - newbase*fy,base*fx);
    glEnd();
+   glPopMatrix();
 
+   //parte inferior
+   glPushMatrix();
+   glRotatef(angulo,0,1,0);
+   glColor3f(1,0,0); 
+   glTranslatef(0,-base*fx+base*fx*offset_superior,0);
    glBegin(GL_QUADS);
-      glVertex2f(35,0);
-      glVertex2f(35, 50);
-      glVertex2f( 50, 50);
-      glVertex2f( 50,0);
+      glVertex2f(newbase*fy,base*fx);
+      glVertex2f(newbase*fy,base*fx-base*fx*offset_superior);
+      glVertex2f(newbase - newbase*fy,base*fx-base*fx*offset_superior);
+      glVertex2f(newbase - newbase*fy,base*fx);
    glEnd();
+   glPopMatrix();
+
+   //parte meio
+   glPushMatrix();
+   glRotatef(angulo,0,1,0);
+   glColor3f(1,0,0); 
+   glTranslatef(0,(-base*fx+base*fx*offset_superior)/2,0);
+   glBegin(GL_QUADS);
+      glVertex2f(newbase*fy,base*fx);
+      glVertex2f(newbase*fy,base*fx-base*fx*offset_superior);
+      glVertex2f(newbase - newbase*fy,base*fx-base*fx*offset_superior);
+      glVertex2f(newbase - newbase*fy,base*fx);
+   glEnd();
+   glPopMatrix();
 }
 
-// cria um retangulo de qualquer dimensão em 0x0x0
-//funcções de criação de salas: padronizar os parametros de x e y, transformações fazer em buildings
+//*funções de criação de salas: padronizar os parametros de x e y, transformações fazer em buildings
+
+//cria uma sala com paredes externas com janelas e internas sem janelas
 void room(int fx, int fy){
     for (int i=0;i<fx;i++){
       parede(i*base,0,0,0,0,0,0);
@@ -405,6 +488,7 @@ void room(int fx, int fy){
     glPopMatrix(); */
 }
 
+// cria uma sala com paredes externas com janelas pequenas e internas sem janelas
 void room_with_small_window(int fx, int fy){
    for (int i=0;i<fx;i++){
       parede(i*base,0,0,0,0,0,0);
@@ -415,4 +499,17 @@ void room_with_small_window(int fx, int fy){
       parede(i*base,0,0,-90,0,1,0);
       parede(i*base,0,-fx*base,-90,0,1,0);
     }
+}
+
+// cria a sala de entrada do dcce
+void room_entrance(int fx, int fy){
+
+   //paredes laterais
+   parede_front_with_window(0,0,1.5*fy*base,0,0,0,0);
+   parede_with_door(base,0,fy*base,0,0,0,0);
+   parede_front_with_window(2*base,0,1.5*fy*base,0,0,0,0);
+   parede_short(-base*1.5,0,fy*base,90,0,1,0);
+   parede_short(-base*1.5,0,2*fy*base,90,0,1,0);
+
+   //porta
 }
