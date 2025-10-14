@@ -9,7 +9,7 @@ void ground_floor(){
 
     glPushMatrix();
     glTranslatef(4*base,0,2*base);
-    room(2,1);
+    room_with_small_window(2,1);
     glPopMatrix();
 
     glPushMatrix();
@@ -28,7 +28,7 @@ void ground_floor(){
     glPushMatrix();
     glRotatef(180,0,1,0);
     glTranslatef(-6*base,0,5*base);
-    room(2,1);
+    room_with_small_window(2,1);
     glPopMatrix();
 
     glPushMatrix();
@@ -52,7 +52,6 @@ void ground_floor(){
     //glTranslatef(-10*base,0,3*base);
     room(3,4);
     glPopMatrix();
-   //room(2,2);
 
 }
 

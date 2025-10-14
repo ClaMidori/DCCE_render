@@ -193,7 +193,127 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
 }
 
 //cria uma parede com janela pequena no canto superior
-void parede_with_small_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){}
+void parede_with_small_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   float coefx = 0.6;
+   float coefy = 0.1;
+   float coef_window = 0.05;
+   float coef_grade = 0.01;
+
+   //molde da janela
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,1); //Define cor como azul
+   glBegin(GL_QUADS); //infeiror
+      glVertex2f(0,0);
+      glVertex2f(0, base*coefx);
+      glVertex2f( base, base*coefx);
+      glVertex2f( base,0);
+   glEnd();
+   glBegin(GL_QUADS); //superior
+      glVertex2f(0,base);
+      glVertex2f(0, base*(1-coefy));
+      glVertex2f( base, base*(1-coefy));
+      glVertex2f( base,base);
+   glEnd();
+   glBegin(GL_QUADS); //esquerdo
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base);
+      glVertex2f( base*coefy, base);
+      glVertex2f( base*coefy,base*coefx);
+   glEnd();
+   glTranslatef(base-3*base*coefy,0,0);
+   glBegin(GL_QUADS); //direito
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base);
+      glVertex2f( 3*base*coefy, base);
+      glVertex2f( 3*base*coefy,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   //1a divisão da janela
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0);
+   glTranslatef(base*0.38,0,0);
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base-base*coefy);
+      glVertex2f( base*coef_window, base-base*coefy);
+      glVertex2f( base*coef_window,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   // divisão horizontal
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glBegin(GL_QUADS); //superior detalhe
+      glVertex2f(base*coefy,base*0.77);
+      glVertex2f(base*coefy, base*0.77 - base*(coef_window));
+      glVertex2f( base -3*base*coefy, base*0.77 - base*(coef_window));
+      glVertex2f( base -3*base*coefy,base*0.77);
+   glEnd();
+   glPopMatrix();
+
+   //grades verticais da janela primeira
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); //Define cor como azul
+   glTranslatef(1.88*base*coefy + base*coefy/2,0,0); // nn questiona a lógica, funciona
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base*(1-coefy));
+      glVertex2f( base*coef_grade, base*(1-coefy));
+      glVertex2f( base*coef_grade,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); //Define cor como azul
+   glTranslatef(5*base*coefy + base*coefy/2,0,0); // nn questiona a lógica, funciona
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base*(1-coefy));
+      glVertex2f( base*coef_grade, base*(1-coefy));
+      glVertex2f( base*coef_grade,base*coefx);
+   glEnd();
+   glPopMatrix();
+   
+   // grades horizontais da janela
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(0,-base*0.17,0);
+   glBegin(GL_QUADS); //superior detalhe
+      glVertex2f(base*coefy, base);
+      glVertex2f(base*coefy,base -base*coef_grade);
+      glVertex2f( base-3*base*coefy, base -base*coef_grade );
+      glVertex2f( base-3*base*coefy,base);
+   glEnd();
+   glPopMatrix();
+
+   //a de baixo
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(0,-base*0.33,0);
+   glBegin(GL_QUADS); //superior detalhe
+      glVertex2f(base*coefy, base);
+      glVertex2f(base*coefy,base -base*coef_grade);
+      glVertex2f( base-3*base*coefy, base -base*coef_grade );
+      glVertex2f( base-3*base*coefy,base);
+   glEnd();
+   glPopMatrix();
+
+}
 
 void telhado(){
    glColor3f(0,1,0); 
@@ -285,6 +405,14 @@ void room(int fx, int fy){
     glPopMatrix(); */
 }
 
-void room_with_small_windows(int fx, int fy){
-   
+void room_with_small_window(int fx, int fy){
+   for (int i=0;i<fx;i++){
+      parede(i*base,0,0,0,0,0,0);
+      parede_with_small_window(i*base,0,fy*base,0,0,0,0);
+    }
+
+   for (int i=0;i<fy;i++){
+      parede(i*base,0,0,-90,0,1,0);
+      parede(i*base,0,-fx*base,-90,0,1,0);
+    }
 }
