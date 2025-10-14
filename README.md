@@ -26,6 +26,7 @@ Deixei o arquivo house.c e dcce.c para referência temporária
 # Uso do cmake
 
 Para executar é preciso ir para a pasta /build e fazer:
+
     1. cmake ..
     2. make
     3. ./dcce
