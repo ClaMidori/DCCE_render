@@ -34,6 +34,7 @@ void parede_short(float tx, float ty, float tz,float angulo, float rx, float ry,
 void parede_with_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
    float coefx = 0.3;
    float coefy = 0.1;
+   float coefz = 0.025;
    float coef_window = 0.05;
    float coef_grade = 0.01;
 
@@ -43,7 +44,7 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
    glPushMatrix();
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx,ty,tz);
-   glColor3f(1,0,1); //Define cor como azul
+   glColor3f(0,0,1); //Define cor como azul
    glBegin(GL_QUADS); //infeiror
       glVertex2f(0,0);
       glVertex2f(0, base*coefx);
@@ -71,16 +72,128 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
    glEnd();
    glPopMatrix();
 
+   //molde esquerdo janela - moldura externa x e z
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz+base*coefz);
+   glColor3f(1,0,1); //Define cor como azul
+   glTranslatef(base*coefy,0,0);
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coef_window, base-base*coefy);
+      glVertex2f( base*coef_window,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glRotatef(90,0,1,0);
+   glColor3f(1,0,1); //Define cor como azul
+   glTranslatef(-base*coef_window+base*coefz,0,base*coefy);
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coefz, base-base*coefy);
+      glVertex2f( base*coefz,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glRotatef(90,0,1,0);
+   glColor3f(1,0,1); //Define cor como azul
+   glTranslatef(-base*coef_window+base*coefz,0,base*coefy+base*coef_window);
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coefz, base-base*coefy);
+      glVertex2f( base*coefz,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   //molde esquerdo janela
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); //Define cor como azul
+   glTranslatef(base*coefy,0,0);
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coef_window, base-base*coefy);
+      glVertex2f( base*coef_window,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   //molde direito janela
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); //Define cor como azul
+   glTranslatef(base-base*coefy-base*coef_window,0,0);
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coef_window, base-base*coefy);
+      glVertex2f( base*coef_window,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   //molde direito janela - moldura externa x e z
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz+base*coefz);
+   glColor3f(1,0,1); //Define cor como azul
+   glTranslatef(base-base*coefy-base*coef_window,0,0);
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coef_window, base-base*coefy);
+      glVertex2f( base*coef_window,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx+base*0.8,ty,tz);
+   glRotatef(90,0,1,0);
+   glColor3f(1,0,1); //Define cor como azul
+   glTranslatef(-base*coef_window+base*coefz,0,base*coefy);
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coefz, base-base*coefy);
+      glVertex2f( base*coefz,base*coefx);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx+base*0.8-base*coef_window,ty,tz);
+   glRotatef(90,0,1,0);
+   glColor3f(1,0,1); //Define cor como azul
+   glTranslatef(-base*coef_window+base*coefz,0,base*coefy);
+   glBegin(GL_QUADS); //divisao 1/3
+      glVertex2f(0,base*coefx);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coefz, base-base*coefy);
+      glVertex2f( base*coefz,base*coefx);
+   glEnd();
+   glPopMatrix();
+
    //1 divisão da janela
    glPushMatrix();
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx,ty,tz);
-   glColor3f(1,0,1); //Define cor como azul
-   glTranslatef(base*0.33,0,0);
+   glColor3f(1,0,0); //Define cor como azul
+   glTranslatef((base-2*base*coef_window)/3,0,0);
    glBegin(GL_QUADS); //divisao 1/3
       glVertex2f(0,base*coefx);
-      glVertex2f(0, base);
-      glVertex2f( base*coef_window, base);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coef_window, base-base*coefy);
       glVertex2f( base*coef_window,base*coefx);
    glEnd();
    glPopMatrix();
@@ -89,26 +202,81 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
    glPushMatrix();
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx,ty,tz);
-   glColor3f(1,0,1); 
-   glTranslatef(2*base*0.33,0,0);
+   glColor3f(1,0,0); 
+   glTranslatef(2*(base-2*base*coef_window)/3,0,0);
    glBegin(GL_QUADS); //divisao 1/3
       glVertex2f(0,base*coefx);
-      glVertex2f(0, base);
-      glVertex2f( base*coef_window, base);
+      glVertex2f(0, base -base*coefy);
+      glVertex2f( base*coef_window, base -base*coefy);
       glVertex2f( base*coef_window,base*coefx);
    glEnd();
    glPopMatrix();
 
-   // subdivisão superior da janela
+   // subdivisão superior horizontal da janela - meio
    glPushMatrix();
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx,ty,tz);
-   glColor3f(1,0,1); 
+   glColor3f(1,0,0); 
    glBegin(GL_QUADS); //superior detalhe
-      glVertex2f(0,base*0.75);
-      glVertex2f(0, base*0.75 - base*(coef_window));
-      glVertex2f( base, base*0.75 - base*(coef_window));
-      glVertex2f( base,base*0.75);
+      glVertex2f(base*coefy,base*0.75);
+      glVertex2f(base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy,base*0.75);
+   glEnd();
+   glPopMatrix();
+
+   // horizontal inferior
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(0,-base+2*base*coefx,0);
+   glBegin(GL_QUADS); //superior detalhe
+      glVertex2f(base*coefy,base*0.75);
+      glVertex2f(base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy,base*0.75);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz+base*coefz);
+   glColor3f(1,0,1); 
+   glTranslatef(0,-base+2*base*coefx,0);
+   glBegin(GL_QUADS); //superior detalhe
+      glVertex2f(base*coefy,base*0.75);
+      glVertex2f(base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy,base*0.75);
+   glEnd();
+   glPopMatrix();
+
+   //horizontal superior
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(0,base*coefx-base*coef_window-base*coefy,0);
+   glBegin(GL_QUADS); //superior detalhe
+      glVertex2f(base*coefy,base*0.75);
+      glVertex2f(base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy,base*0.75);
+   glEnd();
+   glPopMatrix();
+
+   //horizontal superior - molde externo
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz+base*coefz);
+   glColor3f(1,0,1); 
+   glTranslatef(0,base*coefx-base*coef_window-base*coefy,0);
+   glBegin(GL_QUADS); //superior detalhe
+      glVertex2f(base*coefy,base*0.75);
+      glVertex2f(base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy, base*0.75 - base*(coef_window));
+      glVertex2f( base-base*coefy,base*0.75);
    glEnd();
    glPopMatrix();
 
@@ -120,7 +288,7 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
       glRotatef(angulo,rx,ry,rz);
       glTranslatef(tx,ty,tz);
       glColor3f(1,0,0); //Define cor como azul
-      glTranslatef((i+1)*base*coefx/4 + base*coefx/3,0,0); // nn questiona a lógica, funciona
+      glTranslatef((i+1)*base*coefx/4 + base*coefx*0.35,0,0); // nn questiona a lógica, funciona
       glBegin(GL_QUADS); //divisao 1/3
          glVertex2f(0,base*coefx);
          glVertex2f(0, base*(1-coefy));
@@ -136,7 +304,7 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
       glRotatef(angulo,rx,ry,rz);
       glTranslatef(tx,ty,tz);
       glColor3f(1,0,0); //Define cor como azul
-      glTranslatef(base*0.3 +(i+1)*base*coefx/4 + base*coefx/3,0,0); // nn questiona a lógica, funciona
+      glTranslatef(base*0.26 +(i+1)*base*coefx/4 + base*coefx/3,0,0); // nn questiona a lógica, funciona
       glBegin(GL_QUADS); //divisao 1/3
          glVertex2f(0,base*coefx);
          glVertex2f(0, base*(1-coefy));
@@ -152,7 +320,7 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
       glRotatef(angulo,rx,ry,rz);
       glTranslatef(tx,ty,tz);
       glColor3f(1,0,0); //Define cor como azul
-      glTranslatef(base*0.59 +(i+1)*base*coefx/4 + base*coefx/3,0,0); // nn questiona a lógica, funciona
+      glTranslatef(base*0.53 +(i+1)*base*coefx/4 + base*coefx/3,0,0); // nn questiona a lógica, funciona
       glBegin(GL_QUADS); //divisao 1/3
          glVertex2f(0,base*coefx);
          glVertex2f(0, base*(1-coefy));
@@ -167,7 +335,7 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx,ty,tz);
    glColor3f(1,0,0); 
-   glTranslatef(0,-base*0.18,0);
+   glTranslatef(0,-base*0.2,0);
    glBegin(GL_QUADS); //superior detalhe
       glVertex2f(base*coefy, base);
       glVertex2f(base*coefy,base -base*coef_grade);
@@ -182,7 +350,7 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx,ty,tz);
    glColor3f(1,0,0); 
-   glTranslatef(0,-base*0.55,0);
+   glTranslatef(0,-base*0.525,0);
    glBegin(GL_QUADS); //superior detalhe
       glVertex2f(base*coefy, base);
       glVertex2f(base*coefy,base -base*coef_grade);
@@ -196,7 +364,7 @@ void parede_with_window(float tx, float ty, float tz,float angulo, float rx, flo
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx,ty,tz);
    glColor3f(1,0,0); 
-   glTranslatef(0,-base*0.4,0);
+   glTranslatef(0,-base*0.425,0);
    glBegin(GL_QUADS); //superior detalhe
       glVertex2f(base*coefy, base);
       glVertex2f(base*coefy,base -base*coef_grade);
@@ -332,15 +500,294 @@ void parede_with_small_window(float tx, float ty, float tz,float angulo, float r
 
 // cria as duas paredes com janelas verticais - default da frente do dcce
 void parede_front_with_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   float offset_janela = 0.05;
+   float offset_grade = 0.01;
+
+   //esquerda
    glPushMatrix();
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx,ty,tz);
-   glColor3f(0,1,0); //Define cor como azul
+   glColor3f(0,0,1); //Define cor como azul
    glBegin(GL_QUADS); //quadrado
       glVertex2f(0,0);
       glVertex2f(0, base);
-      glVertex2f( base, base);
+      glVertex2f( base/4, base);
+      glVertex2f( base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   //direita
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(0,0,1); //Define cor como azul
+   glTranslatef(base-base/4,0,0);
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( base/4, base);
+      glVertex2f( base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   //superior
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(0,0,1); //Define cor como azul
+   glTranslatef(0,base-base/6,0);
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base/6);
+      glVertex2f( base, base/6);
       glVertex2f( base,0);
+   glEnd();
+   glPopMatrix();
+
+   //inferior
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(0,0,1); //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base/4);
+      glVertex2f( base, base/4);
+      glVertex2f( base,0);
+   glEnd();
+   glPopMatrix();
+
+   //inferior da janela - esquerda
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/4,base/4,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_janela);
+      glVertex2f(base/2-base/4,base*offset_janela);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   // inferior da janela - direita
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/2,base/4,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_janela);
+      glVertex2f(base/2-base/4,base*offset_janela);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   //superior da janela - esquerda
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/2,base-base/6-base*offset_janela,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_janela);
+      glVertex2f(base/2-base/4,base*offset_janela);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   // superior da janela - direita
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/4,base-base/6-base*offset_janela,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_janela);
+      glVertex2f(base/2-base/4,base*offset_janela);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   //janelinha- esquerda
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/2,base-base/3-base*offset_janela,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_janela);
+      glVertex2f(base/2-base/4,base*offset_janela);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   // janelinha - direita
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/4,base-base/3-base*offset_janela,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_janela);
+      glVertex2f(base/2-base/4,base*offset_janela);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   //lateral esquerda
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/4,base/4,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base-base/6-base/4-base*offset_janela);
+      glVertex2f(base*offset_janela,base-base/6-base/4-base*offset_janela);
+      glVertex2f(base*offset_janela,0);
+   glEnd();
+   glPopMatrix();
+
+   // lateral direita
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base - base/4-base*offset_janela,base/4,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base-base/6-base/4-base*offset_janela);
+      glVertex2f(base*offset_janela,base-base/6-base/4-base*offset_janela);
+      glVertex2f(base*offset_janela,0);
+   glEnd();
+   glPopMatrix();
+
+   // lateral meio
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base - base/2-base*offset_janela/2,base/4,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base-base/6-base/4-base*offset_janela);
+      glVertex2f(base*offset_janela,base-base/6-base/4-base*offset_janela);
+      glVertex2f(base*offset_janela,0);
+   glEnd();
+   glPopMatrix();
+
+   // grades verticias
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/4 + base/8+2*base*offset_grade,base/4,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base-base/6-base/4-base*offset_grade);
+      glVertex2f(base*offset_grade,base-base/6-base/4-base*offset_grade);
+      glVertex2f(base*offset_grade,0);
+   glEnd();
+   glPopMatrix();
+
+   // grades verticais
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/2 + base/8-base*offset_grade,base/4,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base-base/6-base/4-base*offset_grade);
+      glVertex2f(base*offset_grade,base-base/6-base/4-base*offset_grade);
+      glVertex2f(base*offset_grade,0);
+   glEnd();
+   glPopMatrix();
+
+   // grades horizontais -direita
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/2,base-base/3+base/16-base*offset_grade,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_grade);
+      glVertex2f(base/2-base/4,base*offset_grade);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/2,base-base/2+base/16-2*base*offset_grade,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_grade);
+      glVertex2f(base/2-base/4,base*offset_grade);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/2,base-base/2-base/16-2*base*offset_grade,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_grade);
+      glVertex2f(base/2-base/4,base*offset_grade);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   //grades horizontais - esquerda
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/4,base-base/3+base/16-base*offset_grade,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_grade);
+      glVertex2f(base/2-base/4,base*offset_grade);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+      glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/4,base-base/2+base/16-2*base*offset_grade,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_grade);
+      glVertex2f(base/2-base/4,base*offset_grade);
+      glVertex2f(base/2-base/4,0);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   glColor3f(1,0,0); 
+   glTranslatef(base/4,base-base/2-base/16-2*base*offset_grade,0);
+   glBegin(GL_QUADS);
+      glVertex2f(0,0);
+      glVertex2f(0,base*offset_grade);
+      glVertex2f(base/2-base/4,base*offset_grade);
+      glVertex2f(base/2-base/4,0);
    glEnd();
    glPopMatrix();
 }
@@ -351,7 +798,7 @@ void parede_with_door(float tx, float ty, float tz,float angulo, float rx, float
    glPushMatrix();
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx,ty,tz);
-   glColor3f(1,0,1); //Define cor como azul
+   glColor3f(0,0,1); //Define cor como azul
    glBegin(GL_QUADS); //quadrado
       glVertex2f(0,base);
       glVertex2f(0, base-base*fy);
@@ -380,8 +827,8 @@ void door(float angulo){
    float fy = 0.1;
    float offset_superior = 0.05;
    float newbase = base/2;
-   // min = 0 
-   // max = base/2
+   float coef_window = 0.05;
+   float coef_grade = 0.01;
 
    //coluna esquerda
    glPushMatrix();
@@ -445,6 +892,52 @@ void door(float angulo){
       glVertex2f(newbase - newbase*fy,base*fx);
    glEnd();
    glPopMatrix();
+
+   //grades dverticais
+   for (int i=0;i<3;i++){
+      glPushMatrix();
+      glColor3f(1,0,0); //Define cor como azul
+      glTranslatef((i+1)*newbase/4,0,0);
+      glBegin(GL_QUADS); //divisao 1/3
+         glVertex2f(0,base*fx);
+         glVertex2f(0, base*fx*offset_superior);
+         glVertex2f( base*coef_grade, base*fx*offset_superior);
+         glVertex2f( base*coef_grade,base*fx);
+      glEnd();
+      glPopMatrix();
+   }
+
+   //grades horizontais superiores
+   for (int i=0;i<4;i++){
+      glPushMatrix();
+      glRotatef(angulo,0,1,0);
+      glColor3f(1,0,0); 
+      glTranslatef(0,(i+1)*2*(-base*fx*offset_superior),0);
+      glBegin(GL_QUADS);
+         glVertex2f(newbase*fy,base*fx);
+         glVertex2f(newbase*fy,base*fx-base*fx*coef_grade);
+         glVertex2f(newbase - newbase*fy,base*fx-base*fx*coef_grade);
+         glVertex2f(newbase - newbase*fy,base*fx);
+      glEnd();
+      glPopMatrix();
+   }
+
+      //grades horizontais inferiores
+   for (int i=0;i<4;i++){
+      glPushMatrix();
+      glRotatef(angulo,0,1,0);
+      glColor3f(1,0,0); 
+      glTranslatef(0,(-base*fx +base*fx*offset_superior)/2,0);
+      glTranslatef(0,(i+1)*2*(-base*fx*offset_superior),0);
+      glBegin(GL_QUADS);
+         glVertex2f(newbase*fy,base*fx);
+         glVertex2f(newbase*fy,base*fx-base*fx*coef_grade);
+         glVertex2f(newbase - newbase*fy,base*fx-base*fx*coef_grade);
+         glVertex2f(newbase - newbase*fy,base*fx);
+      glEnd();
+      glPopMatrix();
+   }
+
 }
 
 //*funções de criação de salas: padronizar os parametros de x e y, transformações fazer em buildings

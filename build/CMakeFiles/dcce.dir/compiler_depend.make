@@ -4,6 +4,8 @@
 CMakeFiles/dcce.dir/src/building.c.o: /home/mariatomain/CG_prj2/src/building.c \
   /home/mariatomain/CG_prj2/include/commons.h \
   /home/mariatomain/CG_prj2/include/commons.h \
+  /home/mariatomain/CG_prj2/include/window.h \
+  /home/mariatomain/CG_prj2/include/commons.h \
   /home/mariatomain/CG_prj2/include/room.h \
   /home/mariatomain/CG_prj2/include/building.h \
   /usr/include/GL/freeglut_std.h \
@@ -258,7 +260,9 @@ CMakeFiles/dcce.dir/src/keyboard.c.o: /home/mariatomain/CG_prj2/src/keyboard.c \
 
 CMakeFiles/dcce.dir/src/main.c.o: /home/mariatomain/CG_prj2/src/main.c \
   /home/mariatomain/CG_prj2/include/commons.h \
+  /home/mariatomain/CG_prj2/include/commons.h \
   /home/mariatomain/CG_prj2/include/room.h \
+  /home/mariatomain/CG_prj2/include/window.h \
   /home/mariatomain/CG_prj2/include/building.h \
   /home/mariatomain/CG_prj2/include/commons.h \
   /home/mariatomain/CG_prj2/include/controls.h \
@@ -433,6 +437,8 @@ CMakeFiles/dcce.dir/src/mouse.c.o: /home/mariatomain/CG_prj2/src/mouse.c \
 
 CMakeFiles/dcce.dir/src/room.c.o: /home/mariatomain/CG_prj2/src/room.c \
   /home/mariatomain/CG_prj2/include/commons.h \
+  /home/mariatomain/CG_prj2/include/commons.h \
+  /home/mariatomain/CG_prj2/include/window.h \
   /home/mariatomain/CG_prj2/include/room.h \
   /usr/include/GL/freeglut_std.h \
   /usr/include/GL/gl.h \
@@ -554,9 +560,7 @@ CMakeFiles/dcce.dir/src/room.c.o: /home/mariatomain/CG_prj2/src/room.c \
 
 /usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
 
-/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
-
-/usr/include/unistd.h:
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
@@ -582,11 +586,27 @@ CMakeFiles/dcce.dir/src/room.c.o: /home/mariatomain/CG_prj2/src/room.c \
 
 /home/mariatomain/CG_prj2/include/building.h:
 
+/usr/include/unistd.h:
+
+/usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
+
 /usr/include/features.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
+
+/usr/include/features-time64.h:
+
+/home/mariatomain/CG_prj2/include/window.h:
+
 /home/mariatomain/CG_prj2/include/commons.h:
+
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
@@ -621,16 +641,6 @@ CMakeFiles/dcce.dir/src/room.c.o: /home/mariatomain/CG_prj2/src/room.c \
 /usr/include/KHR/khrplatform.h:
 
 /usr/include/x86_64-linux-gnu/bits/math-vector.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
-/usr/include/x86_64-linux-gnu/bits/getopt_core.h:
-
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/features-time64.h:
 
 /usr/include/GL/freeglut_std.h:
 
@@ -669,8 +679,6 @@ CMakeFiles/dcce.dir/src/room.c.o: /home/mariatomain/CG_prj2/src/room.c \
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdio_lim.h:
 
