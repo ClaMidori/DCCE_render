@@ -5,8 +5,6 @@ CMakeFiles/dcce.dir/src/building.c.o
  /home/mariatomain/CG_prj2/src/building.c
  /home/mariatomain/CG_prj2/include/commons.h
  /home/mariatomain/CG_prj2/include/commons.h
- /home/mariatomain/CG_prj2/include/window.h
- /home/mariatomain/CG_prj2/include/commons.h
  /home/mariatomain/CG_prj2/include/room.h
  /home/mariatomain/CG_prj2/include/building.h
  /usr/include/GL/freeglut_std.h
@@ -264,9 +262,7 @@ CMakeFiles/dcce.dir/src/keyboard.c.o
 CMakeFiles/dcce.dir/src/main.c.o
  /home/mariatomain/CG_prj2/src/main.c
  /home/mariatomain/CG_prj2/include/commons.h
- /home/mariatomain/CG_prj2/include/commons.h
  /home/mariatomain/CG_prj2/include/room.h
- /home/mariatomain/CG_prj2/include/window.h
  /home/mariatomain/CG_prj2/include/building.h
  /home/mariatomain/CG_prj2/include/commons.h
  /home/mariatomain/CG_prj2/include/controls.h
@@ -443,8 +439,6 @@ CMakeFiles/dcce.dir/src/mouse.c.o
 CMakeFiles/dcce.dir/src/room.c.o
  /home/mariatomain/CG_prj2/src/room.c
  /home/mariatomain/CG_prj2/include/commons.h
- /home/mariatomain/CG_prj2/include/commons.h
- /home/mariatomain/CG_prj2/include/window.h
  /home/mariatomain/CG_prj2/include/room.h
  /usr/include/GL/freeglut_std.h
  /usr/include/GL/gl.h
