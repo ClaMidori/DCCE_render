@@ -69,4 +69,9 @@ CMakeFiles/dcce.dir/src/room.c.o: /home/mariatomain/CG_prj2/src/room.c \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/wall.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/../include/commons.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/../include/door.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/../include/../include/commons.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/structures.h

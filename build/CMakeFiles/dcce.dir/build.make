@@ -125,19 +125,19 @@ CMakeFiles/dcce.dir/src/controls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/controls.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/controls.c -o CMakeFiles/dcce.dir/src/controls.c.s
 
-CMakeFiles/dcce.dir/src/room.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/room.c.o: /home/mariatomain/CG_prj2/src/room.c
-CMakeFiles/dcce.dir/src/room.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dcce.dir/src/room.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/room.c.o -MF CMakeFiles/dcce.dir/src/room.c.o.d -o CMakeFiles/dcce.dir/src/room.c.o -c /home/mariatomain/CG_prj2/src/room.c
+CMakeFiles/dcce.dir/src/block.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/src/block.c.o: /home/mariatomain/CG_prj2/src/block.c
+CMakeFiles/dcce.dir/src/block.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dcce.dir/src/block.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/block.c.o -MF CMakeFiles/dcce.dir/src/block.c.o.d -o CMakeFiles/dcce.dir/src/block.c.o -c /home/mariatomain/CG_prj2/src/block.c
 
-CMakeFiles/dcce.dir/src/room.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/room.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/room.c > CMakeFiles/dcce.dir/src/room.c.i
+CMakeFiles/dcce.dir/src/block.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/block.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/block.c > CMakeFiles/dcce.dir/src/block.c.i
 
-CMakeFiles/dcce.dir/src/room.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/room.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/room.c -o CMakeFiles/dcce.dir/src/room.c.s
+CMakeFiles/dcce.dir/src/block.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/block.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/block.c -o CMakeFiles/dcce.dir/src/block.c.s
 
 CMakeFiles/dcce.dir/src/building.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/building.c.o: /home/mariatomain/CG_prj2/src/building.c
@@ -153,14 +153,59 @@ CMakeFiles/dcce.dir/src/building.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/building.c.s"
 	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/building.c -o CMakeFiles/dcce.dir/src/building.c.s
 
+CMakeFiles/dcce.dir/src/door.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/src/door.c.o: /home/mariatomain/CG_prj2/src/door.c
+CMakeFiles/dcce.dir/src/door.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/dcce.dir/src/door.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/door.c.o -MF CMakeFiles/dcce.dir/src/door.c.o.d -o CMakeFiles/dcce.dir/src/door.c.o -c /home/mariatomain/CG_prj2/src/door.c
+
+CMakeFiles/dcce.dir/src/door.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/door.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/door.c > CMakeFiles/dcce.dir/src/door.c.i
+
+CMakeFiles/dcce.dir/src/door.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/door.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/door.c -o CMakeFiles/dcce.dir/src/door.c.s
+
+CMakeFiles/dcce.dir/src/wall.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/src/wall.c.o: /home/mariatomain/CG_prj2/src/wall.c
+CMakeFiles/dcce.dir/src/wall.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/dcce.dir/src/wall.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/wall.c.o -MF CMakeFiles/dcce.dir/src/wall.c.o.d -o CMakeFiles/dcce.dir/src/wall.c.o -c /home/mariatomain/CG_prj2/src/wall.c
+
+CMakeFiles/dcce.dir/src/wall.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/wall.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/wall.c > CMakeFiles/dcce.dir/src/wall.c.i
+
+CMakeFiles/dcce.dir/src/wall.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/wall.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/wall.c -o CMakeFiles/dcce.dir/src/wall.c.s
+
+CMakeFiles/dcce.dir/src/structures.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/src/structures.c.o: /home/mariatomain/CG_prj2/src/structures.c
+CMakeFiles/dcce.dir/src/structures.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/dcce.dir/src/structures.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/structures.c.o -MF CMakeFiles/dcce.dir/src/structures.c.o.d -o CMakeFiles/dcce.dir/src/structures.c.o -c /home/mariatomain/CG_prj2/src/structures.c
+
+CMakeFiles/dcce.dir/src/structures.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/structures.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/structures.c > CMakeFiles/dcce.dir/src/structures.c.i
+
+CMakeFiles/dcce.dir/src/structures.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/structures.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/structures.c -o CMakeFiles/dcce.dir/src/structures.c.s
+
 # Object files for target dcce
 dcce_OBJECTS = \
 "CMakeFiles/dcce.dir/src/main.c.o" \
 "CMakeFiles/dcce.dir/src/keyboard.c.o" \
 "CMakeFiles/dcce.dir/src/mouse.c.o" \
 "CMakeFiles/dcce.dir/src/controls.c.o" \
-"CMakeFiles/dcce.dir/src/room.c.o" \
-"CMakeFiles/dcce.dir/src/building.c.o"
+"CMakeFiles/dcce.dir/src/block.c.o" \
+"CMakeFiles/dcce.dir/src/building.c.o" \
+"CMakeFiles/dcce.dir/src/door.c.o" \
+"CMakeFiles/dcce.dir/src/wall.c.o" \
+"CMakeFiles/dcce.dir/src/structures.c.o"
 
 # External object files for target dcce
 dcce_EXTERNAL_OBJECTS =
@@ -169,15 +214,18 @@ dcce: CMakeFiles/dcce.dir/src/main.c.o
 dcce: CMakeFiles/dcce.dir/src/keyboard.c.o
 dcce: CMakeFiles/dcce.dir/src/mouse.c.o
 dcce: CMakeFiles/dcce.dir/src/controls.c.o
-dcce: CMakeFiles/dcce.dir/src/room.c.o
+dcce: CMakeFiles/dcce.dir/src/block.c.o
 dcce: CMakeFiles/dcce.dir/src/building.c.o
+dcce: CMakeFiles/dcce.dir/src/door.c.o
+dcce: CMakeFiles/dcce.dir/src/wall.c.o
+dcce: CMakeFiles/dcce.dir/src/structures.c.o
 dcce: CMakeFiles/dcce.dir/build.make
 dcce: /usr/lib/x86_64-linux-gnu/libGL.so
 dcce: /usr/lib/x86_64-linux-gnu/libGLU.so
 dcce: /usr/lib/x86_64-linux-gnu/libglut.so
 dcce: /usr/lib/x86_64-linux-gnu/libXi.so
 dcce: CMakeFiles/dcce.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking C executable dcce"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable dcce"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dcce.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

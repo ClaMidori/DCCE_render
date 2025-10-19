@@ -129,6 +129,30 @@ dcce/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/build
 .PHONY : dcce/fast
 
+src/block.o: src/block.c.o
+.PHONY : src/block.o
+
+# target to build an object file
+src/block.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/block.c.o
+.PHONY : src/block.c.o
+
+src/block.i: src/block.c.i
+.PHONY : src/block.i
+
+# target to preprocess a source file
+src/block.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/block.c.i
+.PHONY : src/block.c.i
+
+src/block.s: src/block.c.s
+.PHONY : src/block.s
+
+# target to generate assembly for a file
+src/block.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/block.c.s
+.PHONY : src/block.c.s
+
 src/building.o: src/building.c.o
 .PHONY : src/building.o
 
@@ -176,6 +200,30 @@ src/controls.s: src/controls.c.s
 src/controls.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/controls.c.s
 .PHONY : src/controls.c.s
+
+src/door.o: src/door.c.o
+.PHONY : src/door.o
+
+# target to build an object file
+src/door.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/door.c.o
+.PHONY : src/door.c.o
+
+src/door.i: src/door.c.i
+.PHONY : src/door.i
+
+# target to preprocess a source file
+src/door.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/door.c.i
+.PHONY : src/door.c.i
+
+src/door.s: src/door.c.s
+.PHONY : src/door.s
+
+# target to generate assembly for a file
+src/door.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/door.c.s
+.PHONY : src/door.c.s
 
 src/keyboard.o: src/keyboard.c.o
 .PHONY : src/keyboard.o
@@ -249,29 +297,53 @@ src/mouse.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/mouse.c.s
 .PHONY : src/mouse.c.s
 
-src/room.o: src/room.c.o
-.PHONY : src/room.o
+src/structures.o: src/structures.c.o
+.PHONY : src/structures.o
 
 # target to build an object file
-src/room.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/room.c.o
-.PHONY : src/room.c.o
+src/structures.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/structures.c.o
+.PHONY : src/structures.c.o
 
-src/room.i: src/room.c.i
-.PHONY : src/room.i
+src/structures.i: src/structures.c.i
+.PHONY : src/structures.i
 
 # target to preprocess a source file
-src/room.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/room.c.i
-.PHONY : src/room.c.i
+src/structures.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/structures.c.i
+.PHONY : src/structures.c.i
 
-src/room.s: src/room.c.s
-.PHONY : src/room.s
+src/structures.s: src/structures.c.s
+.PHONY : src/structures.s
 
 # target to generate assembly for a file
-src/room.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/room.c.s
-.PHONY : src/room.c.s
+src/structures.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/structures.c.s
+.PHONY : src/structures.c.s
+
+src/wall.o: src/wall.c.o
+.PHONY : src/wall.o
+
+# target to build an object file
+src/wall.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/wall.c.o
+.PHONY : src/wall.c.o
+
+src/wall.i: src/wall.c.i
+.PHONY : src/wall.i
+
+# target to preprocess a source file
+src/wall.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/wall.c.i
+.PHONY : src/wall.c.i
+
+src/wall.s: src/wall.c.s
+.PHONY : src/wall.s
+
+# target to generate assembly for a file
+src/wall.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/wall.c.s
+.PHONY : src/wall.c.s
 
 # Help Target
 help:
@@ -282,12 +354,18 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... dcce"
+	@echo "... src/block.o"
+	@echo "... src/block.i"
+	@echo "... src/block.s"
 	@echo "... src/building.o"
 	@echo "... src/building.i"
 	@echo "... src/building.s"
 	@echo "... src/controls.o"
 	@echo "... src/controls.i"
 	@echo "... src/controls.s"
+	@echo "... src/door.o"
+	@echo "... src/door.i"
+	@echo "... src/door.s"
 	@echo "... src/keyboard.o"
 	@echo "... src/keyboard.i"
 	@echo "... src/keyboard.s"
@@ -297,9 +375,12 @@ help:
 	@echo "... src/mouse.o"
 	@echo "... src/mouse.i"
 	@echo "... src/mouse.s"
-	@echo "... src/room.o"
-	@echo "... src/room.i"
-	@echo "... src/room.s"
+	@echo "... src/structures.o"
+	@echo "... src/structures.i"
+	@echo "... src/structures.s"
+	@echo "... src/wall.o"
+	@echo "... src/wall.i"
+	@echo "... src/wall.s"
 .PHONY : help
 
 

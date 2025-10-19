@@ -69,10 +69,15 @@ CMakeFiles/dcce.dir/src/main.c.o: /home/mariatomain/CG_prj2/src/main.c \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/mariatomain/CG_prj2/src/../include/room.h \
- /home/mariatomain/CG_prj2/src/../include/../include/commons.h \
  /home/mariatomain/CG_prj2/src/../include/keyboard.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/commons.h \
  /home/mariatomain/CG_prj2/src/../include/mouse.h \
  /home/mariatomain/CG_prj2/src/../include/controls.h \
  /home/mariatomain/CG_prj2/src/../include/building.h \
- /home/mariatomain/CG_prj2/src/../include/../include/room.h
+ /home/mariatomain/CG_prj2/src/../include/../include/block.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/../include/commons.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/../include/wall.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/../include/../include/commons.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/../include/../include/door.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/../include/../include/../include/commons.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/../include/structures.h
