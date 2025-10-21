@@ -19,8 +19,11 @@ set(SOURCES
     src/keyboard.c 
     src/mouse.c
     src/controls.c
-    src/room.c
+    src/block.c
     src/building.c
+    src/door.c
+    src/wall.c
+    src/structures.c
 )
 
 # Adiciona o diretório "include" para que você possa usar #include "house.h"

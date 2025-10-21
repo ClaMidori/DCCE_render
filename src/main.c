@@ -1,12 +1,8 @@
 #include "../include/commons.h"
-#include "../include/room.h"
 #include "../include/keyboard.h"
 #include "../include/mouse.h"
 #include "../include/controls.h"
 #include "../include/building.h"
-
-int angulo =0;
-int portaAbrindo = 0;
 
 void Inicializa(void)
 {
@@ -28,6 +24,7 @@ void Draw(){
     glutSolidCube(20);
     glPopMatrix();
     ground_floor();
+    //teste();
 }
 
 void DISPLAY(void)
