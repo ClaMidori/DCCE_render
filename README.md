@@ -1,7 +1,9 @@
 # DCCE_render
 Projeto de Computação Gráfica, no qual iremos desenhar o Departamento de Ciência da Computação e Estatística do câmpus de São José do Rio Preto com OpenGL como trabalho final da disciplina.
 
-![alt text](dcce.jpg)
+<div align="center">
+  <img src="dcce.jpg" alt="Departamento de Ciência da Computação e Estatística">
+</div>
 
 # Primeiro commit e modificações
 
