@@ -1,7 +1,7 @@
-CMakeFiles/dcce.dir/src/wall.c.o: /home/mariatomain/CG_prj2/src/wall.c \
+CMakeFiles/dcce.dir/src/wall.c.o: /home/midori/DCCE_render/src/wall.c \
  /usr/include/stdc-predef.h \
- /home/mariatomain/CG_prj2/src/../include/wall.h \
- /home/mariatomain/CG_prj2/src/../include/../include/commons.h \
+ /home/midori/DCCE_render/src/../include/wall.h \
+ /home/midori/DCCE_render/src/../include/../include/commons.h \
  /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \
@@ -70,5 +70,5 @@ CMakeFiles/dcce.dir/src/wall.c.o: /home/mariatomain/CG_prj2/src/wall.c \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/mariatomain/CG_prj2/src/../include/../include/door.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/commons.h
+ /home/midori/DCCE_render/src/../include/../include/door.h \
+ /home/midori/DCCE_render/src/../include/../include/../include/commons.h

@@ -1,9 +1,8 @@
-CMakeFiles/dcce.dir/src/main.c.o: /home/mariatomain/CG_prj2/src/main.c \
+CMakeFiles/dcce.dir/src/main.c.o: /home/midori/DCCE_render/src/main.c \
  /usr/include/stdc-predef.h \
- /home/mariatomain/CG_prj2/src/../include/commons.h \
- /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
- /usr/include/GL/gl.h /usr/include/GL/glext.h \
- /usr/include/KHR/khrplatform.h \
+ /home/midori/DCCE_render/src/../include/commons.h /usr/include/GL/glut.h \
+ /usr/include/GL/freeglut_std.h /usr/include/GL/gl.h \
+ /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -69,15 +68,15 @@ CMakeFiles/dcce.dir/src/main.c.o: /home/mariatomain/CG_prj2/src/main.c \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/mariatomain/CG_prj2/src/../include/keyboard.h \
- /home/mariatomain/CG_prj2/src/../include/../include/commons.h \
- /home/mariatomain/CG_prj2/src/../include/mouse.h \
- /home/mariatomain/CG_prj2/src/../include/controls.h \
- /home/mariatomain/CG_prj2/src/../include/building.h \
- /home/mariatomain/CG_prj2/src/../include/../include/block.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/commons.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/wall.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/../include/commons.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/../include/door.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/../include/../include/commons.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/structures.h
+ /home/midori/DCCE_render/src/../include/keyboard.h \
+ /home/midori/DCCE_render/src/../include/../include/commons.h \
+ /home/midori/DCCE_render/src/../include/mouse.h \
+ /home/midori/DCCE_render/src/../include/controls.h \
+ /home/midori/DCCE_render/src/../include/building.h \
+ /home/midori/DCCE_render/src/../include/../include/block.h \
+ /home/midori/DCCE_render/src/../include/../include/../include/commons.h \
+ /home/midori/DCCE_render/src/../include/../include/../include/wall.h \
+ /home/midori/DCCE_render/src/../include/../include/../include/../include/commons.h \
+ /home/midori/DCCE_render/src/../include/../include/../include/../include/door.h \
+ /home/midori/DCCE_render/src/../include/../include/../include/../include/../include/commons.h \
+ /home/midori/DCCE_render/src/../include/../include/../include/structures.h
