@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dcce.dir/src/controls.c.o.d"
   "CMakeFiles/dcce.dir/src/door.c.o"
   "CMakeFiles/dcce.dir/src/door.c.o.d"
+  "CMakeFiles/dcce.dir/src/ground.c.o"
+  "CMakeFiles/dcce.dir/src/ground.c.o.d"
   "CMakeFiles/dcce.dir/src/keyboard.c.o"
   "CMakeFiles/dcce.dir/src/keyboard.c.o.d"
   "CMakeFiles/dcce.dir/src/main.c.o"
