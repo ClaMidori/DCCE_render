@@ -1,6 +1,6 @@
-CMakeFiles/dcce.dir/src/block.c.o: /home/mariatomain/CG_prj2/src/block.c \
- /usr/include/stdc-predef.h \
- /home/mariatomain/CG_prj2/src/../include/block.h \
+CMakeFiles/dcce.dir/src/ground.c.o: \
+ /home/mariatomain/CG_prj2/src/ground.c /usr/include/stdc-predef.h \
+ /home/mariatomain/CG_prj2/src/../include/ground.h \
  /home/mariatomain/CG_prj2/src/../include/../include/commons.h \
  /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
@@ -69,10 +69,4 @@ CMakeFiles/dcce.dir/src/block.c.o: /home/mariatomain/CG_prj2/src/block.c \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/mariatomain/CG_prj2/src/../include/../include/wall.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/commons.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/door.h \
- /home/mariatomain/CG_prj2/src/../include/../include/../include/../include/commons.h \
- /home/mariatomain/CG_prj2/src/../include/../include/structures.h \
- /home/mariatomain/CG_prj2/src/../include/../include/ground.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h

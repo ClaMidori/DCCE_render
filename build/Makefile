@@ -225,6 +225,30 @@ src/door.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/door.c.s
 .PHONY : src/door.c.s
 
+src/ground.o: src/ground.c.o
+.PHONY : src/ground.o
+
+# target to build an object file
+src/ground.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/ground.c.o
+.PHONY : src/ground.c.o
+
+src/ground.i: src/ground.c.i
+.PHONY : src/ground.i
+
+# target to preprocess a source file
+src/ground.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/ground.c.i
+.PHONY : src/ground.c.i
+
+src/ground.s: src/ground.c.s
+.PHONY : src/ground.s
+
+# target to generate assembly for a file
+src/ground.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/ground.c.s
+.PHONY : src/ground.c.s
+
 src/keyboard.o: src/keyboard.c.o
 .PHONY : src/keyboard.o
 
@@ -366,6 +390,9 @@ help:
 	@echo "... src/door.o"
 	@echo "... src/door.i"
 	@echo "... src/door.s"
+	@echo "... src/ground.o"
+	@echo "... src/ground.i"
+	@echo "... src/ground.s"
 	@echo "... src/keyboard.o"
 	@echo "... src/keyboard.i"
 	@echo "... src/keyboard.s"
