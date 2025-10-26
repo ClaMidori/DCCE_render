@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
+GL/glut.h
+-
+GL/glu.h
+-
+stdio.h
+-
+stdarg.h
+-
+unistd.h
+-
+stdlib.h
+-
+math.h
+-
+
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/controls.h
+../include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
+
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/keyboard.h
+../include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
+
+/home/mirian/UNESP/DCCE_CG/DCCE_render/src/keyboard.c
+../include/keyboard.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/keyboard.h
+../include/controls.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/controls.h
+
