@@ -27,6 +27,19 @@ void block(int front, int left, int right, int back){
    }
 }
 
+void down_up_block(int up, int down){
+	if(up==1){
+
+		wall(0,base,0,90,1,0,0);
+
+	}
+	if(down==1){
+
+		wall(0,-base,0,90,1,0,0);
+
+	}
+}
+
 void big_window_block(int front, int left, int right, int back){
    if(back == 1){
       wall(0,0,-base,0,0,0,0);

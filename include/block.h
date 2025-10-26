@@ -12,6 +12,8 @@ void room_entrance(int fx, int fy); */
 
 void block(int front, int left, int right, int back);
 
+void down_up_block(int up, int down);
+
 void big_window_block(int front, int left, int right, int back);
 
 void medium_window_block(int front, int left, int right, int back);

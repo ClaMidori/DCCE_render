@@ -24,6 +24,7 @@ void Draw(){
     glutSolidCube(20);
     glPopMatrix();
     ground_floor();
+    first_floor();
     //teste();
 }
 
@@ -88,7 +89,10 @@ int main(int argc, char**argv)
     glutKeyboardFunc(pressed_keys);
     glutKeyboardUpFunc(released_keys);
     glutPassiveMotionFunc(MOUSE);
+    glutSpecialFunc(TeclasEspeciais);
+    glutSpecialUpFunc(TeclasEspeciaisUp);
     glutIdleFunc(update_moviment);
+    glEnable(GL_DEPTH_TEST);
     glutMainLoop();
     return 0;
 }
