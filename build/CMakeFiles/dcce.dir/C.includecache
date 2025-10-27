@@ -6,6 +6,20 @@
 
 #IncludeRegexTransform: 
 
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/block.h
+../include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
+../include/wall.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/wall.h
+../include/structures.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/structures.h
+
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/building.h
+../include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
+../include/block.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/block.h
+
 /home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
 GL/glut.h
 -
@@ -22,17 +36,21 @@ stdlib.h
 math.h
 -
 
-/home/mirian/UNESP/DCCE_CG/DCCE_render/include/controls.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/door.h
 ../include/commons.h
 /home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
 
-/home/mirian/UNESP/DCCE_CG/DCCE_render/include/keyboard.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/structures.h
 ../include/commons.h
 /home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
 
-/home/mirian/UNESP/DCCE_CG/DCCE_render/src/keyboard.c
-../include/keyboard.h
-/home/mirian/UNESP/DCCE_CG/DCCE_render/include/keyboard.h
-../include/controls.h
-/home/mirian/UNESP/DCCE_CG/DCCE_render/include/controls.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/wall.h
+../include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
+../include/door.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/door.h
+
+/home/mirian/UNESP/DCCE_CG/DCCE_render/src/building.c
+../include/building.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/building.h
 
