@@ -321,6 +321,30 @@ src/mouse.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/mouse.c.s
 .PHONY : src/mouse.c.s
 
+src/roof.o: src/roof.c.o
+.PHONY : src/roof.o
+
+# target to build an object file
+src/roof.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/roof.c.o
+.PHONY : src/roof.c.o
+
+src/roof.i: src/roof.c.i
+.PHONY : src/roof.i
+
+# target to preprocess a source file
+src/roof.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/roof.c.i
+.PHONY : src/roof.c.i
+
+src/roof.s: src/roof.c.s
+.PHONY : src/roof.s
+
+# target to generate assembly for a file
+src/roof.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/roof.c.s
+.PHONY : src/roof.c.s
+
 src/structures.o: src/structures.c.o
 .PHONY : src/structures.o
 
@@ -402,6 +426,9 @@ help:
 	@echo "... src/mouse.o"
 	@echo "... src/mouse.i"
 	@echo "... src/mouse.s"
+	@echo "... src/roof.o"
+	@echo "... src/roof.i"
+	@echo "... src/roof.s"
 	@echo "... src/structures.o"
 	@echo "... src/structures.i"
 	@echo "... src/structures.s"

@@ -16,6 +16,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mariatomain/CG_prj2/src/keyboard.c" "CMakeFiles/dcce.dir/src/keyboard.c.o" "gcc" "CMakeFiles/dcce.dir/src/keyboard.c.o.d"
   "/home/mariatomain/CG_prj2/src/main.c" "CMakeFiles/dcce.dir/src/main.c.o" "gcc" "CMakeFiles/dcce.dir/src/main.c.o.d"
   "/home/mariatomain/CG_prj2/src/mouse.c" "CMakeFiles/dcce.dir/src/mouse.c.o" "gcc" "CMakeFiles/dcce.dir/src/mouse.c.o.d"
+  "/home/mariatomain/CG_prj2/src/roof.c" "CMakeFiles/dcce.dir/src/roof.c.o" "gcc" "CMakeFiles/dcce.dir/src/roof.c.o.d"
   "/home/mariatomain/CG_prj2/src/structures.c" "CMakeFiles/dcce.dir/src/structures.c.o" "gcc" "CMakeFiles/dcce.dir/src/structures.c.o.d"
   "/home/mariatomain/CG_prj2/src/wall.c" "CMakeFiles/dcce.dir/src/wall.c.o" "gcc" "CMakeFiles/dcce.dir/src/wall.c.o.d"
   )

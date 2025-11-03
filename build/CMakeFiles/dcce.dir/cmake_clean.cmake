@@ -15,6 +15,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/dcce.dir/src/main.c.o.d"
   "CMakeFiles/dcce.dir/src/mouse.c.o"
   "CMakeFiles/dcce.dir/src/mouse.c.o.d"
+  "CMakeFiles/dcce.dir/src/roof.c.o"
+  "CMakeFiles/dcce.dir/src/roof.c.o.d"
   "CMakeFiles/dcce.dir/src/structures.c.o"
   "CMakeFiles/dcce.dir/src/structures.c.o.d"
   "CMakeFiles/dcce.dir/src/wall.c.o"
