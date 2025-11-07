@@ -8,6 +8,7 @@
 
 void ground_floor();
 void first_floor();
+void second_floor();
 
 void teste();
 

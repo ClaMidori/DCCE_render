@@ -2,8 +2,8 @@
 #include "../include/controls.h"
 
 //controle de moovimento
-unsigned char keys[2]; // [0] -> movimento horizontal [1] -> movimento vertical
-float acc = 1;
+unsigned char keys[3]; // [0] -> movimento horizontal [1] -> movimento vertical
+float acc = 3;
 
 
 void pressed_keys(unsigned char tecla, int x, int y)
@@ -26,7 +26,7 @@ void released_keys(unsigned char tecla, int x, int y)
 
 void update_moviment(){
     // correct acc
-    if(keys[0] !='\0' && keys[1] !='\0') acc= 0.41;
+    if(keys[0] !='\0' && keys[1] !='\0') acc= 2.24;
 
     switch(keys[0]){
     case 'd':
@@ -68,4 +68,24 @@ void update_moviment(){
     default:
         break;
     }
+
+    if(keys[2] == GLUT_KEY_PAGE_UP){//Page up = fn + seta pra cima
+        posy += acc; 
+        oy += acc;
+        glutPostRedisplay();
+    } else if(keys[2] == GLUT_KEY_PAGE_DOWN){//Page down = fn + seta pra baixo
+        posy -= acc;
+        oy -= acc;
+        glutPostRedisplay();
+    }
+}
+
+void TeclasEspeciaisUp(int key, int x, int y)
+{
+	keys[2] = 0;
+}
+
+void TeclasEspeciais(int key, int x, int y)
+{
+	keys[2] = key;
 }

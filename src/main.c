@@ -19,11 +19,13 @@ void Inicializa(void)
 void Draw(){
     glColor3ub(100,200,0);
     glPushMatrix();
-    glTranslatef(0,0,0);
+    glTranslatef(0,-ground_offset,0);
     glScalef(60,0.01,60);
-    glutSolidCube(20);
+    glutSolidCube(30);
     glPopMatrix();
     ground_floor();
+    first_floor();
+    second_floor();
     //teste();
 }
 
@@ -88,6 +90,8 @@ int main(int argc, char**argv)
     glutKeyboardFunc(pressed_keys);
     glutKeyboardUpFunc(released_keys);
     glutPassiveMotionFunc(MOUSE);
+    glutSpecialFunc(TeclasEspeciais);
+    glutSpecialUpFunc(TeclasEspeciaisUp);
     glutIdleFunc(update_moviment);
     glutMainLoop();
     return 0;

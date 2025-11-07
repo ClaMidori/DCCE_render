@@ -23,7 +23,9 @@ set(SOURCES
     src/building.c
     src/door.c
     src/wall.c
+    src/ground.c
     src/structures.c
+    src/roof.c
 )
 
 # Adiciona o diretório "include" para que você possa usar #include "house.h"
