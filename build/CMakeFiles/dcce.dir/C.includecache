@@ -6,17 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/block.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/block.h
 ../include/commons.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
 ../include/wall.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/wall.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/wall.h
 ../include/structures.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/structures.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/structures.h
 ../include/ground.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/ground.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/ground.h
 
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/building.h
+../include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
+../include/block.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/block.h
+
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
 GL/glut.h
 -
 GL/glu.h
@@ -32,25 +38,25 @@ stdlib.h
 math.h
 -
 
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/door.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/door.h
 ../include/commons.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
 
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/ground.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/ground.h
 ../include/commons.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
 
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/structures.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/structures.h
 ../include/commons.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
 
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/wall.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/wall.h
 ../include/commons.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/commons.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/commons.h
 ../include/door.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/door.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/door.h
 
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/src/block.c
-../include/block.h
-/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include/block.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/src/building.c
+../include/building.h
+/home/mirian/UNESP/DCCE_CG/DCCE_render/include/building.h
 

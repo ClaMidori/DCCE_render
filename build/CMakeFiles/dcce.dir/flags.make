@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mirian/UNESP/DCCE_CG/Updates/DCCE_render/include
+C_INCLUDES = -I/home/mirian/UNESP/DCCE_CG/DCCE_render/include
 
 C_FLAGS = -std=gnu11
 
