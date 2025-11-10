@@ -13,17 +13,22 @@
 //* constantes de cores
 
 #define white glColor3f(0.9f, 0.9f, 0.9f);
+#define white_shadow glColor3f(0.8f, 0.8f, 0.8f);
 #define gray glColor3f(0.6f, 0.6f, 0.6f);
-#define red glColor3f(0.9f, 0, 0);
+#define red glColor3f(0.698, 0.133, 0.133);
 #define dark_red glColor3f(0.6f, 0, 0);
-
-//* constantes auxiliares
-#define wall_thickness 3
+#define areia glColor3f(0.741, 0.718, 0.420);
+#define areia_shadow glColor3f(0.65, 0.65, 0.4);
 
 //* A construção do prédio funciona como uma matriz tridimensional, pela escala, 10x10x3
 
 #define base 50 //* métrica base para a construção das salas
 #define mx 10 //* número de linhas de blocos do prédio
 #define mz 10 //* número de colunas de blocos do prédio
-#define my 3 //* altura da matriz
+#define my 2 //* altura da matriz
 
+//* constantes auxiliares
+#define wall_thickness 3
+#define p_thickness base/10
+#define ground_offset 5
+#define betw_height 0.3*base
