@@ -1,7 +1,7 @@
-CMakeFiles/dcce.dir/src/mouse.c.o: \
- /home/midori_torres/mi_branch/DCCE_render/src/mouse.c \
+CMakeFiles/dcce.dir/src/ground.c.o: \
+ /home/midori_torres/mi_branch/DCCE_render/src/ground.c \
  /usr/include/stdc-predef.h \
- /home/midori_torres/mi_branch/DCCE_render/src/../include/mouse.h \
+ /home/midori_torres/mi_branch/DCCE_render/src/../include/ground.h \
  /home/midori_torres/mi_branch/DCCE_render/src/../include/../include/commons.h \
  /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
@@ -70,5 +70,4 @@ CMakeFiles/dcce.dir/src/mouse.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
- /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/midori_torres/mi_branch/DCCE_render/src/../include/controls.h
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h

@@ -1,7 +1,8 @@
 CMakeFiles/dcce.dir/src/controls.c.o: \
- /home/midori/DCCE_render/src/controls.c /usr/include/stdc-predef.h \
- /home/midori/DCCE_render/src/../include/controls.h \
- /home/midori/DCCE_render/src/../include/../include/commons.h \
+ /home/midori_torres/mi_branch/DCCE_render/src/controls.c \
+ /usr/include/stdc-predef.h \
+ /home/midori_torres/mi_branch/DCCE_render/src/../include/controls.h \
+ /home/midori_torres/mi_branch/DCCE_render/src/../include/../include/commons.h \
  /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \

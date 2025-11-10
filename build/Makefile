@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/midori/DCCE_render
+CMAKE_SOURCE_DIR = /home/midori_torres/mi_branch/DCCE_render
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/midori/DCCE_render/build
+CMAKE_BINARY_DIR = /home/midori_torres/mi_branch/DCCE_render/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/midori/DCCE_render/build/CMakeFiles /home/midori/DCCE_render/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles /home/midori_torres/mi_branch/DCCE_render/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/midori/DCCE_render/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -225,6 +225,30 @@ src/door.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/door.c.s
 .PHONY : src/door.c.s
 
+src/ground.o: src/ground.c.o
+.PHONY : src/ground.o
+
+# target to build an object file
+src/ground.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/ground.c.o
+.PHONY : src/ground.c.o
+
+src/ground.i: src/ground.c.i
+.PHONY : src/ground.i
+
+# target to preprocess a source file
+src/ground.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/ground.c.i
+.PHONY : src/ground.c.i
+
+src/ground.s: src/ground.c.s
+.PHONY : src/ground.s
+
+# target to generate assembly for a file
+src/ground.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/ground.c.s
+.PHONY : src/ground.c.s
+
 src/keyboard.o: src/keyboard.c.o
 .PHONY : src/keyboard.o
 
@@ -297,6 +321,30 @@ src/mouse.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/mouse.c.s
 .PHONY : src/mouse.c.s
 
+src/roof.o: src/roof.c.o
+.PHONY : src/roof.o
+
+# target to build an object file
+src/roof.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/roof.c.o
+.PHONY : src/roof.c.o
+
+src/roof.i: src/roof.c.i
+.PHONY : src/roof.i
+
+# target to preprocess a source file
+src/roof.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/roof.c.i
+.PHONY : src/roof.c.i
+
+src/roof.s: src/roof.c.s
+.PHONY : src/roof.s
+
+# target to generate assembly for a file
+src/roof.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/roof.c.s
+.PHONY : src/roof.c.s
+
 src/structures.o: src/structures.c.o
 .PHONY : src/structures.o
 
@@ -366,6 +414,9 @@ help:
 	@echo "... src/door.o"
 	@echo "... src/door.i"
 	@echo "... src/door.s"
+	@echo "... src/ground.o"
+	@echo "... src/ground.i"
+	@echo "... src/ground.s"
 	@echo "... src/keyboard.o"
 	@echo "... src/keyboard.i"
 	@echo "... src/keyboard.s"
@@ -375,6 +426,9 @@ help:
 	@echo "... src/mouse.o"
 	@echo "... src/mouse.i"
 	@echo "... src/mouse.s"
+	@echo "... src/roof.o"
+	@echo "... src/roof.i"
+	@echo "... src/roof.s"
 	@echo "... src/structures.o"
 	@echo "... src/structures.i"
 	@echo "... src/structures.s"

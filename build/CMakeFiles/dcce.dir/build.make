@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/midori/DCCE_render
+CMAKE_SOURCE_DIR = /home/midori_torres/mi_branch/DCCE_render
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/midori/DCCE_render/build
+CMAKE_BINARY_DIR = /home/midori_torres/mi_branch/DCCE_render/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dcce.dir/depend.make
@@ -70,130 +70,158 @@ include CMakeFiles/dcce.dir/progress.make
 include CMakeFiles/dcce.dir/flags.make
 
 CMakeFiles/dcce.dir/src/main.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/main.c.o: /home/midori/DCCE_render/src/main.c
+CMakeFiles/dcce.dir/src/main.c.o: /home/midori_torres/mi_branch/DCCE_render/src/main.c
 CMakeFiles/dcce.dir/src/main.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dcce.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/main.c.o -MF CMakeFiles/dcce.dir/src/main.c.o.d -o CMakeFiles/dcce.dir/src/main.c.o -c /home/midori/DCCE_render/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dcce.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/main.c.o -MF CMakeFiles/dcce.dir/src/main.c.o.d -o CMakeFiles/dcce.dir/src/main.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/main.c
 
 CMakeFiles/dcce.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori/DCCE_render/src/main.c > CMakeFiles/dcce.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/main.c > CMakeFiles/dcce.dir/src/main.c.i
 
 CMakeFiles/dcce.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori/DCCE_render/src/main.c -o CMakeFiles/dcce.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/main.c -o CMakeFiles/dcce.dir/src/main.c.s
 
 CMakeFiles/dcce.dir/src/keyboard.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/keyboard.c.o: /home/midori/DCCE_render/src/keyboard.c
+CMakeFiles/dcce.dir/src/keyboard.c.o: /home/midori_torres/mi_branch/DCCE_render/src/keyboard.c
 CMakeFiles/dcce.dir/src/keyboard.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dcce.dir/src/keyboard.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/keyboard.c.o -MF CMakeFiles/dcce.dir/src/keyboard.c.o.d -o CMakeFiles/dcce.dir/src/keyboard.c.o -c /home/midori/DCCE_render/src/keyboard.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dcce.dir/src/keyboard.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/keyboard.c.o -MF CMakeFiles/dcce.dir/src/keyboard.c.o.d -o CMakeFiles/dcce.dir/src/keyboard.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/keyboard.c
 
 CMakeFiles/dcce.dir/src/keyboard.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/keyboard.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori/DCCE_render/src/keyboard.c > CMakeFiles/dcce.dir/src/keyboard.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/keyboard.c > CMakeFiles/dcce.dir/src/keyboard.c.i
 
 CMakeFiles/dcce.dir/src/keyboard.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/keyboard.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori/DCCE_render/src/keyboard.c -o CMakeFiles/dcce.dir/src/keyboard.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/keyboard.c -o CMakeFiles/dcce.dir/src/keyboard.c.s
 
 CMakeFiles/dcce.dir/src/mouse.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/mouse.c.o: /home/midori/DCCE_render/src/mouse.c
+CMakeFiles/dcce.dir/src/mouse.c.o: /home/midori_torres/mi_branch/DCCE_render/src/mouse.c
 CMakeFiles/dcce.dir/src/mouse.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dcce.dir/src/mouse.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/mouse.c.o -MF CMakeFiles/dcce.dir/src/mouse.c.o.d -o CMakeFiles/dcce.dir/src/mouse.c.o -c /home/midori/DCCE_render/src/mouse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dcce.dir/src/mouse.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/mouse.c.o -MF CMakeFiles/dcce.dir/src/mouse.c.o.d -o CMakeFiles/dcce.dir/src/mouse.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/mouse.c
 
 CMakeFiles/dcce.dir/src/mouse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/mouse.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori/DCCE_render/src/mouse.c > CMakeFiles/dcce.dir/src/mouse.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/mouse.c > CMakeFiles/dcce.dir/src/mouse.c.i
 
 CMakeFiles/dcce.dir/src/mouse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/mouse.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori/DCCE_render/src/mouse.c -o CMakeFiles/dcce.dir/src/mouse.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/mouse.c -o CMakeFiles/dcce.dir/src/mouse.c.s
 
 CMakeFiles/dcce.dir/src/controls.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/controls.c.o: /home/midori/DCCE_render/src/controls.c
+CMakeFiles/dcce.dir/src/controls.c.o: /home/midori_torres/mi_branch/DCCE_render/src/controls.c
 CMakeFiles/dcce.dir/src/controls.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/dcce.dir/src/controls.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/controls.c.o -MF CMakeFiles/dcce.dir/src/controls.c.o.d -o CMakeFiles/dcce.dir/src/controls.c.o -c /home/midori/DCCE_render/src/controls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/dcce.dir/src/controls.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/controls.c.o -MF CMakeFiles/dcce.dir/src/controls.c.o.d -o CMakeFiles/dcce.dir/src/controls.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/controls.c
 
 CMakeFiles/dcce.dir/src/controls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/controls.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori/DCCE_render/src/controls.c > CMakeFiles/dcce.dir/src/controls.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/controls.c > CMakeFiles/dcce.dir/src/controls.c.i
 
 CMakeFiles/dcce.dir/src/controls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/controls.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori/DCCE_render/src/controls.c -o CMakeFiles/dcce.dir/src/controls.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/controls.c -o CMakeFiles/dcce.dir/src/controls.c.s
 
 CMakeFiles/dcce.dir/src/block.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/block.c.o: /home/midori/DCCE_render/src/block.c
+CMakeFiles/dcce.dir/src/block.c.o: /home/midori_torres/mi_branch/DCCE_render/src/block.c
 CMakeFiles/dcce.dir/src/block.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dcce.dir/src/block.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/block.c.o -MF CMakeFiles/dcce.dir/src/block.c.o.d -o CMakeFiles/dcce.dir/src/block.c.o -c /home/midori/DCCE_render/src/block.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dcce.dir/src/block.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/block.c.o -MF CMakeFiles/dcce.dir/src/block.c.o.d -o CMakeFiles/dcce.dir/src/block.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/block.c
 
 CMakeFiles/dcce.dir/src/block.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/block.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori/DCCE_render/src/block.c > CMakeFiles/dcce.dir/src/block.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/block.c > CMakeFiles/dcce.dir/src/block.c.i
 
 CMakeFiles/dcce.dir/src/block.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/block.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori/DCCE_render/src/block.c -o CMakeFiles/dcce.dir/src/block.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/block.c -o CMakeFiles/dcce.dir/src/block.c.s
 
 CMakeFiles/dcce.dir/src/building.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/building.c.o: /home/midori/DCCE_render/src/building.c
+CMakeFiles/dcce.dir/src/building.c.o: /home/midori_torres/mi_branch/DCCE_render/src/building.c
 CMakeFiles/dcce.dir/src/building.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/dcce.dir/src/building.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/building.c.o -MF CMakeFiles/dcce.dir/src/building.c.o.d -o CMakeFiles/dcce.dir/src/building.c.o -c /home/midori/DCCE_render/src/building.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/dcce.dir/src/building.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/building.c.o -MF CMakeFiles/dcce.dir/src/building.c.o.d -o CMakeFiles/dcce.dir/src/building.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/building.c
 
 CMakeFiles/dcce.dir/src/building.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/building.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori/DCCE_render/src/building.c > CMakeFiles/dcce.dir/src/building.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/building.c > CMakeFiles/dcce.dir/src/building.c.i
 
 CMakeFiles/dcce.dir/src/building.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/building.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori/DCCE_render/src/building.c -o CMakeFiles/dcce.dir/src/building.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/building.c -o CMakeFiles/dcce.dir/src/building.c.s
 
 CMakeFiles/dcce.dir/src/door.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/door.c.o: /home/midori/DCCE_render/src/door.c
+CMakeFiles/dcce.dir/src/door.c.o: /home/midori_torres/mi_branch/DCCE_render/src/door.c
 CMakeFiles/dcce.dir/src/door.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/dcce.dir/src/door.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/door.c.o -MF CMakeFiles/dcce.dir/src/door.c.o.d -o CMakeFiles/dcce.dir/src/door.c.o -c /home/midori/DCCE_render/src/door.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/dcce.dir/src/door.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/door.c.o -MF CMakeFiles/dcce.dir/src/door.c.o.d -o CMakeFiles/dcce.dir/src/door.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/door.c
 
 CMakeFiles/dcce.dir/src/door.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/door.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori/DCCE_render/src/door.c > CMakeFiles/dcce.dir/src/door.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/door.c > CMakeFiles/dcce.dir/src/door.c.i
 
 CMakeFiles/dcce.dir/src/door.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/door.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori/DCCE_render/src/door.c -o CMakeFiles/dcce.dir/src/door.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/door.c -o CMakeFiles/dcce.dir/src/door.c.s
 
 CMakeFiles/dcce.dir/src/wall.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/wall.c.o: /home/midori/DCCE_render/src/wall.c
+CMakeFiles/dcce.dir/src/wall.c.o: /home/midori_torres/mi_branch/DCCE_render/src/wall.c
 CMakeFiles/dcce.dir/src/wall.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/dcce.dir/src/wall.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/wall.c.o -MF CMakeFiles/dcce.dir/src/wall.c.o.d -o CMakeFiles/dcce.dir/src/wall.c.o -c /home/midori/DCCE_render/src/wall.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/dcce.dir/src/wall.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/wall.c.o -MF CMakeFiles/dcce.dir/src/wall.c.o.d -o CMakeFiles/dcce.dir/src/wall.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/wall.c
 
 CMakeFiles/dcce.dir/src/wall.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/wall.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori/DCCE_render/src/wall.c > CMakeFiles/dcce.dir/src/wall.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/wall.c > CMakeFiles/dcce.dir/src/wall.c.i
 
 CMakeFiles/dcce.dir/src/wall.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/wall.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori/DCCE_render/src/wall.c -o CMakeFiles/dcce.dir/src/wall.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/wall.c -o CMakeFiles/dcce.dir/src/wall.c.s
+
+CMakeFiles/dcce.dir/src/ground.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/src/ground.c.o: /home/midori_torres/mi_branch/DCCE_render/src/ground.c
+CMakeFiles/dcce.dir/src/ground.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/dcce.dir/src/ground.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/ground.c.o -MF CMakeFiles/dcce.dir/src/ground.c.o.d -o CMakeFiles/dcce.dir/src/ground.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/ground.c
+
+CMakeFiles/dcce.dir/src/ground.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/ground.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/ground.c > CMakeFiles/dcce.dir/src/ground.c.i
+
+CMakeFiles/dcce.dir/src/ground.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/ground.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/ground.c -o CMakeFiles/dcce.dir/src/ground.c.s
 
 CMakeFiles/dcce.dir/src/structures.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/structures.c.o: /home/midori/DCCE_render/src/structures.c
+CMakeFiles/dcce.dir/src/structures.c.o: /home/midori_torres/mi_branch/DCCE_render/src/structures.c
 CMakeFiles/dcce.dir/src/structures.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/dcce.dir/src/structures.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/structures.c.o -MF CMakeFiles/dcce.dir/src/structures.c.o.d -o CMakeFiles/dcce.dir/src/structures.c.o -c /home/midori/DCCE_render/src/structures.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/dcce.dir/src/structures.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/structures.c.o -MF CMakeFiles/dcce.dir/src/structures.c.o.d -o CMakeFiles/dcce.dir/src/structures.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/structures.c
 
 CMakeFiles/dcce.dir/src/structures.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/structures.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori/DCCE_render/src/structures.c > CMakeFiles/dcce.dir/src/structures.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/structures.c > CMakeFiles/dcce.dir/src/structures.c.i
 
 CMakeFiles/dcce.dir/src/structures.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/structures.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori/DCCE_render/src/structures.c -o CMakeFiles/dcce.dir/src/structures.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/structures.c -o CMakeFiles/dcce.dir/src/structures.c.s
+
+CMakeFiles/dcce.dir/src/roof.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/src/roof.c.o: /home/midori_torres/mi_branch/DCCE_render/src/roof.c
+CMakeFiles/dcce.dir/src/roof.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/dcce.dir/src/roof.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/roof.c.o -MF CMakeFiles/dcce.dir/src/roof.c.o.d -o CMakeFiles/dcce.dir/src/roof.c.o -c /home/midori_torres/mi_branch/DCCE_render/src/roof.c
+
+CMakeFiles/dcce.dir/src/roof.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/roof.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/midori_torres/mi_branch/DCCE_render/src/roof.c > CMakeFiles/dcce.dir/src/roof.c.i
+
+CMakeFiles/dcce.dir/src/roof.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/roof.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/midori_torres/mi_branch/DCCE_render/src/roof.c -o CMakeFiles/dcce.dir/src/roof.c.s
 
 # Object files for target dcce
 dcce_OBJECTS = \
@@ -205,7 +233,9 @@ dcce_OBJECTS = \
 "CMakeFiles/dcce.dir/src/building.c.o" \
 "CMakeFiles/dcce.dir/src/door.c.o" \
 "CMakeFiles/dcce.dir/src/wall.c.o" \
-"CMakeFiles/dcce.dir/src/structures.c.o"
+"CMakeFiles/dcce.dir/src/ground.c.o" \
+"CMakeFiles/dcce.dir/src/structures.c.o" \
+"CMakeFiles/dcce.dir/src/roof.c.o"
 
 # External object files for target dcce
 dcce_EXTERNAL_OBJECTS =
@@ -218,13 +248,16 @@ dcce: CMakeFiles/dcce.dir/src/block.c.o
 dcce: CMakeFiles/dcce.dir/src/building.c.o
 dcce: CMakeFiles/dcce.dir/src/door.c.o
 dcce: CMakeFiles/dcce.dir/src/wall.c.o
+dcce: CMakeFiles/dcce.dir/src/ground.c.o
 dcce: CMakeFiles/dcce.dir/src/structures.c.o
+dcce: CMakeFiles/dcce.dir/src/roof.c.o
 dcce: CMakeFiles/dcce.dir/build.make
 dcce: /usr/lib/x86_64-linux-gnu/libGL.so
 dcce: /usr/lib/x86_64-linux-gnu/libGLU.so
 dcce: /usr/lib/x86_64-linux-gnu/libglut.so
+dcce: /usr/lib/x86_64-linux-gnu/libXi.so
 dcce: CMakeFiles/dcce.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/midori/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking C executable dcce"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable dcce"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dcce.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -236,6 +269,6 @@ CMakeFiles/dcce.dir/clean:
 .PHONY : CMakeFiles/dcce.dir/clean
 
 CMakeFiles/dcce.dir/depend:
-	cd /home/midori/DCCE_render/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/midori/DCCE_render /home/midori/DCCE_render /home/midori/DCCE_render/build /home/midori/DCCE_render/build /home/midori/DCCE_render/build/CMakeFiles/dcce.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/midori_torres/mi_branch/DCCE_render/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/midori_torres/mi_branch/DCCE_render /home/midori_torres/mi_branch/DCCE_render /home/midori_torres/mi_branch/DCCE_render/build /home/midori_torres/mi_branch/DCCE_render/build /home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles/dcce.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dcce.dir/depend
 

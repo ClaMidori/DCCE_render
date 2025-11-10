@@ -1,7 +1,8 @@
 CMakeFiles/dcce.dir/src/structures.c.o: \
- /home/midori/DCCE_render/src/structures.c /usr/include/stdc-predef.h \
- /home/midori/DCCE_render/src/../include/structures.h \
- /home/midori/DCCE_render/src/../include/../include/commons.h \
+ /home/midori_torres/mi_branch/DCCE_render/src/structures.c \
+ /usr/include/stdc-predef.h \
+ /home/midori_torres/mi_branch/DCCE_render/src/../include/structures.h \
+ /home/midori_torres/mi_branch/DCCE_render/src/../include/../include/commons.h \
  /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \
