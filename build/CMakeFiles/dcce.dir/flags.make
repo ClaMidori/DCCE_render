@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = -I/home/mirian/UNESP/DCCE_CG/DCCE_render/include
 
-C_FLAGS =  -g -O0 -fno-omit-frame-pointer -fsanitize=address,undefined -std=gnu11
+C_FLAGS = -std=gnu11
 
