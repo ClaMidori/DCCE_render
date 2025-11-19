@@ -75,4 +75,5 @@ CMakeFiles/dcce.dir/src/block.c.o: /home/mariatomain/CG_prj2/src/block.c \
  /home/mariatomain/CG_prj2/src/../include/../include/../include/door.h \
  /home/mariatomain/CG_prj2/src/../include/../include/../include/../include/commons.h \
  /home/mariatomain/CG_prj2/src/../include/../include/structures.h \
- /home/mariatomain/CG_prj2/src/../include/../include/ground.h
+ /home/mariatomain/CG_prj2/src/../include/../include/ground.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/door.h
