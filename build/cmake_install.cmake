@@ -1,4 +1,4 @@
-# Install script for directory: /home/mariatomain/CG_prj2
+# Install script for directory: /home/mirian/UNESP/DCCE_3d/DCCE_render
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,5 +50,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mariatomain/CG_prj2/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/mirian/UNESP/DCCE_3d/DCCE_render/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

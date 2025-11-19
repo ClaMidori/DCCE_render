@@ -40,7 +40,12 @@ typedef struct {
 
     int hasBackground;//Tem o quadrado de fundo?
 
+    int hasBorders;
+    float borderSize;
+    
+
     // cores
+    Color3 borderColor;
     Color3 color;
 
     // maçaneta

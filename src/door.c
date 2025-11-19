@@ -9,13 +9,14 @@ Door woodDoor = {
     .openAngle = 0,
     .handle = {
         .type = HANDLE_ROUND,
-        .size = 0.1,
+        .size = 0.8,
         .color = {0.6, 0.6, 0.6}
     },
     .hasBars = 0,
     .verticalBars = 0,
     .horizontalBars = 0,
     .hasBackground = 1,
+    .hasBorders = 0,
     .color = {0.6, 0.3, 0.1}
 };
 
@@ -30,10 +31,13 @@ Door gradeDoor = {
     .verticalBars = 3,
     .horizontalBars = 4,
     .hasBackground = 0,
+    .hasBorders = 1,
+    .borderSize = 2.5,
+    .borderColor = {0.6,0,0},
     .handle = {
         .type = HANDLE_NONE
     },
-    .color = {1,0,0}
+    .color = {0.6,0,0}
 };
 
 //Porta branca com maçaneta vertical
@@ -45,14 +49,17 @@ Door whiteDoor = {
     .openAngle = 0,
     .handle = {
         .type = HANDLE_VERTICAL,
-        .size = 0.1,
+        .size = 2.5,
         .color = {0.6, 0.6, 0.6}
     },
-    .hasBars = 1,
-    .verticalBars = 1,
-    .horizontalBars = 1,
+    .hasBars = 0,
+    .verticalBars = 0,
+    .horizontalBars = 0,
     .hasBackground = 1,
-    .color = {0.8, 0.8, 0.8}
+    .hasBorders = 1,
+    .borderSize = 1.5,
+    .borderColor = {0.7, 0.7, 0.7},
+    .color = {0.9, 0.9, 0.9}
 };
 
 void door(const Door *d){
@@ -74,22 +81,98 @@ void door(const Door *d){
 
    // painel principal
    if (d->hasBackground){
+      //Se as bordas da porta existirem
+      if(d->hasBorders){
+         //Painel principal em tamanho reduzido pras bordas aparecerem
+         glBegin(GL_QUADS);
+            glVertex2f(0+d->borderSize, 0+d->borderSize);
+            glVertex2f(w-d->borderSize, 0+d->borderSize);
+            glVertex2f(w-d->borderSize, h-d->borderSize);
+            glVertex2f(0+d->borderSize, h-d->borderSize);
+         glEnd();
+
+         //Processo para desenhar as bordas
+         glColor3f(d->borderColor.r, d->borderColor.g, d->borderColor.b);
+         //Borda esquerda
+         glBegin(GL_QUADS);
+            glVertex2f(0,0);
+            glVertex2f(0,h);
+            glVertex2f(d->borderSize,h);
+            glVertex2f(d->borderSize,0);
+         glEnd();
+         //Borda direita
+         glBegin(GL_QUADS);
+            glVertex2f(w - d->borderSize,0);
+            glVertex2f(w - d->borderSize,h);
+            glVertex2f(w,h);
+            glVertex2f(w,0);
+         glEnd();
+         //Borda superior
+         glBegin(GL_QUADS);
+            glVertex2f(0,h);
+            glVertex2f(w,h);
+            glVertex2f(w,h-d->borderSize);
+            glVertex2f(0,h-d->borderSize);
+         glEnd();
+         //Borda inferior
+         glBegin(GL_QUADS);
+            glVertex2f(0,0);
+            glVertex2f(w,0);
+            glVertex2f(w,d->borderSize);
+            glVertex2f(0,d->borderSize);
+         glEnd();
+      }else{
+         //Painel principal em tamanho normal
+         glBegin(GL_QUADS);
+            glVertex2f(0, 0);
+            glVertex2f(w, 0);
+            glVertex2f(w, h);
+            glVertex2f(0, h);
+         glEnd();
+      } 
+   //Se não tem o painel mas tem bordas  
+   }else if(d->hasBorders){
+      //Processo para desenhar as bordas
+      glColor3f(d->borderColor.r, d->borderColor.g, d->borderColor.b);
+      //Borda esquerda
       glBegin(GL_QUADS);
-         glVertex2f(0, 0);
-         glVertex2f(w, 0);
-         glVertex2f(w, h);
-         glVertex2f(0, h);
+         glVertex2f(0,0);
+         glVertex2f(0,h);
+         glVertex2f(d->borderSize,h);
+         glVertex2f(d->borderSize,0);
+      glEnd();
+      //Borda direita
+      glBegin(GL_QUADS);
+         glVertex2f(w - d->borderSize,0);
+         glVertex2f(w - d->borderSize,h);
+         glVertex2f(w,h);
+         glVertex2f(w,0);
+      glEnd();
+      //Borda superior
+      glBegin(GL_QUADS);
+         glVertex2f(0,h);
+         glVertex2f(w,h);
+         glVertex2f(w,h-d->borderSize);
+         glVertex2f(0,h-d->borderSize);
+      glEnd();
+      //Borda inferior
+      glBegin(GL_QUADS);
+         glVertex2f(0,0);
+         glVertex2f(w,0);
+         glVertex2f(w,d->borderSize);
+         glVertex2f(0,d->borderSize);
       glEnd();
    }
+
    // grades (se existirem)
    if (d->hasBars) {
-      glColor3f(0,0,0);
+      glColor3f(d->color.r, d->color.g, d->color.b);
       for (int i = 0; i < d->verticalBars; i++) {
          float x = (i+1) * (w / (d->verticalBars + 1));
          glBegin(GL_QUADS);
                glVertex2f(x, 0);
-               glVertex2f(x+0.02, 0);
-               glVertex2f(x+0.02, h);
+               glVertex2f(x+0.04, 0);
+               glVertex2f(x+0.04, h);
                glVertex2f(x, h);
          glEnd();
       }
@@ -98,8 +181,8 @@ void door(const Door *d){
          glBegin(GL_QUADS);
                glVertex2f(0, y);
                glVertex2f(w, y);
-               glVertex2f(w, y+0.02);
-               glVertex2f(0, y+0.02);
+               glVertex2f(w, y+0.04);
+               glVertex2f(0, y+0.04);
          glEnd();
       }
    }
@@ -119,13 +202,13 @@ void door(const Door *d){
       case HANDLE_VERTICAL:
          glTranslatef(w * 0.85, h * 0.5, 0);
          glScalef(0.05, d->handle.size, 0.05);
-         glutSolidCube(1.0);
+         glutSolidCube(d->handle.size);
          break;
 
       case HANDLE_HORIZONTAL:
          glTranslatef(w * 0.8, h * 0.35, 0);
          glScalef(d->handle.size, 0.05, 0.05);
-         glutSolidCube(1.0);
+         glutSolidCube(2.0);
          break;
 
       default:

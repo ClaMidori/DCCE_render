@@ -32,6 +32,10 @@ set(SOURCES
 # em vez de #include "../include/house.h"
 include_directories(include)
 
+#Temporariamente para achar erros
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -g -O0 -fno-omit-frame-pointer -fsanitize=address,undefined")
+set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} -fsanitize=address,undefined")
+
 # Cria o executável a partir dos seus arquivos-fonte
 add_executable(dcce ${SOURCES})
 
