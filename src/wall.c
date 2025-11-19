@@ -1131,7 +1131,36 @@ void aux_wall_medium_window(float tx, float ty, float tz,float angulo, float rx,
    glEnd();
    glPopMatrix();
 }
+void wall_with_door(const Door *d, float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   float fy = 0.15;
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white; //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,base);
+      glVertex2f(0, base-base*fy);
+      glVertex2f( base, base-base*fy);
+      glVertex2f( base,base);
+   glEnd();
 
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( wall_thickness, base);
+      glVertex2f( wall_thickness,0);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx+wall_thickness,ty,tz);
+   door(d);
+   glPopMatrix();
+
+   wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
+}
+/*
 void wall_with_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
    float fy = 0.15;
    glPushMatrix();
@@ -1162,6 +1191,36 @@ void wall_with_door(float tx, float ty, float tz,float angulo, float rx, float r
    wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
 }
 
+void wall_with_wood_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   float fy = 0.15;
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white; //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,base);
+      glVertex2f(0, base-base*fy);
+      glVertex2f( base, base-base*fy);
+      glVertex2f( base,base);
+   glEnd();
+
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( wall_thickness, base);
+      glVertex2f( wall_thickness,0);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx+wall_thickness,ty,tz);
+   woodDoor(0);
+   glPopMatrix();
+
+   wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
+}
+*/
 void aux_wall_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
     float fy = 0.15;
    glPushMatrix();
@@ -1209,7 +1268,7 @@ void wall_with_entrance_door(float tx, float ty, float tz,float angulo, float rx
    glPushMatrix();
    glRotatef(angulo,rx,ry,rz);
    glTranslatef(tx+base/2,ty,tz);
-   door(0);
+   door(&gradeDoor);
    glPopMatrix();
 }
 
