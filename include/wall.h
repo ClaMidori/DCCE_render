@@ -37,8 +37,14 @@ void wall_with_small_window(float tx, float ty,float angulo, float tz, float rx,
 void aux_wall_small_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz);
 
 //cria uma parede com porta
+void wall_with_door(const Door *d, float tx, float ty, float tz,float angulo, float rx, float ry, float rz);
+/*
+//cria uma parede com porta
 void wall_with_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz); 
 
+//cria uma parede com porta de madeira
+void wall_with_wood_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz); 
+*/
 // cria o molde da parede ocm a porta
 void aux_wall_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz); 
 

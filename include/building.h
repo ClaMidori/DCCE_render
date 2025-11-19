@@ -3,6 +3,7 @@
 
 #include "../include/commons.h"
 #include "../include/block.h"
+#include "../include/door.h"
 
 //* Modulo dedicado a criação dos andares e a estruturar o prédio
 
