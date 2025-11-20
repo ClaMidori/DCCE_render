@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mirian/UNESP/DCCE_3d/DCCE_render
+CMAKE_SOURCE_DIR = /home/mirian/UNESP/CG/Tiago/DCCE_render
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mirian/UNESP/DCCE_3d/DCCE_render/build
+CMAKE_BINARY_DIR = /home/mirian/UNESP/CG/Tiago/DCCE_render/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dcce.dir/depend.make
@@ -78,146 +78,237 @@ include CMakeFiles/dcce.dir/flags.make
 
 CMakeFiles/dcce.dir/src/main.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dcce.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/main.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dcce.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/main.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/main.c
 
 CMakeFiles/dcce.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/main.c > CMakeFiles/dcce.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/main.c > CMakeFiles/dcce.dir/src/main.c.i
 
 CMakeFiles/dcce.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/main.c -o CMakeFiles/dcce.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/main.c -o CMakeFiles/dcce.dir/src/main.c.s
 
 CMakeFiles/dcce.dir/src/keyboard.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/keyboard.c.o: ../src/keyboard.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dcce.dir/src/keyboard.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/keyboard.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/keyboard.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dcce.dir/src/keyboard.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/keyboard.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/keyboard.c
 
 CMakeFiles/dcce.dir/src/keyboard.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/keyboard.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/keyboard.c > CMakeFiles/dcce.dir/src/keyboard.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/keyboard.c > CMakeFiles/dcce.dir/src/keyboard.c.i
 
 CMakeFiles/dcce.dir/src/keyboard.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/keyboard.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/keyboard.c -o CMakeFiles/dcce.dir/src/keyboard.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/keyboard.c -o CMakeFiles/dcce.dir/src/keyboard.c.s
 
 CMakeFiles/dcce.dir/src/mouse.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/mouse.c.o: ../src/mouse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dcce.dir/src/mouse.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/mouse.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/mouse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dcce.dir/src/mouse.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/mouse.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/mouse.c
 
 CMakeFiles/dcce.dir/src/mouse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/mouse.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/mouse.c > CMakeFiles/dcce.dir/src/mouse.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/mouse.c > CMakeFiles/dcce.dir/src/mouse.c.i
 
 CMakeFiles/dcce.dir/src/mouse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/mouse.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/mouse.c -o CMakeFiles/dcce.dir/src/mouse.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/mouse.c -o CMakeFiles/dcce.dir/src/mouse.c.s
 
 CMakeFiles/dcce.dir/src/controls.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/controls.c.o: ../src/controls.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/dcce.dir/src/controls.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/controls.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/controls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/dcce.dir/src/controls.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/controls.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/controls.c
 
 CMakeFiles/dcce.dir/src/controls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/controls.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/controls.c > CMakeFiles/dcce.dir/src/controls.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/controls.c > CMakeFiles/dcce.dir/src/controls.c.i
 
 CMakeFiles/dcce.dir/src/controls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/controls.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/controls.c -o CMakeFiles/dcce.dir/src/controls.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/controls.c -o CMakeFiles/dcce.dir/src/controls.c.s
 
 CMakeFiles/dcce.dir/src/block.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/block.c.o: ../src/block.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dcce.dir/src/block.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/block.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/block.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dcce.dir/src/block.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/block.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/block.c
 
 CMakeFiles/dcce.dir/src/block.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/block.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/block.c > CMakeFiles/dcce.dir/src/block.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/block.c > CMakeFiles/dcce.dir/src/block.c.i
 
 CMakeFiles/dcce.dir/src/block.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/block.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/block.c -o CMakeFiles/dcce.dir/src/block.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/block.c -o CMakeFiles/dcce.dir/src/block.c.s
 
 CMakeFiles/dcce.dir/src/building.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/building.c.o: ../src/building.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/dcce.dir/src/building.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/building.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/building.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/dcce.dir/src/building.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/building.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/building.c
 
 CMakeFiles/dcce.dir/src/building.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/building.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/building.c > CMakeFiles/dcce.dir/src/building.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/building.c > CMakeFiles/dcce.dir/src/building.c.i
 
 CMakeFiles/dcce.dir/src/building.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/building.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/building.c -o CMakeFiles/dcce.dir/src/building.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/building.c -o CMakeFiles/dcce.dir/src/building.c.s
 
 CMakeFiles/dcce.dir/src/door.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/door.c.o: ../src/door.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/dcce.dir/src/door.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/door.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/door.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/dcce.dir/src/door.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/door.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/door.c
 
 CMakeFiles/dcce.dir/src/door.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/door.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/door.c > CMakeFiles/dcce.dir/src/door.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/door.c > CMakeFiles/dcce.dir/src/door.c.i
 
 CMakeFiles/dcce.dir/src/door.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/door.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/door.c -o CMakeFiles/dcce.dir/src/door.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/door.c -o CMakeFiles/dcce.dir/src/door.c.s
 
 CMakeFiles/dcce.dir/src/wall.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/wall.c.o: ../src/wall.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/dcce.dir/src/wall.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/wall.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/wall.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/dcce.dir/src/wall.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/wall.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/wall.c
 
 CMakeFiles/dcce.dir/src/wall.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/wall.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/wall.c > CMakeFiles/dcce.dir/src/wall.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/wall.c > CMakeFiles/dcce.dir/src/wall.c.i
 
 CMakeFiles/dcce.dir/src/wall.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/wall.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/wall.c -o CMakeFiles/dcce.dir/src/wall.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/wall.c -o CMakeFiles/dcce.dir/src/wall.c.s
 
 CMakeFiles/dcce.dir/src/ground.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/ground.c.o: ../src/ground.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/dcce.dir/src/ground.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/ground.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/ground.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/dcce.dir/src/ground.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/ground.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/ground.c
 
 CMakeFiles/dcce.dir/src/ground.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/ground.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/ground.c > CMakeFiles/dcce.dir/src/ground.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/ground.c > CMakeFiles/dcce.dir/src/ground.c.i
 
 CMakeFiles/dcce.dir/src/ground.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/ground.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/ground.c -o CMakeFiles/dcce.dir/src/ground.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/ground.c -o CMakeFiles/dcce.dir/src/ground.c.s
 
 CMakeFiles/dcce.dir/src/structures.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/structures.c.o: ../src/structures.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/dcce.dir/src/structures.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/structures.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/structures.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/dcce.dir/src/structures.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/structures.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/structures.c
 
 CMakeFiles/dcce.dir/src/structures.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/structures.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/structures.c > CMakeFiles/dcce.dir/src/structures.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/structures.c > CMakeFiles/dcce.dir/src/structures.c.i
 
 CMakeFiles/dcce.dir/src/structures.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/structures.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/structures.c -o CMakeFiles/dcce.dir/src/structures.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/structures.c -o CMakeFiles/dcce.dir/src/structures.c.s
 
 CMakeFiles/dcce.dir/src/roof.c.o: CMakeFiles/dcce.dir/flags.make
 CMakeFiles/dcce.dir/src/roof.c.o: ../src/roof.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/dcce.dir/src/roof.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/roof.c.o -c /home/mirian/UNESP/DCCE_3d/DCCE_render/src/roof.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/dcce.dir/src/roof.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/roof.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/roof.c
 
 CMakeFiles/dcce.dir/src/roof.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/roof.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/DCCE_3d/DCCE_render/src/roof.c > CMakeFiles/dcce.dir/src/roof.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/roof.c > CMakeFiles/dcce.dir/src/roof.c.i
 
 CMakeFiles/dcce.dir/src/roof.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/roof.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/DCCE_3d/DCCE_render/src/roof.c -o CMakeFiles/dcce.dir/src/roof.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/roof.c -o CMakeFiles/dcce.dir/src/roof.c.s
+
+CMakeFiles/dcce.dir/furnitures/sofa_export.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/furnitures/sofa_export.c.o: ../furnitures/sofa_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/dcce.dir/furnitures/sofa_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/furnitures/sofa_export.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/sofa_export.c
+
+CMakeFiles/dcce.dir/furnitures/sofa_export.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/sofa_export.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/sofa_export.c > CMakeFiles/dcce.dir/furnitures/sofa_export.c.i
+
+CMakeFiles/dcce.dir/furnitures/sofa_export.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/sofa_export.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/sofa_export.c -o CMakeFiles/dcce.dir/furnitures/sofa_export.c.s
+
+CMakeFiles/dcce.dir/furnitures/pia_export.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/furnitures/pia_export.c.o: ../furnitures/pia_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/dcce.dir/furnitures/pia_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/furnitures/pia_export.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/pia_export.c
+
+CMakeFiles/dcce.dir/furnitures/pia_export.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/pia_export.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/pia_export.c > CMakeFiles/dcce.dir/furnitures/pia_export.c.i
+
+CMakeFiles/dcce.dir/furnitures/pia_export.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/pia_export.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/pia_export.c -o CMakeFiles/dcce.dir/furnitures/pia_export.c.s
+
+CMakeFiles/dcce.dir/furnitures/ar_export.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/furnitures/ar_export.c.o: ../furnitures/ar_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/dcce.dir/furnitures/ar_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/furnitures/ar_export.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/ar_export.c
+
+CMakeFiles/dcce.dir/furnitures/ar_export.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/ar_export.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/ar_export.c > CMakeFiles/dcce.dir/furnitures/ar_export.c.i
+
+CMakeFiles/dcce.dir/furnitures/ar_export.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/ar_export.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/ar_export.c -o CMakeFiles/dcce.dir/furnitures/ar_export.c.s
+
+CMakeFiles/dcce.dir/furnitures/camera_export.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/furnitures/camera_export.c.o: ../furnitures/camera_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/dcce.dir/furnitures/camera_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/furnitures/camera_export.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/camera_export.c
+
+CMakeFiles/dcce.dir/furnitures/camera_export.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/camera_export.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/camera_export.c > CMakeFiles/dcce.dir/furnitures/camera_export.c.i
+
+CMakeFiles/dcce.dir/furnitures/camera_export.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/camera_export.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/camera_export.c -o CMakeFiles/dcce.dir/furnitures/camera_export.c.s
+
+CMakeFiles/dcce.dir/furnitures/computador_export.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/furnitures/computador_export.c.o: ../furnitures/computador_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/dcce.dir/furnitures/computador_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/furnitures/computador_export.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/computador_export.c
+
+CMakeFiles/dcce.dir/furnitures/computador_export.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/computador_export.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/computador_export.c > CMakeFiles/dcce.dir/furnitures/computador_export.c.i
+
+CMakeFiles/dcce.dir/furnitures/computador_export.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/computador_export.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/computador_export.c -o CMakeFiles/dcce.dir/furnitures/computador_export.c.s
+
+CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o: ../furnitures/gabinete_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/gabinete_export.c
+
+CMakeFiles/dcce.dir/furnitures/gabinete_export.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/gabinete_export.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/gabinete_export.c > CMakeFiles/dcce.dir/furnitures/gabinete_export.c.i
+
+CMakeFiles/dcce.dir/furnitures/gabinete_export.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/gabinete_export.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/gabinete_export.c -o CMakeFiles/dcce.dir/furnitures/gabinete_export.c.s
+
+CMakeFiles/dcce.dir/src/furniture.c.o: CMakeFiles/dcce.dir/flags.make
+CMakeFiles/dcce.dir/src/furniture.c.o: ../src/furniture.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/dcce.dir/src/furniture.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/dcce.dir/src/furniture.c.o -c /home/mirian/UNESP/CG/Tiago/DCCE_render/src/furniture.c
+
+CMakeFiles/dcce.dir/src/furniture.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/dcce.dir/src/furniture.c.i"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mirian/UNESP/CG/Tiago/DCCE_render/src/furniture.c > CMakeFiles/dcce.dir/src/furniture.c.i
+
+CMakeFiles/dcce.dir/src/furniture.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/furniture.c.s"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mirian/UNESP/CG/Tiago/DCCE_render/src/furniture.c -o CMakeFiles/dcce.dir/src/furniture.c.s
 
 # Object files for target dcce
 dcce_OBJECTS = \
@@ -231,7 +322,14 @@ dcce_OBJECTS = \
 "CMakeFiles/dcce.dir/src/wall.c.o" \
 "CMakeFiles/dcce.dir/src/ground.c.o" \
 "CMakeFiles/dcce.dir/src/structures.c.o" \
-"CMakeFiles/dcce.dir/src/roof.c.o"
+"CMakeFiles/dcce.dir/src/roof.c.o" \
+"CMakeFiles/dcce.dir/furnitures/sofa_export.c.o" \
+"CMakeFiles/dcce.dir/furnitures/pia_export.c.o" \
+"CMakeFiles/dcce.dir/furnitures/ar_export.c.o" \
+"CMakeFiles/dcce.dir/furnitures/camera_export.c.o" \
+"CMakeFiles/dcce.dir/furnitures/computador_export.c.o" \
+"CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o" \
+"CMakeFiles/dcce.dir/src/furniture.c.o"
 
 # External object files for target dcce
 dcce_EXTERNAL_OBJECTS =
@@ -247,12 +345,19 @@ dcce: CMakeFiles/dcce.dir/src/wall.c.o
 dcce: CMakeFiles/dcce.dir/src/ground.c.o
 dcce: CMakeFiles/dcce.dir/src/structures.c.o
 dcce: CMakeFiles/dcce.dir/src/roof.c.o
+dcce: CMakeFiles/dcce.dir/furnitures/sofa_export.c.o
+dcce: CMakeFiles/dcce.dir/furnitures/pia_export.c.o
+dcce: CMakeFiles/dcce.dir/furnitures/ar_export.c.o
+dcce: CMakeFiles/dcce.dir/furnitures/camera_export.c.o
+dcce: CMakeFiles/dcce.dir/furnitures/computador_export.c.o
+dcce: CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o
+dcce: CMakeFiles/dcce.dir/src/furniture.c.o
 dcce: CMakeFiles/dcce.dir/build.make
 dcce: /usr/lib/x86_64-linux-gnu/libGL.so
 dcce: /usr/lib/x86_64-linux-gnu/libGLU.so
 dcce: /usr/lib/x86_64-linux-gnu/libglut.so
 dcce: CMakeFiles/dcce.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable dcce"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking C executable dcce"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dcce.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -265,6 +370,6 @@ CMakeFiles/dcce.dir/clean:
 .PHONY : CMakeFiles/dcce.dir/clean
 
 CMakeFiles/dcce.dir/depend:
-	cd /home/mirian/UNESP/DCCE_3d/DCCE_render/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mirian/UNESP/DCCE_3d/DCCE_render /home/mirian/UNESP/DCCE_3d/DCCE_render /home/mirian/UNESP/DCCE_3d/DCCE_render/build /home/mirian/UNESP/DCCE_3d/DCCE_render/build /home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles/dcce.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/mirian/UNESP/CG/Tiago/DCCE_render/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mirian/UNESP/CG/Tiago/DCCE_render /home/mirian/UNESP/CG/Tiago/DCCE_render /home/mirian/UNESP/CG/Tiago/DCCE_render/build /home/mirian/UNESP/CG/Tiago/DCCE_render/build /home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles/dcce.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/dcce.dir/depend
 

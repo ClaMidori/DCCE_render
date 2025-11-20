@@ -3,6 +3,7 @@
 #include "../include/mouse.h"
 #include "../include/controls.h"
 #include "../include/building.h"
+#include "../include/furniture.h"
 
 void Inicializa(void)
 {
@@ -26,6 +27,9 @@ void Draw(){
     ground_floor();
     first_floor();
     second_floor();
+    teste_objetos();
+    
+
     //teste();
 }
 

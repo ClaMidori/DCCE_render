@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mirian/UNESP/DCCE_3d/DCCE_render
+CMAKE_SOURCE_DIR = /home/mirian/UNESP/CG/Tiago/DCCE_render
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mirian/UNESP/DCCE_3d/DCCE_render/build
+CMAKE_BINARY_DIR = /home/mirian/UNESP/CG/Tiago/DCCE_render/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles /home/mirian/UNESP/DCCE_3d/DCCE_render/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles /home/mirian/UNESP/CG/Tiago/DCCE_render/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mirian/UNESP/DCCE_3d/DCCE_render/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/mirian/UNESP/CG/Tiago/DCCE_render/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -141,6 +141,168 @@ dcce: cmake_check_build_system
 dcce/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/build
 .PHONY : dcce/fast
+
+furnitures/ar_export.o: furnitures/ar_export.c.o
+
+.PHONY : furnitures/ar_export.o
+
+# target to build an object file
+furnitures/ar_export.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/ar_export.c.o
+.PHONY : furnitures/ar_export.c.o
+
+furnitures/ar_export.i: furnitures/ar_export.c.i
+
+.PHONY : furnitures/ar_export.i
+
+# target to preprocess a source file
+furnitures/ar_export.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/ar_export.c.i
+.PHONY : furnitures/ar_export.c.i
+
+furnitures/ar_export.s: furnitures/ar_export.c.s
+
+.PHONY : furnitures/ar_export.s
+
+# target to generate assembly for a file
+furnitures/ar_export.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/ar_export.c.s
+.PHONY : furnitures/ar_export.c.s
+
+furnitures/camera_export.o: furnitures/camera_export.c.o
+
+.PHONY : furnitures/camera_export.o
+
+# target to build an object file
+furnitures/camera_export.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/camera_export.c.o
+.PHONY : furnitures/camera_export.c.o
+
+furnitures/camera_export.i: furnitures/camera_export.c.i
+
+.PHONY : furnitures/camera_export.i
+
+# target to preprocess a source file
+furnitures/camera_export.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/camera_export.c.i
+.PHONY : furnitures/camera_export.c.i
+
+furnitures/camera_export.s: furnitures/camera_export.c.s
+
+.PHONY : furnitures/camera_export.s
+
+# target to generate assembly for a file
+furnitures/camera_export.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/camera_export.c.s
+.PHONY : furnitures/camera_export.c.s
+
+furnitures/computador_export.o: furnitures/computador_export.c.o
+
+.PHONY : furnitures/computador_export.o
+
+# target to build an object file
+furnitures/computador_export.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/computador_export.c.o
+.PHONY : furnitures/computador_export.c.o
+
+furnitures/computador_export.i: furnitures/computador_export.c.i
+
+.PHONY : furnitures/computador_export.i
+
+# target to preprocess a source file
+furnitures/computador_export.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/computador_export.c.i
+.PHONY : furnitures/computador_export.c.i
+
+furnitures/computador_export.s: furnitures/computador_export.c.s
+
+.PHONY : furnitures/computador_export.s
+
+# target to generate assembly for a file
+furnitures/computador_export.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/computador_export.c.s
+.PHONY : furnitures/computador_export.c.s
+
+furnitures/gabinete_export.o: furnitures/gabinete_export.c.o
+
+.PHONY : furnitures/gabinete_export.o
+
+# target to build an object file
+furnitures/gabinete_export.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o
+.PHONY : furnitures/gabinete_export.c.o
+
+furnitures/gabinete_export.i: furnitures/gabinete_export.c.i
+
+.PHONY : furnitures/gabinete_export.i
+
+# target to preprocess a source file
+furnitures/gabinete_export.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/gabinete_export.c.i
+.PHONY : furnitures/gabinete_export.c.i
+
+furnitures/gabinete_export.s: furnitures/gabinete_export.c.s
+
+.PHONY : furnitures/gabinete_export.s
+
+# target to generate assembly for a file
+furnitures/gabinete_export.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/gabinete_export.c.s
+.PHONY : furnitures/gabinete_export.c.s
+
+furnitures/pia_export.o: furnitures/pia_export.c.o
+
+.PHONY : furnitures/pia_export.o
+
+# target to build an object file
+furnitures/pia_export.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/pia_export.c.o
+.PHONY : furnitures/pia_export.c.o
+
+furnitures/pia_export.i: furnitures/pia_export.c.i
+
+.PHONY : furnitures/pia_export.i
+
+# target to preprocess a source file
+furnitures/pia_export.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/pia_export.c.i
+.PHONY : furnitures/pia_export.c.i
+
+furnitures/pia_export.s: furnitures/pia_export.c.s
+
+.PHONY : furnitures/pia_export.s
+
+# target to generate assembly for a file
+furnitures/pia_export.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/pia_export.c.s
+.PHONY : furnitures/pia_export.c.s
+
+furnitures/sofa_export.o: furnitures/sofa_export.c.o
+
+.PHONY : furnitures/sofa_export.o
+
+# target to build an object file
+furnitures/sofa_export.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/sofa_export.c.o
+.PHONY : furnitures/sofa_export.c.o
+
+furnitures/sofa_export.i: furnitures/sofa_export.c.i
+
+.PHONY : furnitures/sofa_export.i
+
+# target to preprocess a source file
+furnitures/sofa_export.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/sofa_export.c.i
+.PHONY : furnitures/sofa_export.c.i
+
+furnitures/sofa_export.s: furnitures/sofa_export.c.s
+
+.PHONY : furnitures/sofa_export.s
+
+# target to generate assembly for a file
+furnitures/sofa_export.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/sofa_export.c.s
+.PHONY : furnitures/sofa_export.c.s
 
 src/block.o: src/block.c.o
 
@@ -249,6 +411,33 @@ src/door.s: src/door.c.s
 src/door.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/door.c.s
 .PHONY : src/door.c.s
+
+src/furniture.o: src/furniture.c.o
+
+.PHONY : src/furniture.o
+
+# target to build an object file
+src/furniture.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/furniture.c.o
+.PHONY : src/furniture.c.o
+
+src/furniture.i: src/furniture.c.i
+
+.PHONY : src/furniture.i
+
+# target to preprocess a source file
+src/furniture.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/furniture.c.i
+.PHONY : src/furniture.c.i
+
+src/furniture.s: src/furniture.c.s
+
+.PHONY : src/furniture.s
+
+# target to generate assembly for a file
+src/furniture.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/src/furniture.c.s
+.PHONY : src/furniture.c.s
 
 src/ground.o: src/ground.c.o
 
@@ -448,6 +637,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... dcce"
+	@echo "... furnitures/ar_export.o"
+	@echo "... furnitures/ar_export.i"
+	@echo "... furnitures/ar_export.s"
+	@echo "... furnitures/camera_export.o"
+	@echo "... furnitures/camera_export.i"
+	@echo "... furnitures/camera_export.s"
+	@echo "... furnitures/computador_export.o"
+	@echo "... furnitures/computador_export.i"
+	@echo "... furnitures/computador_export.s"
+	@echo "... furnitures/gabinete_export.o"
+	@echo "... furnitures/gabinete_export.i"
+	@echo "... furnitures/gabinete_export.s"
+	@echo "... furnitures/pia_export.o"
+	@echo "... furnitures/pia_export.i"
+	@echo "... furnitures/pia_export.s"
+	@echo "... furnitures/sofa_export.o"
+	@echo "... furnitures/sofa_export.i"
+	@echo "... furnitures/sofa_export.s"
 	@echo "... src/block.o"
 	@echo "... src/block.i"
 	@echo "... src/block.s"
@@ -460,6 +667,9 @@ help:
 	@echo "... src/door.o"
 	@echo "... src/door.i"
 	@echo "... src/door.s"
+	@echo "... src/furniture.o"
+	@echo "... src/furniture.i"
+	@echo "... src/furniture.s"
 	@echo "... src/ground.o"
 	@echo "... src/ground.i"
 	@echo "... src/ground.s"

@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mirian/UNESP/DCCE_3d/DCCE_render/include
+C_INCLUDES = -I/home/mirian/UNESP/CG/Tiago/DCCE_render/include
 
 C_FLAGS =  -g -O0 -fno-omit-frame-pointer -fsanitize=address,undefined -std=gnu11
 
