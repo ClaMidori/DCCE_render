@@ -5,21 +5,288 @@
 #include "../furnitures/gabinete_export.h"
 #include "../furnitures/pia_export.h"
 #include "../furnitures/sofa_export.h"
+#include <GL/gl.h>
+#include <commons.h>
 
-void teste_objetos(){
+void drawCube(float w, float h, float d)
+{
+    // desenha um cubo centrado na origem
+    float x = w/2.0f, y = h/2.0f, z = d/2.0f;
+
+    glBegin(GL_QUADS);
+
+    // Frente
+    glNormal3f(0, 0, 1);
+    glVertex3f(-x, -y,  z);
+    glVertex3f( x, -y,  z);
+    glVertex3f( x,  y,  z);
+    glVertex3f(-x,  y,  z);
+
+    // Trás
+    glNormal3f(0, 0, -1);
+    glVertex3f( x, -y, -z);
+    glVertex3f(-x, -y, -z);
+    glVertex3f(-x,  y, -z);
+    glVertex3f( x,  y, -z);
+
+    // Esquerda
+    glNormal3f(-1, 0, 0);
+    glVertex3f(-x, -y, -z);
+    glVertex3f(-x, -y,  z);
+    glVertex3f(-x,  y,  z);
+    glVertex3f(-x,  y, -z);
+
+    // Direita
+    glNormal3f(1, 0, 0);
+    glVertex3f( x, -y,  z);
+    glVertex3f( x, -y, -z);
+    glVertex3f( x,  y, -z);
+    glVertex3f( x,  y,  z);
+
+    // Topo
+    glNormal3f(0, 1, 0);
+    glVertex3f(-x,  y,  z);
+    glVertex3f( x,  y,  z);
+    glVertex3f( x,  y, -z);
+    glVertex3f(-x,  y, -z);
+
+    // Base
+    glNormal3f(0, -1, 0);
+    glVertex3f(-x, -y, -z);
+    glVertex3f( x, -y, -z);
+    glVertex3f( x, -y,  z);
+    glVertex3f(-x, -y,  z);
+
+    glEnd();
+}
+
+void geladeira_draw()
+{
     glPushMatrix();
-    glTranslatef(1000, 50, -100);
-    //ar_draw();  FALHO -> FAZER EM OPENGL
+    glTranslatef(base*8.85, 20, base*3.85);
+    glScalef(20, 20, 20);
+    glRotatef(180, 0, 1, 0);
+    
+    /////////////////////////////////////////////////
+    // corpo principal da geladeira
+    /////////////////////////////////////////////////
+    glColor3f(0.85f, 0.85f, 0.9f); // branco levemente azulado
+
+    drawCube(1.0f, 2.0f, 0.8f);   // largura, altura, profundidade
+
+    /////////////////////////////////////////////////
+    // porta superior (freezer)
+    /////////////////////////////////////////////////
+    glPushMatrix();
+        glTranslatef(0.0f, 0.6f, 0.41f); // desloca para a frente
+        glScalef(0.95f, 0.45f, 1.0f);
+        glColor3f(0.92f, 0.92f, 0.95f);
+
+        drawCube(1.0f, 0.8f, 0.05f);
     glPopMatrix();
 
+    /////////////////////////////////////////////////
+    // porta inferior (geladeira)
+    /////////////////////////////////////////////////
+    glPushMatrix();
+        glTranslatef(0.0f, -0.3f, 0.41f);
+        glScalef(0.95f, 0.9f, 1.0f);
+        glColor3f(0.93f, 0.93f, 0.96f);
+
+        drawCube(1.0f, 1.6f, 0.05f);
+    glPopMatrix();
+
+    /////////////////////////////////////////////////
+    // puxador da porta inferior
+    /////////////////////////////////////////////////
+    glPushMatrix();
+        glColor3f(0.7f, 0.7f, 0.75f);
+
+        glTranslatef(0.45f, -0.3f, 0.45f);
+        glScalef(0.05f, 0.7f, 0.05f);
+
+        drawCube(1.0f, 1.0f, 1.0f);
+    glPopMatrix();
+
+    /////////////////////////////////////////////////
+    // puxador da porta superior
+    /////////////////////////////////////////////////
+    glPushMatrix();
+        glColor3f(0.7f, 0.7f, 0.75f);
+
+        glTranslatef(0.45f, 0.65f, 0.45f);
+        glScalef(0.05f, 0.4f, 0.05f);
+
+        drawCube(1.0f, 1.0f, 1.0f);
+    glPopMatrix();
+
+    glPopMatrix();
+}
+
+void balcao_draw()
+{
+    float w = 2.0f;  // largura = dobro da geladeira
+    float h = 2.0f;  // altura igual à geladeira
+    float d = 5.0f;  // comprimento solicitado
+
+    float x = w / 2.0f;
+    float y = h / 2.0f;
+    float z = d / 2.0f;
+    glPushMatrix();
+    glTranslatef(base*9.3, 10, base*3.85);
+    glScalef(4.9, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    glBegin(GL_QUADS);
+
+    // Frente
+    glNormal3f(0, 0, 1);
+    glVertex3f(-x, -y,  z);
+    glVertex3f( x, -y,  z);
+    glVertex3f( x,  y,  z);
+    glVertex3f(-x,  y,  z);
+
+    // Trás
+    glNormal3f(0, 0, -1);
+    glVertex3f( x, -y, -z);
+    glVertex3f(-x, -y, -z);
+    glVertex3f(-x,  y, -z);
+    glVertex3f( x,  y, -z);
+
+    // Esquerda
+    glNormal3f(-1, 0, 0);
+    glVertex3f(-x, -y, -z);
+    glVertex3f(-x, -y,  z);
+    glVertex3f(-x,  y,  z);
+    glVertex3f(-x,  y, -z);
+
+    // Direita
+    glNormal3f(1, 0, 0);
+    glVertex3f( x, -y,  z);
+    glVertex3f( x, -y, -z);
+    glVertex3f( x,  y, -z);
+    glVertex3f( x,  y,  z);
+
+    // Topo
+    glNormal3f(0, 1, 0);
+    glVertex3f(-x,  y,  z);
+    glVertex3f( x,  y,  z);
+    glVertex3f( x,  y, -z);
+    glVertex3f(-x,  y, -z);
+
+    // Base
+    glNormal3f(0, -1, 0);
+    glVertex3f(-x, -y, -z);
+    glVertex3f( x, -y, -z);
+    glVertex3f( x, -y,  z);
+    glVertex3f(-x, -y,  z);
+
+    glEnd();
+    glPopMatrix();
+}
+
+void balcao2_draw()
+{
+    float h_total = 2.0f;        
+    float h = h_total / 4.0f;   
+    float w = 2.0f / 3.0f;      
+    float d = 5.0f;              
+
+    float centerY = 1.0f - (h / 2.0f);
+
+    float x = w / 2.0f;
+    float y = h / 2.0f;
+    float z = d / 2.0f;
+
+    glPushMatrix();
+    glTranslatef(0.0f, centerY, 0.0f);
+    glPushMatrix();
+    glTranslatef(base*9.5, 17, base*3.85);
+    glScalef(9, 10, 20);
+    glRotatef(90, 0, 1, 0);
+    glBegin(GL_QUADS);
+
+    // Frente
+    glNormal3f(0, 0, 1);
+    glVertex3f(-x, -y,  z);
+    glVertex3f( x, -y,  z);
+    glVertex3f( x,  y,  z);
+    glVertex3f(-x,  y,  z);
+
+    // Trás
+    glNormal3f(0, 0, -1);
+    glVertex3f( x, -y, -z);
+    glVertex3f(-x, -y, -z);
+    glVertex3f(-x,  y, -z);
+    glVertex3f( x,  y, -z);
+
+    // Esquerda
+    glNormal3f(-1, 0, 0);
+    glVertex3f(-x, -y, -z);
+    glVertex3f(-x, -y,  z);
+    glVertex3f(-x,  y,  z);
+    glVertex3f(-x,  y, -z);
+
+    // Direita
+    glNormal3f(1, 0, 0);
+    glVertex3f( x, -y,  z);
+    glVertex3f( x, -y, -z);
+    glVertex3f( x,  y, -z);
+    glVertex3f( x,  y,  z);
+
+    // Topo
+    glNormal3f(0, 1, 0);
+    glVertex3f(-x,  y,  z);
+    glVertex3f( x,  y,  z);
+    glVertex3f( x,  y, -z);
+    glVertex3f(-x,  y, -z);
+
+    // Base
+    glNormal3f(0, -1, 0);
+    glVertex3f(-x, -y, -z);
+    glVertex3f( x, -y, -z);
+    glVertex3f( x, -y,  z);
+    glVertex3f(-x, -y,  z);
+
+    glEnd();
+
+    glPopMatrix();
+    glPopMatrix();
+}
+
+
+void primeiro_andar_moveis(){
+    // refeitorio
+    glPushMatrix();
+    geladeira_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    balcao_draw();
+    glPushMatrix();
+    glTranslatef(0, 40, 0);
+    glScalef(1, 0.5, 1);
+    balcao_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(20, 40, 0);
+    glScalef(1, 0.5, 1);
+    balcao_draw();
+    glPopMatrix();
+    glPushMatrix();
+    balcao2_draw();
+    glPopMatrix();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base*9.3, 20, base*3.8);
+    glScalef(0.8, 0.8, 0.8);
+    glRotatef(90, 0, 1, 0);
+    pia_draw();
+    glPopMatrix();
+    // expo
     glPushMatrix();
     glTranslatef(1000, 50, 100);
     camera_draw();
-    glPopMatrix();
-
-    glPushMatrix();
-    glTranslatef(1000, 50, 200);
-    //computador_draw();  FALHO -> FAZER EM OPENGL
     glPopMatrix();
 
     glPushMatrix();

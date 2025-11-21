@@ -1,2 +1,3 @@
 #include <GL/gl.h>
-void teste_objetos();
+void geladeira_draw();
+void primeiro_andar_moveis();

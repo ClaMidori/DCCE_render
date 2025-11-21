@@ -39,6 +39,7 @@ CMakeFiles/dcce.dir/src/door.c.o
  /home/mirian/UNESP/CG/Tiago/DCCE_render/include/door.h
  /home/mirian/UNESP/CG/Tiago/DCCE_render/src/door.c
 CMakeFiles/dcce.dir/src/furniture.c.o
+ ../include/commons.h
  /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/ar_export.h
  /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/camera_export.h
  /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/computador_export.h

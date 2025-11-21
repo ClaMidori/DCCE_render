@@ -38,6 +38,7 @@ CMakeFiles/dcce.dir/src/door.c.o: ../include/commons.h
 CMakeFiles/dcce.dir/src/door.c.o: ../include/door.h
 CMakeFiles/dcce.dir/src/door.c.o: ../src/door.c
 
+CMakeFiles/dcce.dir/src/furniture.c.o: ../include/commons.h
 CMakeFiles/dcce.dir/src/furniture.c.o: ../furnitures/ar_export.h
 CMakeFiles/dcce.dir/src/furniture.c.o: ../furnitures/camera_export.h
 CMakeFiles/dcce.dir/src/furniture.c.o: ../furnitures/computador_export.h

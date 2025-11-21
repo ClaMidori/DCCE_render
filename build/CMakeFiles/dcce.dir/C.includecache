@@ -6,8 +6,20 @@
 
 #IncludeRegexTransform: 
 
-/home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/ar_export.c
-GL/gl.h
+../include/commons.h
+GL/glut.h
+-
+GL/glu.h
+-
+stdio.h
+-
+stdarg.h
+-
+unistd.h
+-
+stdlib.h
+-
+math.h
 -
 
 /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/ar_export.h
@@ -41,4 +53,8 @@ GL/gl.h
 /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/pia_export.h
 ../furnitures/sofa_export.h
 /home/mirian/UNESP/CG/Tiago/DCCE_render/furnitures/sofa_export.h
+GL/gl.h
+-
+commons.h
+-
 
