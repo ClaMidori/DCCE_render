@@ -20,6 +20,7 @@
 #define areia glColor3f(0.741, 0.718, 0.420);
 #define areia_shadow glColor3f(0.65, 0.65, 0.4);
 #define brown glColor3f(0.54, 0.27, 0.07);
+#define blue glColor3f(0, 0, 1);
 
 //* A construção do prédio funciona como uma matriz tridimensional, pela escala, 10x10x3
 

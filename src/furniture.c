@@ -66,17 +66,11 @@ void geladeira_draw()
     glTranslatef(base*8.85, 20, base*3.85);
     glScalef(20, 20, 20);
     glRotatef(180, 0, 1, 0);
-    
-    /////////////////////////////////////////////////
-    // corpo principal da geladeira
-    /////////////////////////////////////////////////
-    glColor3f(0.85f, 0.85f, 0.9f); // branco levemente azulado
 
-    drawCube(1.0f, 2.0f, 0.8f);   // largura, altura, profundidade
+    glColor3f(0.85f, 0.85f, 0.9f); 
 
-    /////////////////////////////////////////////////
-    // porta superior (freezer)
-    /////////////////////////////////////////////////
+    drawCube(1.0f, 2.0f, 0.8f);  
+
     glPushMatrix();
         glTranslatef(0.0f, 0.6f, 0.41f); // desloca para a frente
         glScalef(0.95f, 0.45f, 1.0f);
@@ -85,9 +79,6 @@ void geladeira_draw()
         drawCube(1.0f, 0.8f, 0.05f);
     glPopMatrix();
 
-    /////////////////////////////////////////////////
-    // porta inferior (geladeira)
-    /////////////////////////////////////////////////
     glPushMatrix();
         glTranslatef(0.0f, -0.3f, 0.41f);
         glScalef(0.95f, 0.9f, 1.0f);
@@ -96,9 +87,6 @@ void geladeira_draw()
         drawCube(1.0f, 1.6f, 0.05f);
     glPopMatrix();
 
-    /////////////////////////////////////////////////
-    // puxador da porta inferior
-    /////////////////////////////////////////////////
     glPushMatrix();
         glColor3f(0.7f, 0.7f, 0.75f);
 
@@ -108,9 +96,6 @@ void geladeira_draw()
         drawCube(1.0f, 1.0f, 1.0f);
     glPopMatrix();
 
-    /////////////////////////////////////////////////
-    // puxador da porta superior
-    /////////////////////////////////////////////////
     glPushMatrix();
         glColor3f(0.7f, 0.7f, 0.75f);
 
@@ -253,6 +238,146 @@ void balcao2_draw()
     glPopMatrix();
 }
 
+void drawCubeUnit() {
+    glBegin(GL_QUADS);
+
+    // Frente
+    glNormal3f(0, 0, 1);
+    glVertex3f(-0.5, -0.5,  0.5);
+    glVertex3f( 0.5, -0.5,  0.5);
+    glVertex3f( 0.5,  0.5,  0.5);
+    glVertex3f(-0.5,  0.5,  0.5);
+
+    // Trás
+    glNormal3f(0, 0, -1);
+    glVertex3f(-0.5, -0.5, -0.5);
+    glVertex3f(-0.5,  0.5, -0.5);
+    glVertex3f( 0.5,  0.5, -0.5);
+    glVertex3f( 0.5, -0.5, -0.5);
+
+    // Esquerda
+    glNormal3f(-1, 0, 0);
+    glVertex3f(-0.5, -0.5, -0.5);
+    glVertex3f(-0.5, -0.5,  0.5);
+    glVertex3f(-0.5,  0.5,  0.5);
+    glVertex3f(-0.5,  0.5, -0.5);
+
+    // Direita
+    glNormal3f(1, 0, 0);
+    glVertex3f(0.5, -0.5, -0.5);
+    glVertex3f(0.5,  0.5, -0.5);
+    glVertex3f(0.5,  0.5,  0.5);
+    glVertex3f(0.5, -0.5,  0.5);
+
+    // Topo
+    glNormal3f(0, 1, 0);
+    glVertex3f(-0.5, 0.5, -0.5);
+    glVertex3f(-0.5, 0.5,  0.5);
+    glVertex3f( 0.5, 0.5,  0.5);
+    glVertex3f( 0.5, 0.5, -0.5);
+
+    // Base
+    glNormal3f(0, -1, 0);
+    glVertex3f(-0.5, -0.5, -0.5);
+    glVertex3f( 0.5, -0.5, -0.5);
+    glVertex3f( 0.5, -0.5,  0.5);
+    glVertex3f(-0.5, -0.5,  0.5);
+
+    glEnd();
+}
+
+
+static void cadeiraSimples_draw() {
+
+    // --- Assento ---
+    glPushMatrix();
+        glColor3f(0.7f,0.6f,0.4f);
+        glTranslatef(0,0.5,0);
+        glScalef(0.6f,0.1f,0.6f);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // --- Pernas (4) ---
+    // posições em X e Z: ±0.25
+    float px = 0.25f;
+    float pz = 0.25f;
+
+    for(int ix=-1; ix<=1; ix+=2) {
+        for(int iz=-1; iz<=1; iz+=2) {
+            glPushMatrix();
+                glColor3f(0.4f,0.3f,0.2f);
+                glTranslatef(px*ix,0.25,pz*iz);
+                glScalef(0.1f,0.5f,0.1f);
+                drawCubeUnit();
+            glPopMatrix();
+        }
+    }
+
+    // --- Encosto ---
+    glPushMatrix();
+        glColor3f(0.7f,0.6f,0.4f);
+        glTranslatef(0,0.95,-0.25f);
+        glScalef(0.6f,0.8f,0.1f);
+        drawCubeUnit();
+    glPopMatrix();
+}
+
+void mesaComCadeiras_draw() {
+
+    // ----- Mesa -----
+    glPushMatrix();
+        glColor3f(0.65f,0.45f,0.25f);
+
+        // Tampo
+        glPushMatrix();
+            glTranslatef(0,1.0,0);
+            glScalef(2.0f,0.1f,1.2f);
+            drawCubeUnit();
+        glPopMatrix();
+
+        // Pernas da mesa
+        float px = 0.8f, pz = 0.45f;
+        for(int ix=-1; ix<=1; ix+=2) {
+            for(int iz=-1; iz<=1; iz+=2) {
+                glPushMatrix();
+                    glTranslatef(px*ix,0.5,pz*iz);
+                    glScalef(0.1f,1.0f,0.1f);
+                    drawCubeUnit();
+                glPopMatrix();
+            }
+        }
+    glPopMatrix();
+
+    // ----- 4 Cadeiras -----
+
+    // Frente direita
+    glPushMatrix();
+        glTranslatef(0.0f, 0.0f, 1.2f);
+        glRotatef(180,0,1,0);
+        cadeiraSimples_draw();
+    glPopMatrix();
+
+    // Frente esquerda
+    glPushMatrix();
+        glTranslatef(0.0f, 0.0f, -1.2f);
+        glRotatef(0,0,1,0);
+        cadeiraSimples_draw();
+    glPopMatrix();
+
+    // Trás direita
+    glPushMatrix();
+        glTranslatef(-1.7f, 0.0f, 0.0f);
+        glRotatef(90,0,1,0);
+        cadeiraSimples_draw();
+    glPopMatrix();
+
+    // Trás esquerda
+    glPushMatrix();
+        glTranslatef(1.7f, 0.0f, 0.0f);
+        glRotatef(270,0,1,0);
+        cadeiraSimples_draw();
+    glPopMatrix();
+}
 
 void primeiro_andar_moveis(){
     // refeitorio
@@ -283,7 +408,46 @@ void primeiro_andar_moveis(){
     glRotatef(90, 0, 1, 0);
     pia_draw();
     glPopMatrix();
-    // expo
+
+    glPushMatrix();
+    glTranslatef(base*9, 5, base*2.3);
+    glRotatef(-90, 0, 1, 0);
+    glScalef(0.5, 0.5, 0.5);
+    sofa_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base*9, 5, base*3);
+    glScalef(10, 10, 10);
+    mesaComCadeiras_draw();
+    glPopMatrix();
+
+    // moveis internos fora de salas
+    glPushMatrix();
+    glTranslatef(base*2.9, 20, base*1.25); // armários
+    glScalef(20, 20, 20);
+    brown
+    drawCube(0.5, 2, 1);
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*2.9, 20, base*1.75);
+    glScalef(20, 20, 20);
+    white_shadow
+    drawCube(0.5, 2, 1);
+    glPopMatrix();
+
+    glPushMatrix(); // quadros de avisos
+    blue
+    glTranslatef(base*5.5, 30, base*4);
+    glScalef(30, 10, 5);
+    drawCube(1, 3, 1);
+    glPopMatrix();
+    glPopMatrix();
+    glTranslatef(base*3, 30, base*3.5);
+    glScalef(5, 10, 30);
+    drawCube(1, 3, 1);
+    glPopMatrix();
+
     glPushMatrix();
     glTranslatef(1000, 50, 100);
     camera_draw();
@@ -299,8 +463,4 @@ void primeiro_andar_moveis(){
     pia_draw();
     glPopMatrix();
 
-    glPushMatrix();
-    glTranslatef(1000, 50, 500);
-    sofa_draw();
-    glPopMatrix();
 }
