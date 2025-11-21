@@ -30,6 +30,12 @@ void wall_with_medium_window(float tx, float ty,float angulo, float tz, float rx
 // cria um molde para a parede para completar a espessura
 void aux_wall_medium_window (float tx, float ty,float angulo, float tz, float rx, float ry, float rz);
 
+//cria uma parede com janela alta e fina de grades
+void wall_with_tall_grade_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz);
+
+// cria um molde para a parede para completar a espessura
+void aux_wall_tall_grade_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz);
+
 //cria uma parede com uma janela pequena
 void wall_with_small_window(float tx, float ty,float angulo, float tz, float rx, float ry, float rz);
 
