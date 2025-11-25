@@ -25,6 +25,30 @@ CMakeFiles/dcce.dir/furnitures/ar_export.c.o: /home/mint/DCCE_render/furnitures/
   /usr/include/x86_64-linux-gnu/sys/cdefs.h \
   /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
 
+CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o: /home/mint/DCCE_render/furnitures/cadeiraLow_export.c \
+  /usr/include/GL/gl.h \
+  /usr/include/GL/glext.h \
+  /usr/include/KHR/khrplatform.h \
+  /usr/include/features-time64.h \
+  /usr/include/features.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/stdint.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/long-double.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
+  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+  /usr/include/x86_64-linux-gnu/bits/time64.h \
+  /usr/include/x86_64-linux-gnu/bits/timesize.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+  /usr/include/x86_64-linux-gnu/bits/wchar.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h
+
 CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o: /home/mint/DCCE_render/furnitures/cadeiraU_export.c \
   /usr/include/GL/gl.h \
   /usr/include/GL/glext.h \
@@ -597,6 +621,7 @@ CMakeFiles/dcce.dir/src/door.c.o: /home/mint/DCCE_render/src/door.c \
 CMakeFiles/dcce.dir/src/furniture.c.o: /home/mint/DCCE_render/src/furniture.c \
   /home/mint/DCCE_render/include/commons.h \
   /home/mint/DCCE_render/furnitures/ar_export.h \
+  /home/mint/DCCE_render/furnitures/cadeiraLow_export.h \
   /home/mint/DCCE_render/furnitures/cadeiraU_export.h \
   /home/mint/DCCE_render/furnitures/camera_export.h \
   /home/mint/DCCE_render/furnitures/computador_export.h \
@@ -1304,8 +1329,6 @@ CMakeFiles/dcce.dir/src/wall.c.o: /home/mint/DCCE_render/src/wall.c \
 
 /home/mint/DCCE_render/include/keyboard.h:
 
-/home/mint/DCCE_render/src/keyboard.c:
-
 /home/mint/DCCE_render/src/ground.c:
 
 /home/mint/DCCE_render/include/furniture.h:
@@ -1324,6 +1347,10 @@ CMakeFiles/dcce.dir/src/wall.c.o: /home/mint/DCCE_render/src/wall.c \
 
 /home/mint/DCCE_render/furnitures/cadeiraU_export.h:
 
+/home/mint/DCCE_render/src/keyboard.c:
+
+/home/mint/DCCE_render/furnitures/cadeiraLow_export.h:
+
 /home/mint/DCCE_render/src/door.c:
 
 /home/mint/DCCE_render/src/building.c:
@@ -1333,8 +1360,6 @@ CMakeFiles/dcce.dir/src/wall.c.o: /home/mint/DCCE_render/src/wall.c \
 /usr/include/x86_64-linux-gnu/sys/types.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
-
-/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
 
 /home/mint/DCCE_render/src/controls.c:
 
@@ -1382,13 +1407,9 @@ CMakeFiles/dcce.dir/src/wall.c.o: /home/mint/DCCE_render/src/wall.c \
 
 /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h:
 
-/home/mint/DCCE_render/include/mouse.h:
+/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
-/home/mint/DCCE_render/furnitures/pia_export.c:
-
-/home/mint/DCCE_render/include/door.h:
-
-/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
@@ -1442,6 +1463,10 @@ CMakeFiles/dcce.dir/src/wall.c.o: /home/mint/DCCE_render/src/wall.c \
 
 /usr/include/x86_64-linux-gnu/bits/endian.h:
 
+/usr/include/x86_64-linux-gnu/bits/unistd_ext.h:
+
+/home/mint/DCCE_render/furnitures/cadeiraLow_export.c:
+
 /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
@@ -1470,18 +1495,6 @@ CMakeFiles/dcce.dir/src/wall.c.o: /home/mint/DCCE_render/src/wall.c \
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/home/mint/DCCE_render/furnitures/tcadeiras_export.h:
-
-/usr/include/GL/freeglut_std.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
-
-/usr/include/stdint.h:
-
-/usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
-
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
 /usr/include/features-time64.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
@@ -1493,6 +1506,22 @@ CMakeFiles/dcce.dir/src/wall.c.o: /home/mint/DCCE_render/src/wall.c \
 /usr/include/GL/glext.h:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/home/mint/DCCE_render/include/mouse.h:
+
+/home/mint/DCCE_render/furnitures/pia_export.c:
+
+/home/mint/DCCE_render/include/door.h:
+
+/home/mint/DCCE_render/furnitures/tcadeiras_export.h:
+
+/usr/include/x86_64-linux-gnu/bits/fp-fast.h:
+
+/usr/include/stdint.h:
+
+/usr/include/GL/freeglut_std.h:
+
+/usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
 /home/mint/DCCE_render/furnitures/computador_export.h:
 

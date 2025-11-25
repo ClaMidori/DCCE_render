@@ -9,6 +9,7 @@
 #include "../furnitures/mesaR_export.h"
 #include "../furnitures/privada_export.h"
 #include "../furnitures/tcadeiras_export.h"
+#include "../furnitures/cadeiraLow_export.h"
 #include <GL/gl.h>
 #include <commons.h>
 
@@ -561,183 +562,273 @@ void primeiro_andar_moveis(){
     // LIPAI
     glPushMatrix();
     white_shadow
-    glTranslatef(base*0.5, 20, base*8.75);
+    glTranslatef(base*0.5, 20, base*1.75);
     glRotatef(180, 0, 1, 0);
     glScalef(1.5, 1.5, 1.5);
     mesaR_draw();
     glPopMatrix();
     glPushMatrix();
     white_shadow
-    glTranslatef(base*1.20, 20, base*8.75);
+    glTranslatef(base*1.20, 20, base*1.75);
     glRotatef(180, 0, 1, 0);
     glScalef(1.5, 1.5, 1.5);
     mesaR_draw();
     glPopMatrix();
     glPushMatrix();
     white_shadow
-    glTranslatef(base*1.9, 20, base*8.75);
-    glRotatef(180, 0, 1, 0);
-    glScalef(1.5, 1.5, 1.5);
-    mesaR_draw();
-    glPopMatrix();
-    glPushMatrix();
-    white_shadow
-    glTranslatef(base*2.60, 20, base*8.75);
-    glRotatef(180, 0, 1, 0);
-    glScalef(1.5, 1.5, 1.5);
-    mesaR_draw();
-    glPopMatrix();
-    glPushMatrix();
-    white_shadow
-    glTranslatef(base*2.70, 20, base*8.05);
+    glTranslatef(base*1.70, 20, base*1.15);
     glRotatef(270, 0, 1, 0);
     glScalef(1.5, 1.5, 1.5);
     mesaR_draw();
     glPopMatrix();
     glPushMatrix();
     white_shadow
-    glTranslatef(base*2.70, 20, base*7.35);
-    glRotatef(270, 0, 1, 0);
-    glScalef(1.5, 1.5, 1.5);
-    mesaR_draw();
-    glPopMatrix();
-    glPushMatrix();
-    white_shadow
-    glTranslatef(base*2.70, 20, base*6.65);
-    glRotatef(270, 0, 1, 0);
-    glScalef(1.5, 1.5, 1.5);
-    mesaR_draw();
-    glPopMatrix();
-    glPushMatrix();
-    white_shadow
-    glTranslatef(base*0.30, 20, base*8.05);
+    glTranslatef(base*0.30, 20, base*1.2);
     glRotatef(90, 0, 1, 0);
     glScalef(1.5, 1.5, 1.5);
     mesaR_draw();
     glPopMatrix();
     glPushMatrix();
     white_shadow
-    glTranslatef(base*0.30, 20, base*7.35);
+    glTranslatef(base*0.30, 20, base*0.5);
     glRotatef(90, 0, 1, 0);
     glScalef(1.5, 1.5, 1.5);
     mesaR_draw();
     glPopMatrix();
     glPushMatrix();
     white_shadow
-    glTranslatef(base*0.30, 20, base*6.65);
-    glRotatef(90, 0, 1, 0);
-    glScalef(1.5, 1.5, 1.5);
-    mesaR_draw();
-    glPopMatrix();
-    glPushMatrix();
-    white_shadow
-    glTranslatef(base*0.30, 20, base*5.95);
-    glRotatef(90, 0, 1, 0);
-    glScalef(1.5, 1.5, 1.5);
-    mesaR_draw();
-    glPopMatrix();
-    glPushMatrix();
-    white_shadow
-    glTranslatef(base*1.20, 20, base*5.25);
-    //glRotatef(180, 0, 1, 0);
+    glTranslatef(base*1.20, 20, base*0.25);
     glScalef(1.5, 1.5, 1.5);
     mesaR_draw();
     glPopMatrix();
     
+
     glPushMatrix();
-    black
-    glTranslatef(base*0.35, 7.2, base*5.95);
-    glRotatef(270, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*0.5, 20, base*8.8);
-    glRotatef(0, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*1.20, 20, base*8.75);
-    glRotatef(0, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*1.9, 20, base*8.75);
-    glRotatef(180, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();  
-    glTranslatef(base*2.60, 20, base*8.75);
-    glRotatef(0, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*2.75, 20, base*8.05);
-    glRotatef(90, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*2.75, 20, base*7.35);
-    glRotatef(90, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*2.75, 20, base*6.65);
-    glRotatef(90, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*0.25, 20, base*8.05);
-    glRotatef(-90, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*0.25, 20, base*7.35);
-    glRotatef(-90, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*0.25, 20, base*6.65);
-    glRotatef(-90, 0, 1, 0);
-    glScalef(1.2, 1.2, 1.2);
-    cadeiraU_draw();
-    glPopMatrix();
-    glPushMatrix();
-    glTranslatef(base*1.20, 20, base*5.2);
-    glScalef(1.2, 1.2, 1.2);
-    glRotatef(-180, 0, 1, 0);
-    cadeiraU_draw();
-    glPopMatrix();
-    
-    glPushMatrix();
-    glTranslatef(base*2.70, 25, base*8.05);
+    glTranslatef(base*0.5, 25, base*1.75);
     glScalef(10, 10, 10);
-    glRotatef(-90, 0, 1, 0);
+    glRotatef(180, 0, 1, 0);
     monitor_draw();
     glPopMatrix();
-    //
     glPushMatrix();
-    glTranslatef(1000, 50, 100);
-    camera_draw();
+    glTranslatef(base*1.2, 25, base*1.75);
+    glScalef(10, 10, 10);
+    glRotatef(180, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*1.7, 25, base*1.15);
+    glScalef(10, 10, 10);
+    glRotatef(270, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*0.3, 25, base*1.2);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*0.3, 25, base*0.5);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*1.2, 25, base*0.25);
+    glScalef(10, 10, 10);
+    //glRotatef(180, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+
+    black
+    glPushMatrix();
+    glTranslatef(base*0.5, 12, base*1.52);
+   // glRotatef(180, 0, 1, 0);
+    glScalef(1.2, 1.2, 1.2);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*1.2, 12, base*1.52);
+   // glRotatef(180, 0, 1, 0);
+    glScalef(1.2, 1.2, 1.2);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*1.47, 12, base*1.15);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*0.53, 12, base*1.2);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*0.53, 12, base*0.5);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*1.2, 12, base*0.48);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-180, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+
+    //LIDIA
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*4.95, 20, base*8);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(270, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*4.95, 20, base*7.3);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(270, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*4.95, 20, base*6.6);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(270, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*4.95, 20, base*5.9);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(270, 0, 1, 0);
+    mesaR_draw();
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(1000, 50, 30);
-    //gabinete_draw();  SIMPLES -> FAZER EM OPENGL
+    glTranslatef(base*5.15, 20, base*8);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*5.15, 20, base*7.3);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*5.15, 20, base*6.6);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*5.15, 20, base*5.9);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(90, 0, 1, 0);
+    mesaR_draw();
     glPopMatrix();
 
     glPushMatrix();
-    glTranslatef(1000, 50, 400);
-    pia_draw();
+    black
+    glTranslatef(base*4.95, 25, base*8);
+    glScalef(10, 10, 10);
+    glRotatef(270, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*4.95, 25, base*7.3);
+    glScalef(10, 10, 10);
+    glRotatef(270, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*4.95, 25, base*6.6);
+    glScalef(10, 10, 10);
+    glRotatef(270, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*4.95, 25, base*5.9);
+    glScalef(10, 10, 10);
+    glRotatef(270, 0, 1, 0);
+    monitor_draw();
     glPopMatrix();
 
+    glPushMatrix();
+    glTranslatef(base*5.15, 25, base*8);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*5.15, 25, base*7.3);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*5.15, 25, base*6.6);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*5.15, 25, base*5.9);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    black
+    glTranslatef(base*4.72, 12, base*8);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*4.72, 12, base*7.3);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*4.72, 12, base*6.6);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*4.72, 12, base*5.9);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base*5.38, 12, base*8);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*5.38, 12, base*7.3);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*5.38, 12, base*6.6);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*5.38, 12, base*5.9);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
 }

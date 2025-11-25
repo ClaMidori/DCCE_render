@@ -28,6 +28,7 @@ CMakeFiles/dcce.dir/src/furniture.c.o: \
  /home/mint/DCCE_render/src/../furnitures/mesaR_export.h \
  /home/mint/DCCE_render/src/../furnitures/privada_export.h \
  /home/mint/DCCE_render/src/../furnitures/tcadeiras_export.h \
+ /home/mint/DCCE_render/src/../furnitures/cadeiraLow_export.h \
  /home/mint/DCCE_render/include/commons.h /usr/include/GL/glut.h \
  /usr/include/GL/freeglut_std.h /usr/include/GL/glu.h \
  /usr/include/stdlib.h /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \

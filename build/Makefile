@@ -153,6 +153,30 @@ furnitures/ar_export.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/ar_export.c.s
 .PHONY : furnitures/ar_export.c.s
 
+furnitures/cadeiraLow_export.o: furnitures/cadeiraLow_export.c.o
+.PHONY : furnitures/cadeiraLow_export.o
+
+# target to build an object file
+furnitures/cadeiraLow_export.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o
+.PHONY : furnitures/cadeiraLow_export.c.o
+
+furnitures/cadeiraLow_export.i: furnitures/cadeiraLow_export.c.i
+.PHONY : furnitures/cadeiraLow_export.i
+
+# target to preprocess a source file
+furnitures/cadeiraLow_export.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.i
+.PHONY : furnitures/cadeiraLow_export.c.i
+
+furnitures/cadeiraLow_export.s: furnitures/cadeiraLow_export.c.s
+.PHONY : furnitures/cadeiraLow_export.s
+
+# target to generate assembly for a file
+furnitures/cadeiraLow_export.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dcce.dir/build.make CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.s
+.PHONY : furnitures/cadeiraLow_export.c.s
+
 furnitures/cadeiraU_export.o: furnitures/cadeiraU_export.c.o
 .PHONY : furnitures/cadeiraU_export.o
 
@@ -669,6 +693,9 @@ help:
 	@echo "... furnitures/ar_export.o"
 	@echo "... furnitures/ar_export.i"
 	@echo "... furnitures/ar_export.s"
+	@echo "... furnitures/cadeiraLow_export.o"
+	@echo "... furnitures/cadeiraLow_export.i"
+	@echo "... furnitures/cadeiraLow_export.s"
 	@echo "... furnitures/cadeiraU_export.o"
 	@echo "... furnitures/cadeiraU_export.i"
 	@echo "... furnitures/cadeiraU_export.s"

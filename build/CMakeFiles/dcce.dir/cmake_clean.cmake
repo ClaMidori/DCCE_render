@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/dcce.dir/furnitures/ar_export.c.o"
   "CMakeFiles/dcce.dir/furnitures/ar_export.c.o.d"
+  "CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o"
+  "CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o.d"
   "CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o"
   "CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o.d"
   "CMakeFiles/dcce.dir/furnitures/camera_export.c.o"

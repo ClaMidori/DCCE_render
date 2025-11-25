@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/mint/DCCE_render/furnitures/ar_export.c" "CMakeFiles/dcce.dir/furnitures/ar_export.c.o" "gcc" "CMakeFiles/dcce.dir/furnitures/ar_export.c.o.d"
+  "/home/mint/DCCE_render/furnitures/cadeiraLow_export.c" "CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o" "gcc" "CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o.d"
   "/home/mint/DCCE_render/furnitures/cadeiraU_export.c" "CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o" "gcc" "CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o.d"
   "/home/mint/DCCE_render/furnitures/camera_export.c" "CMakeFiles/dcce.dir/furnitures/camera_export.c.o" "gcc" "CMakeFiles/dcce.dir/furnitures/camera_export.c.o.d"
   "/home/mint/DCCE_render/furnitures/computador_export.c" "CMakeFiles/dcce.dir/furnitures/computador_export.c.o" "gcc" "CMakeFiles/dcce.dir/furnitures/computador_export.c.o.d"

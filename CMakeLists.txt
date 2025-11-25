@@ -36,6 +36,7 @@ set(SOURCES
     furnitures/privada_export.c
     furnitures/mesaR_export.c
     furnitures/cadeiraU_export.c
+    furnitures/cadeiraLow_export.c
     src/furniture.c
 )
 
