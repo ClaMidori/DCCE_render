@@ -545,6 +545,145 @@ void cadeiraEsc_draw() {
     glPopMatrix();
 }
 
+static void estante_drawPrateleira(float h, float largura, float profundidade, float espPrateleira) {
+    glPushMatrix();
+        glTranslatef(0.0f, h, 0.0f);
+        glScalef(largura, espPrateleira, profundidade);
+        drawCubeUnit();
+    glPopMatrix();
+}
+
+// ---- Estante com pés retangulares ----
+void estanteFerro_draw() {
+    // Dimensões gerais
+    float largura = 1.0f;        // X
+    float profundidade = 0.30f;  // Z
+    float altura = 1.80f;        // Y
+
+    // Pés retangulares
+    float espPéX = 0.05f;
+    float espPéZ = 0.05f;
+
+    float espPrateleira = 0.04f;
+
+    // Altura das prateleiras (valores para o centro das prateleiras)
+    float h1 = 0.10f;
+    float h2 = 0.90f;
+    float h3 = 1.70f;
+
+    // --------- PÉS RETANGULARES ---------
+    glColor3f(0.25f, 0.25f, 0.25f); // ferro escuro
+
+    // Note: quando escalamos o cubo (centro em y=0), deslocamos para altura/2
+    // para que a base do pé fique no y=0 (chão).
+    float péCenterY = altura * 0.5f;
+
+    // Pé frontal esquerdo
+    glPushMatrix();
+        glTranslatef(-largura/2.0f, péCenterY, -profundidade/2.0f);
+        glScalef(espPéX, altura, espPéZ);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // Pé frontal direito
+    glPushMatrix();
+        glTranslatef(largura/2.0f, péCenterY, -profundidade/2.0f);
+        glScalef(espPéX, altura, espPéZ);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // Pé traseiro esquerdo
+    glPushMatrix();
+        glTranslatef(-largura/2.0f, péCenterY, profundidade/2.0f);
+        glScalef(espPéX, altura, espPéZ);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // Pé traseiro direito
+    glPushMatrix();
+        glTranslatef(largura/2.0f, péCenterY, profundidade/2.0f);
+        glScalef(espPéX, altura, espPéZ);
+        drawCubeUnit();
+    glPopMatrix();
+
+
+    // --------- PRATELEIRAS ---------
+    glColor3f(0.75f, 0.75f, 0.75f); // cor das prateleiras
+
+    estante_drawPrateleira(h1, largura, profundidade, espPrateleira);
+    estante_drawPrateleira(h2, largura, profundidade, espPrateleira);
+    estante_drawPrateleira(h3, largura, profundidade, espPrateleira);
+}
+
+void bancoEspera_draw() {
+    // ====== DIMENSÕES ======
+    float larguraAssento = 0.55f;
+    float profundidadeAssento = 0.55f;
+    float alturaAssento = 0.45f;
+
+    float alturaEncosto = 0.40f;
+    float espessuraAssento = 0.05f;
+    float espessuraEncosto = 0.05f;
+
+    float espessuraBarra = 0.06f;
+    float alturaBarra = 0.30f;
+
+    float larguraTotal = 3.0f * larguraAssento + 0.20f; // pequena folga
+
+    // Dimensões dos pés
+    float péLarg = 0.08f;
+    float péProf = 0.25f;
+    float péAlt  = 0.35f;
+
+
+    // ====== BARRA SUPERIOR ======
+    glColor3f(0.25f, 0.25f, 0.25f); // ferro
+
+    glPushMatrix();
+        glTranslatef(0, alturaBarra, 0);
+        glScalef(larguraTotal, espessuraBarra, espessuraBarra);
+        drawCubeUnit();
+    glPopMatrix();
+
+
+    // ====== PÉS ======
+    // Pé esquerdo
+    glPushMatrix();
+        glTranslatef(-larguraTotal/2 + péLarg, péAlt/2, 0);
+        glScalef(péLarg, péAlt, péProf);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // Pé direito
+    glPushMatrix();
+        glTranslatef(larguraTotal/2 - péLarg, péAlt/2, 0);
+        glScalef(péLarg, péAlt, péProf);
+        drawCubeUnit();
+    glPopMatrix();
+
+
+    // ====== 3 ASSENTOS ======
+    for (int i = 0; i < 3; i++) {
+        float offsetX = -larguraTotal/2 + larguraAssento/2 + i * larguraAssento;
+
+        // ---- Assento ----
+        white_shadow
+
+        glPushMatrix();
+            glTranslatef(offsetX, alturaAssento, 0);
+            glScalef(larguraAssento, espessuraAssento, profundidadeAssento);
+            drawCubeUnit();
+        glPopMatrix();
+
+        // ---- Encosto ----
+        glPushMatrix();
+            glTranslatef(offsetX, alturaAssento + alturaEncosto/2 + espessuraAssento/2, -profundidadeAssento/2 + espessuraEncosto/2);
+            glScalef(larguraAssento, alturaEncosto, espessuraEncosto);
+            drawCubeUnit();
+        glPopMatrix();
+    }
+}
+
 void primeiro_andar_moveis(){
     // refeitorio
     glPushMatrix();
@@ -612,6 +751,15 @@ void primeiro_andar_moveis(){
     glTranslatef(base*3, 30, base*3.5);
     glScalef(5, 10, 30);
     drawCube(1, 3, 1);
+    glPopMatrix();
+
+    // cadeira recepção
+    white_shadow
+    glPushMatrix();
+    glTranslatef(base*3.2, 0, base*3.5);
+    glRotatef(90, 0, 1, 0);
+    glScalef(20, 20, 20);
+    bancoEspera_draw();
     glPopMatrix();
 
     // Banheiro F
@@ -1112,5 +1260,82 @@ void primeiro_andar_moveis(){
     glTranslatef(base*8.35, 30, base*9);
     glScalef(75, 10, 5);
     drawCube(1, 3, 1);
+    glPopMatrix();
+
+    // guidolab
+    white_shadow
+    glPushMatrix();
+    glTranslatef(base*2.25, 16, base*3.25);
+    glScalef(1.2, 1.2, 1.2);
+    //glRotatef(90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base*1.75, 16, base*2.5);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base*0.5, 16, base*2.85); // z pra frente pra trás
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(180, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+
+
+    glPushMatrix();
+    black
+    glTranslatef(base*2.25, 12, base*3.48);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(180, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*1.52, 12, base*2.5);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*0.5, 12, base*2.62);
+    glScalef(1.2, 1.2, 1.2);
+    //glRotatef(180, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+
+
+    glPushMatrix();
+    glTranslatef(base*2.25, 20, base*3.25);
+    glScalef(10, 10, 10);
+    //glRotatef(-90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*1.75, 20, base*2.5);
+    glScalef(10, 10, 10);
+    glRotatef(-90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*0.5, 20, base*2.85);
+    glScalef(10, 10, 10);
+    glRotatef(180, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+
+    white_shadow
+    glPushMatrix();
+    glTranslatef(base*0.25, 7.5, base*2.25);
+    glScalef(15, 15, 15);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base*2.25, 0, base*3.85);
+    glScalef(40, 27.5, 30);
+    estanteFerro_draw();
     glPopMatrix();
 }
