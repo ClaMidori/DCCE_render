@@ -32,6 +32,10 @@ set(SOURCES
     furnitures/camera_export.c
     furnitures/computador_export.c
     furnitures/gabinete_export.c
+    furnitures/tcadeiras_export.c
+    furnitures/privada_export.c
+    furnitures/mesaR_export.c
+    furnitures/cadeiraU_export.c
     src/furniture.c
 )
 

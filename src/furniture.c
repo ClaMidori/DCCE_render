@@ -5,6 +5,10 @@
 #include "../furnitures/gabinete_export.h"
 #include "../furnitures/pia_export.h"
 #include "../furnitures/sofa_export.h"
+#include "../furnitures/cadeiraU_export.h"
+#include "../furnitures/mesaR_export.h"
+#include "../furnitures/privada_export.h"
+#include "../furnitures/tcadeiras_export.h"
 #include <GL/gl.h>
 #include <commons.h>
 
@@ -59,6 +63,7 @@ void drawCube(float w, float h, float d)
 
     glEnd();
 }
+
 
 void geladeira_draw()
 {
@@ -286,6 +291,53 @@ void drawCubeUnit() {
     glEnd();
 }
 
+void monitor_draw()
+{
+    glPushMatrix(); // tudo relativo a 0,0,0
+
+    // Opcional: cor do corpo (base + suporte)
+    glColor3f(0.2f, 0.2f, 0.2f);
+
+    // ---------- BASE (retângulo deitado) ----------
+    // queremos que a base toque o chão => altura da base = 0.1, centro em y = 0.05
+    glPushMatrix();
+        glTranslatef(0.0f, 0.05f, 0.0f);   // y = 0.05
+        glScalef(0.8f, 0.1f, 0.5f);        // largura X, altura Y, profundidade Z
+        drawCubeUnit();
+    glPopMatrix();
+
+    // ---------- SUPORTE (retângulo em pé) ----------
+    // suporte estreito ligando base à tela
+    glPushMatrix();
+        glTranslatef(0.0f, 0.45f, 0.0f);   // centro do suporte
+        glScalef(0.08f, 0.8f, 0.06f);      // bem fino
+        drawCubeUnit();
+    glPopMatrix();
+
+    // ---------- TELA (retângulo largo e fino) ----------
+    // desenhar levemente à frente (z positivo) para parecer que está "na frente" do suporte
+    // tela é fina em Z
+    glPushMatrix();
+        glColor3f(0.0f, 0.0f, 0.0f);       // cor da moldura/painel
+        glTranslatef(0.0f, 1.05f, 0.08f);  // centro da tela
+        glScalef(1.2f, 0.9f, 0.06f);       // largura, altura, profundidade fina
+        drawCubeUnit();
+    glPopMatrix();
+
+    // ---------- PANTALLA (área "ativa" dentro da moldura) ----------
+    // pintar um retângulo um pouco mais fino e deslocado para frente para parecer a área da tela
+    glPushMatrix();
+        glColor3f(0.05f, 0.05f, 0.2f);     // "preto azulado" da tela
+        glTranslatef(0.0f, 1.05f, 0.095f); // um pouco mais à frente que a moldura
+        glScalef(1.05f, 0.75f, 0.02f);     // ligeiramente menor que a moldura
+        drawCubeUnit();
+    glPopMatrix();
+
+    // reset de cor para evitar vazamento
+    glColor3f(1.0f, 1.0f, 1.0f);
+
+    glPopMatrix();
+}
 
 static void cadeiraSimples_draw() {
 
@@ -442,12 +494,165 @@ void primeiro_andar_moveis(){
     glScalef(30, 10, 5);
     drawCube(1, 3, 1);
     glPopMatrix();
-    glPopMatrix();
+    glPushMatrix();
     glTranslatef(base*3, 30, base*3.5);
     glScalef(5, 10, 30);
     drawCube(1, 3, 1);
     glPopMatrix();
 
+    // Banheiro F
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.85, 15, base*3.75);
+    glRotatef(180, 0, 1, 0);
+    glScalef(0.3, 0.75, 0.45);
+    privada_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.85, 15, base*3.5);
+    glRotatef(180, 0, 1, 0);
+    glScalef(0.3, 0.75, 0.45);
+    privada_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.85, 15, base*3.25);
+    glRotatef(180, 0, 1, 0);
+    glScalef(0.3, 0.75, 0.45);
+    privada_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.2, 20, base*3.5);
+    glScalef(0.4, 0.4, 0.4);
+    pia_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.2, 20, base*3.25);
+    glScalef(0.4, 0.4, 0.4);
+    pia_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.2, 20, base*3.75);
+    glScalef(0.4, 0.4, 0.4);
+    pia_draw();
+    glPopMatrix();
+
+    // Banheiro M
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*9.85, 15, base*4.25);
+    glRotatef(180, 0, 1, 0);
+    glScalef(0.3, 0.75, 0.45);
+    privada_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*9.1, 20, base*4.25);
+    glScalef(0.4, 0.4, 0.4);
+    pia_draw();
+    glPopMatrix();
+
+    // LIPAI
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.5, 20, base*8.75);
+    glRotatef(180, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*1.20, 20, base*8.75);
+    glRotatef(180, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*1.9, 20, base*8.75);
+    glRotatef(180, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*2.60, 20, base*8.75);
+    glRotatef(180, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*2.70, 20, base*8.05);
+    glRotatef(270, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*2.70, 20, base*7.35);
+    glRotatef(270, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*2.70, 20, base*6.65);
+    glRotatef(270, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.30, 20, base*8.05);
+    glRotatef(90, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.30, 20, base*7.35);
+    glRotatef(90, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.30, 20, base*6.65);
+    glRotatef(90, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*0.30, 20, base*5.95);
+    glRotatef(90, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*1.20, 20, base*5.25);
+    //glRotatef(180, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    mesaR_draw();
+    glPopMatrix();
+    
+    //cadeiraU_draw();
+    
+    glPushMatrix();
+    glTranslatef(base*2.70, 25, base*8.05);
+    glScalef(10, 10, 10);
+    glRotatef(-90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    //
     glPushMatrix();
     glTranslatef(1000, 50, 100);
     camera_draw();
