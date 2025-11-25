@@ -26,6 +26,22 @@ set(SOURCES
     src/ground.c
     src/structures.c
     src/roof.c
+    furnitures/sofa_export.c
+    furnitures/pia_export.c
+    furnitures/ar_export.c
+    furnitures/camera_export.c
+    furnitures/computador_export.c
+    furnitures/gabinete_export.c
+    #meu a partir daqui
+    furnitures/cadeiraU_export.c
+    furnitures/cestoLixo_export.c
+    furnitures/canetas_export.c
+    furnitures/mesaL_export.c
+    furnitures/mesaR_export.c
+    furnitures/tcadeiras_export.c
+    furnitures/privada_export.c
+
+    src/furniture.c
 )
 
 # Adiciona o diretório "include" para que você possa usar #include "house.h"

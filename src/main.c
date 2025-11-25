@@ -3,6 +3,7 @@
 #include "../include/mouse.h"
 #include "../include/controls.h"
 #include "../include/building.h"
+#include "../include/furniture.h"
 
 void Inicializa(void)
 {
@@ -12,21 +13,26 @@ void Inicializa(void)
     glEnable(GL_SMOOTH);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    glutWarpPointer(400,300);
+    glutWarpPointer(400, 300);
     glutSetCursor(GLUT_CURSOR_NONE);
 }
 
-void Draw(){
-    glColor3ub(100,200,0);
+void Draw()
+{
+    glColor3ub(100, 200, 0);
     glPushMatrix();
-    glTranslatef(0,-ground_offset,0);
-    glScalef(60,0.01,60);
+    glTranslatef(0, -ground_offset, 0);
+    glScalef(60, 0.01, 60);
     glutSolidCube(30);
     glPopMatrix();
     ground_floor();
     first_floor();
     second_floor();
-    //teste();
+    mobilia_recepcao();
+    mobilia_banheiros();
+    mobilia_salas();
+
+    // teste();
 }
 
 void DISPLAY(void)
@@ -63,26 +69,26 @@ void DISPLAY(void)
     // -----------------------------
 
     // Agora o gluLookAt usará os valores atualizados de ox, oy, oz
-    gluLookAt(posx, posy, posz,   // Posição do olho
-              ox, oy, oz,         // Ponto para onde o olho está olhando
+    gluLookAt(posx, posy, posz, // Posição do olho
+              ox, oy, oz,       // Ponto para onde o olho está olhando
               0.0, 1.0, 0.0);   // Vetor "para cima" (assumindo que seja esse)
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    
+
     Draw();
-    
+
     glutSwapBuffers();
     // Remova o glutPostRedisplay daqui, ele não é necessário dentro da própria função de display.
     // As funções MOUSE e update_moviment já o chamam quando algo muda.
 }
 
-int main(int argc, char**argv)
+int main(int argc, char **argv)
 {
-    glutInit(&argc,argv);
+    glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH | GLUT_STENCIL); /*Define as características do espaço vetorial.
                                                                         //  Nesse caso, permite animações (sem cintilações), cores compostas por Verm. Verde e Azul,
                                                                 //  Buffer que permite trablhar com profundidade e elimina faces escondidas.*/
-    glutInitWindowSize(800,600);
+    glutInitWindowSize(800, 600);
     glutInitWindowPosition(10, 10);
     glutCreateWindow("Projeto");
     Inicializa();
