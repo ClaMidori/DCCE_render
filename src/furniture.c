@@ -432,6 +432,119 @@ void mesaComCadeiras_draw() {
     glPopMatrix();
 }
 
+void cadeiraEsc_draw() {
+
+    // --- Pernas ---
+    glColor3f(0.2f, 0.15f, 0.05f); // cor madeira escura
+
+    // perna frontal esquerda
+    glPushMatrix();
+        glTranslatef(-0.35f, -0.5f,  0.25f);
+        glScalef(0.1f, 0.6f, 0.1f);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // perna frontal direita
+    glPushMatrix();
+        glTranslatef( 0.35f, -0.5f,  0.25f);
+        glScalef(0.1f, 0.6f, 0.1f);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // perna traseira esquerda
+    glPushMatrix();
+        glTranslatef(-0.35f, -0.5f, -0.25f);
+        glScalef(0.1f, 0.8f, 0.1f);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // perna traseira direita
+    glPushMatrix();
+        glTranslatef( 0.35f, -0.5f, -0.25f);
+        glScalef(0.1f, 0.8f, 0.1f);
+        drawCubeUnit();
+    glPopMatrix();
+
+
+    // --- Assento ---
+    glPushMatrix();
+        glColor3f(0.7f, 0.5f, 0.3f);
+        glTranslatef(0.0f, 0.0f, 0.0f);
+        glScalef(0.9f, 0.12f, 0.7f);
+        drawCubeUnit();
+    glPopMatrix();
+
+
+    // --- Encosto ---
+    glPushMatrix();
+        glColor3f(0.7f, 0.5f, 0.3f);
+        glTranslatef(0.0f, 0.28f, -0.25f);
+        glScalef(0.85f, 1.2f, 0.12f);
+        drawCubeUnit();
+    glPopMatrix();
+
+
+    // --- Estrutura metálica (barras de suporte) ---
+    glColor3f(0.45f, 0.45f, 0.45f);
+
+    // barra frontal
+    glPushMatrix();
+        glTranslatef(0.0f, -0.35f, 0.35f);
+        glScalef(0.8f, 0.06f, 0.06f);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // barra traseira
+    glPushMatrix();
+        glTranslatef(0.0f, -0.35f, -0.35f);
+        glScalef(0.8f, 0.06f, 0.06f);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // lateral esquerda
+    glPushMatrix();
+        glTranslatef(-0.45f, -0.25f, 0.0f);
+        glScalef(0.06f, 0.6f, 0.06f);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // lateral direita
+    glPushMatrix();
+        glTranslatef(0.45f, -0.25f, 0.0f);
+        glScalef(0.06f, 0.6f, 0.06f);
+        drawCubeUnit();
+    glPopMatrix();
+
+
+    // --- Braço metálico da prancheta ---
+    
+    glColor3f(0.45f, 0.45f, 0.45f);
+
+    // vertical
+    glPushMatrix();
+        glTranslatef(0.65f, -0.1f, 0.15f);
+        glScalef(0.06f, 0.6f, 0.06f);
+        drawCubeUnit();
+    glPopMatrix();
+
+    // horizontal
+    glPushMatrix();
+        glTranslatef(0.4f, 0.15f, 0.15f);
+        glScalef(0.5f, 0.06f, 0.06f);
+        drawCubeUnit();
+    glPopMatrix();
+
+
+    // --- Prancheta ---
+    glPushMatrix();
+        glColor3f(0.6f, 0.45f, 0.3f);
+        glTranslatef(0.3f, 0.22f, 0.15f);
+        //glRotatef(-12.0f, 0, 0, 1);
+        glScalef(0.45f, 0.02f, 0.28f);
+        drawCubeUnit();
+    glPopMatrix();
+}
+
 void primeiro_andar_moveis(){
     // refeitorio
     glPushMatrix();
@@ -504,41 +617,30 @@ void primeiro_andar_moveis(){
     // Banheiro F
     glPushMatrix();
     white_shadow
-    glTranslatef(base*0.85, 15, base*3.75);
-    glRotatef(180, 0, 1, 0);
+    glTranslatef(base*0.75, 15, base*3.125);
+    glRotatef(-90, 0, 1, 0);
     glScalef(0.3, 0.75, 0.45);
     privada_draw();
     glPopMatrix();
     glPushMatrix();
     white_shadow
-    glTranslatef(base*0.85, 15, base*3.5);
-    glRotatef(180, 0, 1, 0);
-    glScalef(0.3, 0.75, 0.45);
-    privada_draw();
-    glPopMatrix();
-    glPushMatrix();
-    white_shadow
-    glTranslatef(base*0.85, 15, base*3.25);
-    glRotatef(180, 0, 1, 0);
+    glTranslatef(base*0.25, 15, base*3.125);
+    glRotatef(-90, 0, 1, 0);
     glScalef(0.3, 0.75, 0.45);
     privada_draw();
     glPopMatrix();
 
     glPushMatrix();
     white_shadow
-    glTranslatef(base*0.2, 20, base*3.5);
+    glTranslatef(base*0.35, 20, base*4.85);
     glScalef(0.4, 0.4, 0.4);
+    glRotatef(90, 0, 1, 0);
     pia_draw();
     glPopMatrix();
     glPushMatrix();
     white_shadow
-    glTranslatef(base*0.2, 20, base*3.25);
-    glScalef(0.4, 0.4, 0.4);
-    pia_draw();
-    glPopMatrix();
-    glPushMatrix();
-    white_shadow
-    glTranslatef(base*0.2, 20, base*3.75);
+    glTranslatef(base*0.65, 20, base*4.85);
+    glRotatef(90, 0, 1, 0);
     glScalef(0.4, 0.4, 0.4);
     pia_draw();
     glPopMatrix();
@@ -830,5 +932,185 @@ void primeiro_andar_moveis(){
     glScalef(1.2, 1.2, 1.2);
     glRotatef(-90, 0, 1, 0);
     cadeiraL_draw();
+    glPopMatrix();
+
+    white_shadow
+    glPushMatrix();
+    glTranslatef(base*3.25, 20, base*8);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*3.25, 20, base*7.3);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*3.25, 20, base*6.6);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*3.25, 20, base*5.9);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+
+    black
+    glPushMatrix();
+    glTranslatef(base*3.48, 12, base*8);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*3.48, 12, base*7.3);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*3.48, 12, base*6.6);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*3.48, 12, base*5.9);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(-90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base*3.25, 25, base*8);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*3.25, 25, base*7.3);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*3.25, 25, base*6.6);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*3.25, 25, base*5.9);
+    glScalef(10, 10, 10);
+    glRotatef(90, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    white_shadow
+    glTranslatef(base*6.75, 20, base*8);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(270, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*6.75, 20, base*7.3);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(270, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*6.75, 20, base*6.6);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(270, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*6.75, 20, base*5.9);
+    glScalef(1.5, 1.5, 1.5);
+    glRotatef(270, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    black
+    glTranslatef(base*6.75, 25, base*8);
+    glScalef(10, 10, 10);
+    glRotatef(270, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*6.75, 25, base*7.3);
+    glScalef(10, 10, 10);
+    glRotatef(270, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*6.75, 25, base*6.6);
+    glScalef(10, 10, 10);
+    glRotatef(270, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*6.75, 25, base*5.9);
+    glScalef(10, 10, 10);
+    glRotatef(270, 0, 1, 0);
+    monitor_draw();
+    glPopMatrix();
+
+    glPushMatrix();
+    black
+    glTranslatef(base*6.52, 12, base*8);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*6.52, 12, base*7.3);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*6.52, 12, base*6.6);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*6.52, 12, base*5.9);
+    glScalef(1.2, 1.2, 1.2);
+    glRotatef(90, 0, 1, 0);
+    cadeiraL_draw();
+    glPopMatrix();
+
+    // 4N
+    for(int ai=0; ai <5; ai++){
+        for(int bi=0; bi<5; bi++){
+            glPushMatrix();
+            glTranslatef(base*(9.25-0.5*ai), 10, base*(7.5-0.5*bi));
+            glScalef(10, 10, 10);
+            cadeiraEsc_draw();
+            glPopMatrix();
+        }
+    }
+
+    glPushMatrix();
+    glTranslatef(base*9.25, 16, base*8);
+    glScalef(1.2, 1.2, 1.2);
+    //glRotatef(90, 0, 1, 0);
+    mesaR_draw();
+    glPopMatrix();
+
+    glPushMatrix(); // lousa
+    green
+    glTranslatef(base*8.35, 30, base*9);
+    glScalef(75, 10, 5);
+    drawCube(1, 3, 1);
     glPopMatrix();
 }

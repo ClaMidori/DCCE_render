@@ -22,6 +22,7 @@
 #define brown glColor3f(0.54, 0.27, 0.07);
 #define blue glColor3f(0, 0, 1);
 #define black glColor3f(0, 0, 0);
+#define green glColor3f(0.06f, 0.0164f, 0.102f);
 
 //* A construção do prédio funciona como uma matriz tridimensional, pela escala, 10x10x3
 
