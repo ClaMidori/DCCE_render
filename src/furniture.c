@@ -644,7 +644,13 @@ void primeiro_andar_moveis(){
     mesaR_draw();
     glPopMatrix();
     
-    //cadeiraU_draw();
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(base*0.30, 20, base*5.95);
+    glRotatef(90, 0, 1, 0);
+    glScalef(1.5, 1.5, 1.5);
+    cadeiraU_draw();
+    glPopMatrix();
     
     glPushMatrix();
     glTranslatef(base*2.70, 25, base*8.05);
