@@ -778,6 +778,20 @@ void primeiro_andar_moveis(){
     privada_draw();
     glPopMatrix();
 
+    glColor3f(0.2, 0.2, 0.2);
+    glPushMatrix();
+    glTranslatef(base*0.5, 25, base*3.3);
+    glScalef(1, 50, 23);
+    drawCubeUnit();
+    glPopMatrix();
+
+    brown
+    glPushMatrix();
+    glTranslatef(base*0.5, 25, base*3.5);
+    glScalef(42, 40, 1);
+    drawCubeUnit();
+    glPopMatrix();
+
     glPushMatrix();
     white_shadow
     glTranslatef(base*0.35, 20, base*4.85);
@@ -800,6 +814,20 @@ void primeiro_andar_moveis(){
     glRotatef(180, 0, 1, 0);
     glScalef(0.3, 0.75, 0.45);
     privada_draw();
+    glPopMatrix();
+
+    glColor3f(0.2, 0.2, 0.2);
+    glPushMatrix();
+    glTranslatef(base*9.7, 25, base*4.5);
+    glScalef(23, 50, 1);
+    drawCubeUnit();
+    glPopMatrix();
+
+    brown
+    glPushMatrix();
+    glTranslatef(base*9.55, 25, base*4.25);
+    glScalef(1, 40, 23.5);
+    drawCubeUnit();
     glPopMatrix();
 
     glPushMatrix();
