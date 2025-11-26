@@ -28,9 +28,11 @@ void Draw()
     ground_floor();
     first_floor();
     second_floor();
+    primeiro_andar_moveis();
     mobilia_recepcao();
     mobilia_banheiros();
     mobilia_salas();
+    mobilia_corredor();
 
     // teste();
 }

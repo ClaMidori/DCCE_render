@@ -33,13 +33,17 @@ set(SOURCES
     furnitures/computador_export.c
     furnitures/gabinete_export.c
     #meu a partir daqui
-    furnitures/cadeiraU_export.c
     furnitures/cestoLixo_export.c
     furnitures/canetas_export.c
     furnitures/mesaL_export.c
     furnitures/mesaR_export.c
+    furnitures/cadeiraLow_export.c
     furnitures/tcadeiras_export.c
     furnitures/privada_export.c
+    furnitures/vaso_export.c
+    furnitures/portasP_export.c
+    furnitures/baseP_export.c
+    furnitures/botoesP_export.c
 
     src/furniture.c
 )
