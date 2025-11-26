@@ -286,18 +286,20 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&whiteDoor,0,0,1,1);
-        glTranslatef(base,0,0); //bloco 1x0
+        lateral_door_block(&whiteDoor,0,0,1,0);
+        tall_window_block(0,0,0,1);
+        glTranslatef(base,0,0); //bloco 2x0
         lateral_door_block(&whiteDoor,1,0,1,1);
         glTranslatef(0.6*base,0,0);
-        big_window_block(1,1,0,1); //bloco 0x0
+        big_window_block(1,1,0,1); //bloco 3x0
 
         glTranslatef(4*base,0,0);
-        big_window_block(1,0,1,1); //bloco 0x0
+        big_window_block(1,0,1,1); //bloco 7x0
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
-        glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&whiteDoor,0,0,1,1);
+        glTranslatef(base*0.4,0,0); //bloco 8x0
+        lateral_door_block(&whiteDoor,0,0,1,0);
+        tall_window_block(0,0,0,1);
         glTranslatef(base,0,0); //bloco 1x0
         lateral_door_block(&whiteDoor,1,0,1,1);
         glTranslatef(0.6*base,0,0);
@@ -494,8 +496,9 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&whiteDoor,1,0,1,0);
-        glTranslatef(base,0,0); //bloco 1x0
+        lateral_door_block(&whiteDoor,0,0,1,0);
+        tall_window_block(1,0,0,0);
+        glTranslatef(base,0,0); //bloco 2x0
         lateral_door_block(&whiteDoor,1,0,1,1);
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
@@ -505,7 +508,8 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&whiteDoor,1,0,1,0);
+        lateral_door_block(&whiteDoor,0,0,1,0);
+        tall_window_block(1,0,0,0);
         glTranslatef(base,0,0); //bloco 1x0
         lateral_door_block(&whiteDoor,1,0,1,1);
         glTranslatef(0.6*base,0,0);

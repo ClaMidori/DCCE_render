@@ -1131,6 +1131,254 @@ void aux_wall_medium_window(float tx, float ty, float tz,float angulo, float rx,
    glEnd();
    glPopMatrix();
 }
+
+void wall_with_tall_grade_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   /*//Porta de grades sem maçaneta
+Door gradeDoor = {
+    .type = DOOR_GRADE,
+    .width = base/2,
+    .height = base*0.85,
+    .thickness = 0.1,
+    .openAngle = 0,
+    .hasBars = 1,
+    .verticalBars = 3,
+    .horizontalBars = 4,
+    .hasBackground = 0,
+    .hasBorders = 1,
+    .borderSize = 2.5,
+    .borderColor = {0.6,0,0},
+    .handle = {
+        .type = HANDLE_NONE
+    },
+    .color = {0.6,0,0}
+};
+*/
+   float offset_janela = 0.05;
+   float offset_grade = 0.01;
+
+   float width=(base/3)+1;
+   float height=(3*base)/5;
+   float borderSize = 2.5;
+   int verticalBars = 2;
+   int horizontalBars = 5;
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white;
+   //esquerda
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( base/3, base);
+      glVertex2f( base/3,0);
+   glEnd();
+   glPopMatrix();
+
+   //direita
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white; 
+   //glTranslatef(base-base/3,0,0);
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f((2*base)/3,0);
+      glVertex2f(base, 0);
+      glVertex2f( base, base);
+      glVertex2f((2*base)/3,base);
+   glEnd();
+   glPopMatrix();
+
+   //superior
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white; //Define cor como azul
+   //glTranslatef(0,base-base/6,0);
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(base/3,(4*base)/5);
+      glVertex2f((2*base)/3, (4*base)/5);
+      glVertex2f((2*base)/3, base);
+      glVertex2f(base/3,base);
+   glEnd();
+   glPopMatrix();
+
+   //inferior
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white; //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(base/3,0);
+      glVertex2f((2*base)/3, 0);
+      glVertex2f((2*base)/3, base/5);
+      glVertex2f(base/3,base/5);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   red;
+   glTranslatef((base/3),base/5,tz);
+   //Borda esquerda
+      glBegin(GL_QUADS);
+         glVertex2f(0,0);
+         glVertex2f(0,height);
+         glVertex2f(borderSize,height);
+         glVertex2f(borderSize,0);
+      glEnd();
+      //Borda direita
+      glBegin(GL_QUADS);
+         glVertex2f(width - borderSize,0);
+         glVertex2f(width - borderSize,height);
+         glVertex2f(width,height);
+         glVertex2f(width,0);
+      glEnd();
+      //Borda superior
+      glBegin(GL_QUADS);
+         glVertex2f(borderSize,height);
+         glVertex2f(width-borderSize,height);
+         glVertex2f(width-borderSize,height-borderSize);
+         glVertex2f(borderSize,height-borderSize);
+      glEnd();
+      //Borda inferior
+      glBegin(GL_QUADS);
+         glVertex2f(0-offset_janela,0-offset_janela);
+         glVertex2f(width+offset_janela,0-offset_janela);
+         glVertex2f(width+offset_janela,borderSize);
+         glVertex2f(0-offset_janela,borderSize);
+      glEnd();
+       // grades
+      for (int i = 0; i < verticalBars; i++) {
+         float x = (i+1) * (width / (verticalBars + 1));
+         glBegin(GL_QUADS);
+               glVertex2f(x, 0);
+               glVertex2f(x+0.08, 0);
+               glVertex2f(x+0.08, height);
+               glVertex2f(x, height);
+         glEnd();
+      }
+      for (int i = 0; i < horizontalBars; i++) {
+         float y = (i+1) * (height / (horizontalBars + 1));
+         glBegin(GL_QUADS);
+               glVertex2f(0, y);
+               glVertex2f(width, y);
+               glVertex2f(width, y+0.08);
+               glVertex2f(0, y+0.08);
+         glEnd();
+      }
+   glPopMatrix();
+
+}
+
+void aux_wall_tall_grade_window(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   /*//Porta de grades sem maçaneta
+Door gradeDoor = {
+    .type = DOOR_GRADE,
+    .width = base/2,
+    .height = base*0.85,
+    .thickness = 0.1,
+    .openAngle = 0,
+    .hasBars = 1,
+    .verticalBars = 3,
+    .horizontalBars = 4,
+    .hasBackground = 0,
+    .hasBorders = 1,
+    .borderSize = 2.5,
+    .borderColor = {0.6,0,0},
+    .handle = {
+        .type = HANDLE_NONE
+    },
+    .color = {0.6,0,0}
+};
+*/
+   float offset_janela = 0.05;
+   float offset_grade = 0.01;
+
+   float width=base/3;
+   float height=base*0.6;
+   float borderSize = 2.5;
+   int verticalBars = 2;
+   int horizontalBars = 5;
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white;
+   //esquerda
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( base/3, base);
+      glVertex2f( base/3,0);
+   glEnd();
+   glPopMatrix();
+
+   //direita
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white; 
+   //glTranslatef(base-base/3,0,0);
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f((2*base)/3,0);
+      glVertex2f(base, 0);
+      glVertex2f( base, base);
+      glVertex2f((2*base)/3,base);
+   glEnd();
+   glPopMatrix();
+
+   //superior
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white; //Define cor como azul
+   //glTranslatef(0,base-base/6,0);
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(base/3,(4*base)/5);
+      glVertex2f((2*base)/3, (4*base)/5);
+      glVertex2f((2*base)/3, base);
+      glVertex2f(base/3,base);
+   glEnd();
+   glPopMatrix();
+
+   //inferior
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white; //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(base/3,0);
+      glVertex2f((2*base)/3, 0);
+      glVertex2f((2*base)/3, base/5);
+      glVertex2f(base/3,base/5);
+   glEnd();
+   glPopMatrix();
+
+}
+
+void aux_wall_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+    float fy = 0.15;
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   white; //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,base);
+      glVertex2f(0, base-base*fy);
+      glVertex2f( base, base-base*fy);
+      glVertex2f( base,base);
+   glEnd();
+
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( wall_thickness, base);
+      glVertex2f( wall_thickness,0);
+   glEnd();
+   glPopMatrix();
+   wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
+}
+
 void wall_with_door(const Door *d, float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
    float fy = 0.15;
    glPushMatrix();
@@ -1158,89 +1406,6 @@ void wall_with_door(const Door *d, float tx, float ty, float tz,float angulo, fl
    door(d);
    glPopMatrix();
 
-   wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
-}
-/*
-void wall_with_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
-   float fy = 0.15;
-   glPushMatrix();
-   glRotatef(angulo,rx,ry,rz);
-   glTranslatef(tx,ty,tz);
-   white; //Define cor como azul
-   glBegin(GL_QUADS); //quadrado
-      glVertex2f(0,base);
-      glVertex2f(0, base-base*fy);
-      glVertex2f( base, base-base*fy);
-      glVertex2f( base,base);
-   glEnd();
-
-   glBegin(GL_QUADS); //quadrado
-      glVertex2f(0,0);
-      glVertex2f(0, base);
-      glVertex2f( wall_thickness, base);
-      glVertex2f( wall_thickness,0);
-   glEnd();
-   glPopMatrix();
-
-   glPushMatrix();
-   glRotatef(angulo,rx,ry,rz);
-   glTranslatef(tx+wall_thickness,ty,tz);
-   door(0);
-   glPopMatrix();
-
-   wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
-}
-
-void wall_with_wood_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
-   float fy = 0.15;
-   glPushMatrix();
-   glRotatef(angulo,rx,ry,rz);
-   glTranslatef(tx,ty,tz);
-   white; //Define cor como azul
-   glBegin(GL_QUADS); //quadrado
-      glVertex2f(0,base);
-      glVertex2f(0, base-base*fy);
-      glVertex2f( base, base-base*fy);
-      glVertex2f( base,base);
-   glEnd();
-
-   glBegin(GL_QUADS); //quadrado
-      glVertex2f(0,0);
-      glVertex2f(0, base);
-      glVertex2f( wall_thickness, base);
-      glVertex2f( wall_thickness,0);
-   glEnd();
-   glPopMatrix();
-
-   glPushMatrix();
-   glRotatef(angulo,rx,ry,rz);
-   glTranslatef(tx+wall_thickness,ty,tz);
-   woodDoor(0);
-   glPopMatrix();
-
-   wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
-}
-*/
-void aux_wall_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
-    float fy = 0.15;
-   glPushMatrix();
-   glRotatef(angulo,rx,ry,rz);
-   glTranslatef(tx,ty,tz);
-   white; //Define cor como azul
-   glBegin(GL_QUADS); //quadrado
-      glVertex2f(0,base);
-      glVertex2f(0, base-base*fy);
-      glVertex2f( base, base-base*fy);
-      glVertex2f( base,base);
-   glEnd();
-
-   glBegin(GL_QUADS); //quadrado
-      glVertex2f(0,0);
-      glVertex2f(0, base);
-      glVertex2f( wall_thickness, base);
-      glVertex2f( wall_thickness,0);
-   glEnd();
-   glPopMatrix();
    wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
 }
 

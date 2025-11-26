@@ -20,6 +20,8 @@ void big_window_block(int front, int left, int right, int back);
 
 void medium_window_block(int front, int left, int right, int back);
 
+void tall_window_block(int front, int left, int right, int back);
+
 void small_window_block(int front, int left, int right, int back);
 
 void front_door_block(const Door *d, int front, int left, int right, int back);
