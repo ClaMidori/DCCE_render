@@ -1,0 +1,3 @@
+/home/allan/Documentos/Tiago/build/CMakeFiles/dcce.dir
+/home/allan/Documentos/Tiago/build/CMakeFiles/edit_cache.dir
+/home/allan/Documentos/Tiago/build/CMakeFiles/rebuild_cache.dir
