@@ -3,5 +3,5 @@
 
 #include "../include/commons.h"
 
-void main_roof();
+void roof();
 #endif
