@@ -3,7 +3,7 @@
 
 //controle de moovimento
 unsigned char keys[3]; // [0] -> movimento horizontal [1] -> movimento vertical
-float acc = 3;
+float acc = 5;
 
 
 void pressed_keys(unsigned char tecla, int x, int y)

@@ -1,7 +1,8 @@
 CMakeFiles/dcce.dir/src/furniture.c.o: \
- /home/mint/DCCE_render/src/furniture.c /usr/include/stdc-predef.h \
- /home/mint/DCCE_render/src/../include/furniture.h /usr/include/GL/gl.h \
- /usr/include/GL/glext.h /usr/include/KHR/khrplatform.h \
+ /home/mariatomain/CG_prj2/src/furniture.c /usr/include/stdc-predef.h \
+ /home/mariatomain/CG_prj2/src/../include/furniture.h \
+ /usr/include/GL/gl.h /usr/include/GL/glext.h \
+ /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/features-time64.h \
@@ -18,18 +19,18 @@ CMakeFiles/dcce.dir/src/furniture.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
- /home/mint/DCCE_render/src/../furnitures/ar_export.h \
- /home/mint/DCCE_render/src/../furnitures/camera_export.h \
- /home/mint/DCCE_render/src/../furnitures/computador_export.h \
- /home/mint/DCCE_render/src/../furnitures/gabinete_export.h \
- /home/mint/DCCE_render/src/../furnitures/pia_export.h \
- /home/mint/DCCE_render/src/../furnitures/sofa_export.h \
- /home/mint/DCCE_render/src/../furnitures/cadeiraU_export.h \
- /home/mint/DCCE_render/src/../furnitures/mesaR_export.h \
- /home/mint/DCCE_render/src/../furnitures/privada_export.h \
- /home/mint/DCCE_render/src/../furnitures/tcadeiras_export.h \
- /home/mint/DCCE_render/src/../furnitures/cadeiraLow_export.h \
- /home/mint/DCCE_render/include/commons.h /usr/include/GL/glut.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/ar_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/camera_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/computador_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/gabinete_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/pia_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/sofa_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/cadeiraU_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/mesaR_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/privada_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/tcadeiras_export.h \
+ /home/mariatomain/CG_prj2/src/../furnitures/cadeiraLow_export.h \
+ /home/mariatomain/CG_prj2/include/commons.h /usr/include/GL/glut.h \
  /usr/include/GL/freeglut_std.h /usr/include/GL/glu.h \
  /usr/include/stdlib.h /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \

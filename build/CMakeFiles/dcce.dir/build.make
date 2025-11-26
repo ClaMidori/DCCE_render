@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mint/DCCE_render
+CMAKE_SOURCE_DIR = /home/mariatomain/CG_prj2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mint/DCCE_render/build
+CMAKE_BINARY_DIR = /home/mariatomain/CG_prj2/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/dcce.dir/depend.make
@@ -70,326 +70,326 @@ include CMakeFiles/dcce.dir/progress.make
 include CMakeFiles/dcce.dir/flags.make
 
 CMakeFiles/dcce.dir/src/main.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/main.c.o: /home/mint/DCCE_render/src/main.c
+CMakeFiles/dcce.dir/src/main.c.o: /home/mariatomain/CG_prj2/src/main.c
 CMakeFiles/dcce.dir/src/main.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dcce.dir/src/main.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/main.c.o -MF CMakeFiles/dcce.dir/src/main.c.o.d -o CMakeFiles/dcce.dir/src/main.c.o -c /home/mint/DCCE_render/src/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/dcce.dir/src/main.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/main.c.o -MF CMakeFiles/dcce.dir/src/main.c.o.d -o CMakeFiles/dcce.dir/src/main.c.o -c /home/mariatomain/CG_prj2/src/main.c
 
 CMakeFiles/dcce.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/main.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/main.c > CMakeFiles/dcce.dir/src/main.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/main.c > CMakeFiles/dcce.dir/src/main.c.i
 
 CMakeFiles/dcce.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/main.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/main.c -o CMakeFiles/dcce.dir/src/main.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/main.c -o CMakeFiles/dcce.dir/src/main.c.s
 
 CMakeFiles/dcce.dir/src/keyboard.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/keyboard.c.o: /home/mint/DCCE_render/src/keyboard.c
+CMakeFiles/dcce.dir/src/keyboard.c.o: /home/mariatomain/CG_prj2/src/keyboard.c
 CMakeFiles/dcce.dir/src/keyboard.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dcce.dir/src/keyboard.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/keyboard.c.o -MF CMakeFiles/dcce.dir/src/keyboard.c.o.d -o CMakeFiles/dcce.dir/src/keyboard.c.o -c /home/mint/DCCE_render/src/keyboard.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/dcce.dir/src/keyboard.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/keyboard.c.o -MF CMakeFiles/dcce.dir/src/keyboard.c.o.d -o CMakeFiles/dcce.dir/src/keyboard.c.o -c /home/mariatomain/CG_prj2/src/keyboard.c
 
 CMakeFiles/dcce.dir/src/keyboard.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/keyboard.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/keyboard.c > CMakeFiles/dcce.dir/src/keyboard.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/keyboard.c > CMakeFiles/dcce.dir/src/keyboard.c.i
 
 CMakeFiles/dcce.dir/src/keyboard.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/keyboard.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/keyboard.c -o CMakeFiles/dcce.dir/src/keyboard.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/keyboard.c -o CMakeFiles/dcce.dir/src/keyboard.c.s
 
 CMakeFiles/dcce.dir/src/mouse.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/mouse.c.o: /home/mint/DCCE_render/src/mouse.c
+CMakeFiles/dcce.dir/src/mouse.c.o: /home/mariatomain/CG_prj2/src/mouse.c
 CMakeFiles/dcce.dir/src/mouse.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dcce.dir/src/mouse.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/mouse.c.o -MF CMakeFiles/dcce.dir/src/mouse.c.o.d -o CMakeFiles/dcce.dir/src/mouse.c.o -c /home/mint/DCCE_render/src/mouse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/dcce.dir/src/mouse.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/mouse.c.o -MF CMakeFiles/dcce.dir/src/mouse.c.o.d -o CMakeFiles/dcce.dir/src/mouse.c.o -c /home/mariatomain/CG_prj2/src/mouse.c
 
 CMakeFiles/dcce.dir/src/mouse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/mouse.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/mouse.c > CMakeFiles/dcce.dir/src/mouse.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/mouse.c > CMakeFiles/dcce.dir/src/mouse.c.i
 
 CMakeFiles/dcce.dir/src/mouse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/mouse.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/mouse.c -o CMakeFiles/dcce.dir/src/mouse.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/mouse.c -o CMakeFiles/dcce.dir/src/mouse.c.s
 
 CMakeFiles/dcce.dir/src/controls.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/controls.c.o: /home/mint/DCCE_render/src/controls.c
+CMakeFiles/dcce.dir/src/controls.c.o: /home/mariatomain/CG_prj2/src/controls.c
 CMakeFiles/dcce.dir/src/controls.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/dcce.dir/src/controls.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/controls.c.o -MF CMakeFiles/dcce.dir/src/controls.c.o.d -o CMakeFiles/dcce.dir/src/controls.c.o -c /home/mint/DCCE_render/src/controls.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/dcce.dir/src/controls.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/controls.c.o -MF CMakeFiles/dcce.dir/src/controls.c.o.d -o CMakeFiles/dcce.dir/src/controls.c.o -c /home/mariatomain/CG_prj2/src/controls.c
 
 CMakeFiles/dcce.dir/src/controls.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/controls.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/controls.c > CMakeFiles/dcce.dir/src/controls.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/controls.c > CMakeFiles/dcce.dir/src/controls.c.i
 
 CMakeFiles/dcce.dir/src/controls.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/controls.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/controls.c -o CMakeFiles/dcce.dir/src/controls.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/controls.c -o CMakeFiles/dcce.dir/src/controls.c.s
 
 CMakeFiles/dcce.dir/src/block.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/block.c.o: /home/mint/DCCE_render/src/block.c
+CMakeFiles/dcce.dir/src/block.c.o: /home/mariatomain/CG_prj2/src/block.c
 CMakeFiles/dcce.dir/src/block.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dcce.dir/src/block.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/block.c.o -MF CMakeFiles/dcce.dir/src/block.c.o.d -o CMakeFiles/dcce.dir/src/block.c.o -c /home/mint/DCCE_render/src/block.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/dcce.dir/src/block.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/block.c.o -MF CMakeFiles/dcce.dir/src/block.c.o.d -o CMakeFiles/dcce.dir/src/block.c.o -c /home/mariatomain/CG_prj2/src/block.c
 
 CMakeFiles/dcce.dir/src/block.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/block.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/block.c > CMakeFiles/dcce.dir/src/block.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/block.c > CMakeFiles/dcce.dir/src/block.c.i
 
 CMakeFiles/dcce.dir/src/block.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/block.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/block.c -o CMakeFiles/dcce.dir/src/block.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/block.c -o CMakeFiles/dcce.dir/src/block.c.s
 
 CMakeFiles/dcce.dir/src/building.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/building.c.o: /home/mint/DCCE_render/src/building.c
+CMakeFiles/dcce.dir/src/building.c.o: /home/mariatomain/CG_prj2/src/building.c
 CMakeFiles/dcce.dir/src/building.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/dcce.dir/src/building.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/building.c.o -MF CMakeFiles/dcce.dir/src/building.c.o.d -o CMakeFiles/dcce.dir/src/building.c.o -c /home/mint/DCCE_render/src/building.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/dcce.dir/src/building.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/building.c.o -MF CMakeFiles/dcce.dir/src/building.c.o.d -o CMakeFiles/dcce.dir/src/building.c.o -c /home/mariatomain/CG_prj2/src/building.c
 
 CMakeFiles/dcce.dir/src/building.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/building.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/building.c > CMakeFiles/dcce.dir/src/building.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/building.c > CMakeFiles/dcce.dir/src/building.c.i
 
 CMakeFiles/dcce.dir/src/building.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/building.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/building.c -o CMakeFiles/dcce.dir/src/building.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/building.c -o CMakeFiles/dcce.dir/src/building.c.s
 
 CMakeFiles/dcce.dir/src/door.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/door.c.o: /home/mint/DCCE_render/src/door.c
+CMakeFiles/dcce.dir/src/door.c.o: /home/mariatomain/CG_prj2/src/door.c
 CMakeFiles/dcce.dir/src/door.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/dcce.dir/src/door.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/door.c.o -MF CMakeFiles/dcce.dir/src/door.c.o.d -o CMakeFiles/dcce.dir/src/door.c.o -c /home/mint/DCCE_render/src/door.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/dcce.dir/src/door.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/door.c.o -MF CMakeFiles/dcce.dir/src/door.c.o.d -o CMakeFiles/dcce.dir/src/door.c.o -c /home/mariatomain/CG_prj2/src/door.c
 
 CMakeFiles/dcce.dir/src/door.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/door.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/door.c > CMakeFiles/dcce.dir/src/door.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/door.c > CMakeFiles/dcce.dir/src/door.c.i
 
 CMakeFiles/dcce.dir/src/door.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/door.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/door.c -o CMakeFiles/dcce.dir/src/door.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/door.c -o CMakeFiles/dcce.dir/src/door.c.s
 
 CMakeFiles/dcce.dir/src/wall.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/wall.c.o: /home/mint/DCCE_render/src/wall.c
+CMakeFiles/dcce.dir/src/wall.c.o: /home/mariatomain/CG_prj2/src/wall.c
 CMakeFiles/dcce.dir/src/wall.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/dcce.dir/src/wall.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/wall.c.o -MF CMakeFiles/dcce.dir/src/wall.c.o.d -o CMakeFiles/dcce.dir/src/wall.c.o -c /home/mint/DCCE_render/src/wall.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/dcce.dir/src/wall.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/wall.c.o -MF CMakeFiles/dcce.dir/src/wall.c.o.d -o CMakeFiles/dcce.dir/src/wall.c.o -c /home/mariatomain/CG_prj2/src/wall.c
 
 CMakeFiles/dcce.dir/src/wall.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/wall.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/wall.c > CMakeFiles/dcce.dir/src/wall.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/wall.c > CMakeFiles/dcce.dir/src/wall.c.i
 
 CMakeFiles/dcce.dir/src/wall.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/wall.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/wall.c -o CMakeFiles/dcce.dir/src/wall.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/wall.c -o CMakeFiles/dcce.dir/src/wall.c.s
 
 CMakeFiles/dcce.dir/src/ground.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/ground.c.o: /home/mint/DCCE_render/src/ground.c
+CMakeFiles/dcce.dir/src/ground.c.o: /home/mariatomain/CG_prj2/src/ground.c
 CMakeFiles/dcce.dir/src/ground.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/dcce.dir/src/ground.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/ground.c.o -MF CMakeFiles/dcce.dir/src/ground.c.o.d -o CMakeFiles/dcce.dir/src/ground.c.o -c /home/mint/DCCE_render/src/ground.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/dcce.dir/src/ground.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/ground.c.o -MF CMakeFiles/dcce.dir/src/ground.c.o.d -o CMakeFiles/dcce.dir/src/ground.c.o -c /home/mariatomain/CG_prj2/src/ground.c
 
 CMakeFiles/dcce.dir/src/ground.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/ground.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/ground.c > CMakeFiles/dcce.dir/src/ground.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/ground.c > CMakeFiles/dcce.dir/src/ground.c.i
 
 CMakeFiles/dcce.dir/src/ground.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/ground.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/ground.c -o CMakeFiles/dcce.dir/src/ground.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/ground.c -o CMakeFiles/dcce.dir/src/ground.c.s
 
 CMakeFiles/dcce.dir/src/structures.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/structures.c.o: /home/mint/DCCE_render/src/structures.c
+CMakeFiles/dcce.dir/src/structures.c.o: /home/mariatomain/CG_prj2/src/structures.c
 CMakeFiles/dcce.dir/src/structures.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/dcce.dir/src/structures.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/structures.c.o -MF CMakeFiles/dcce.dir/src/structures.c.o.d -o CMakeFiles/dcce.dir/src/structures.c.o -c /home/mint/DCCE_render/src/structures.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/dcce.dir/src/structures.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/structures.c.o -MF CMakeFiles/dcce.dir/src/structures.c.o.d -o CMakeFiles/dcce.dir/src/structures.c.o -c /home/mariatomain/CG_prj2/src/structures.c
 
 CMakeFiles/dcce.dir/src/structures.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/structures.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/structures.c > CMakeFiles/dcce.dir/src/structures.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/structures.c > CMakeFiles/dcce.dir/src/structures.c.i
 
 CMakeFiles/dcce.dir/src/structures.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/structures.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/structures.c -o CMakeFiles/dcce.dir/src/structures.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/structures.c -o CMakeFiles/dcce.dir/src/structures.c.s
 
 CMakeFiles/dcce.dir/src/roof.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/roof.c.o: /home/mint/DCCE_render/src/roof.c
+CMakeFiles/dcce.dir/src/roof.c.o: /home/mariatomain/CG_prj2/src/roof.c
 CMakeFiles/dcce.dir/src/roof.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/dcce.dir/src/roof.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/roof.c.o -MF CMakeFiles/dcce.dir/src/roof.c.o.d -o CMakeFiles/dcce.dir/src/roof.c.o -c /home/mint/DCCE_render/src/roof.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/dcce.dir/src/roof.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/roof.c.o -MF CMakeFiles/dcce.dir/src/roof.c.o.d -o CMakeFiles/dcce.dir/src/roof.c.o -c /home/mariatomain/CG_prj2/src/roof.c
 
 CMakeFiles/dcce.dir/src/roof.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/roof.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/roof.c > CMakeFiles/dcce.dir/src/roof.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/roof.c > CMakeFiles/dcce.dir/src/roof.c.i
 
 CMakeFiles/dcce.dir/src/roof.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/roof.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/roof.c -o CMakeFiles/dcce.dir/src/roof.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/roof.c -o CMakeFiles/dcce.dir/src/roof.c.s
 
 CMakeFiles/dcce.dir/furnitures/sofa_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/sofa_export.c.o: /home/mint/DCCE_render/furnitures/sofa_export.c
+CMakeFiles/dcce.dir/furnitures/sofa_export.c.o: /home/mariatomain/CG_prj2/furnitures/sofa_export.c
 CMakeFiles/dcce.dir/furnitures/sofa_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/dcce.dir/furnitures/sofa_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/sofa_export.c.o -MF CMakeFiles/dcce.dir/furnitures/sofa_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/sofa_export.c.o -c /home/mint/DCCE_render/furnitures/sofa_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/dcce.dir/furnitures/sofa_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/sofa_export.c.o -MF CMakeFiles/dcce.dir/furnitures/sofa_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/sofa_export.c.o -c /home/mariatomain/CG_prj2/furnitures/sofa_export.c
 
 CMakeFiles/dcce.dir/furnitures/sofa_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/sofa_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/sofa_export.c > CMakeFiles/dcce.dir/furnitures/sofa_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/sofa_export.c > CMakeFiles/dcce.dir/furnitures/sofa_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/sofa_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/sofa_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/sofa_export.c -o CMakeFiles/dcce.dir/furnitures/sofa_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/sofa_export.c -o CMakeFiles/dcce.dir/furnitures/sofa_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/pia_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/pia_export.c.o: /home/mint/DCCE_render/furnitures/pia_export.c
+CMakeFiles/dcce.dir/furnitures/pia_export.c.o: /home/mariatomain/CG_prj2/furnitures/pia_export.c
 CMakeFiles/dcce.dir/furnitures/pia_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/dcce.dir/furnitures/pia_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/pia_export.c.o -MF CMakeFiles/dcce.dir/furnitures/pia_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/pia_export.c.o -c /home/mint/DCCE_render/furnitures/pia_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/dcce.dir/furnitures/pia_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/pia_export.c.o -MF CMakeFiles/dcce.dir/furnitures/pia_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/pia_export.c.o -c /home/mariatomain/CG_prj2/furnitures/pia_export.c
 
 CMakeFiles/dcce.dir/furnitures/pia_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/pia_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/pia_export.c > CMakeFiles/dcce.dir/furnitures/pia_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/pia_export.c > CMakeFiles/dcce.dir/furnitures/pia_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/pia_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/pia_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/pia_export.c -o CMakeFiles/dcce.dir/furnitures/pia_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/pia_export.c -o CMakeFiles/dcce.dir/furnitures/pia_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/ar_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/ar_export.c.o: /home/mint/DCCE_render/furnitures/ar_export.c
+CMakeFiles/dcce.dir/furnitures/ar_export.c.o: /home/mariatomain/CG_prj2/furnitures/ar_export.c
 CMakeFiles/dcce.dir/furnitures/ar_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/dcce.dir/furnitures/ar_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/ar_export.c.o -MF CMakeFiles/dcce.dir/furnitures/ar_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/ar_export.c.o -c /home/mint/DCCE_render/furnitures/ar_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/dcce.dir/furnitures/ar_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/ar_export.c.o -MF CMakeFiles/dcce.dir/furnitures/ar_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/ar_export.c.o -c /home/mariatomain/CG_prj2/furnitures/ar_export.c
 
 CMakeFiles/dcce.dir/furnitures/ar_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/ar_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/ar_export.c > CMakeFiles/dcce.dir/furnitures/ar_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/ar_export.c > CMakeFiles/dcce.dir/furnitures/ar_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/ar_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/ar_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/ar_export.c -o CMakeFiles/dcce.dir/furnitures/ar_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/ar_export.c -o CMakeFiles/dcce.dir/furnitures/ar_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/camera_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/camera_export.c.o: /home/mint/DCCE_render/furnitures/camera_export.c
+CMakeFiles/dcce.dir/furnitures/camera_export.c.o: /home/mariatomain/CG_prj2/furnitures/camera_export.c
 CMakeFiles/dcce.dir/furnitures/camera_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/dcce.dir/furnitures/camera_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/camera_export.c.o -MF CMakeFiles/dcce.dir/furnitures/camera_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/camera_export.c.o -c /home/mint/DCCE_render/furnitures/camera_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/dcce.dir/furnitures/camera_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/camera_export.c.o -MF CMakeFiles/dcce.dir/furnitures/camera_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/camera_export.c.o -c /home/mariatomain/CG_prj2/furnitures/camera_export.c
 
 CMakeFiles/dcce.dir/furnitures/camera_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/camera_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/camera_export.c > CMakeFiles/dcce.dir/furnitures/camera_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/camera_export.c > CMakeFiles/dcce.dir/furnitures/camera_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/camera_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/camera_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/camera_export.c -o CMakeFiles/dcce.dir/furnitures/camera_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/camera_export.c -o CMakeFiles/dcce.dir/furnitures/camera_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/computador_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/computador_export.c.o: /home/mint/DCCE_render/furnitures/computador_export.c
+CMakeFiles/dcce.dir/furnitures/computador_export.c.o: /home/mariatomain/CG_prj2/furnitures/computador_export.c
 CMakeFiles/dcce.dir/furnitures/computador_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/dcce.dir/furnitures/computador_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/computador_export.c.o -MF CMakeFiles/dcce.dir/furnitures/computador_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/computador_export.c.o -c /home/mint/DCCE_render/furnitures/computador_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/dcce.dir/furnitures/computador_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/computador_export.c.o -MF CMakeFiles/dcce.dir/furnitures/computador_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/computador_export.c.o -c /home/mariatomain/CG_prj2/furnitures/computador_export.c
 
 CMakeFiles/dcce.dir/furnitures/computador_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/computador_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/computador_export.c > CMakeFiles/dcce.dir/furnitures/computador_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/computador_export.c > CMakeFiles/dcce.dir/furnitures/computador_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/computador_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/computador_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/computador_export.c -o CMakeFiles/dcce.dir/furnitures/computador_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/computador_export.c -o CMakeFiles/dcce.dir/furnitures/computador_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o: /home/mint/DCCE_render/furnitures/gabinete_export.c
+CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o: /home/mariatomain/CG_prj2/furnitures/gabinete_export.c
 CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o -MF CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o -c /home/mint/DCCE_render/furnitures/gabinete_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o -MF CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/gabinete_export.c.o -c /home/mariatomain/CG_prj2/furnitures/gabinete_export.c
 
 CMakeFiles/dcce.dir/furnitures/gabinete_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/gabinete_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/gabinete_export.c > CMakeFiles/dcce.dir/furnitures/gabinete_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/gabinete_export.c > CMakeFiles/dcce.dir/furnitures/gabinete_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/gabinete_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/gabinete_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/gabinete_export.c -o CMakeFiles/dcce.dir/furnitures/gabinete_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/gabinete_export.c -o CMakeFiles/dcce.dir/furnitures/gabinete_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o: /home/mint/DCCE_render/furnitures/tcadeiras_export.c
+CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o: /home/mariatomain/CG_prj2/furnitures/tcadeiras_export.c
 CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o -MF CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o -c /home/mint/DCCE_render/furnitures/tcadeiras_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o -MF CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.o -c /home/mariatomain/CG_prj2/furnitures/tcadeiras_export.c
 
 CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/tcadeiras_export.c > CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/tcadeiras_export.c > CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/tcadeiras_export.c -o CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/tcadeiras_export.c -o CMakeFiles/dcce.dir/furnitures/tcadeiras_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/privada_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/privada_export.c.o: /home/mint/DCCE_render/furnitures/privada_export.c
+CMakeFiles/dcce.dir/furnitures/privada_export.c.o: /home/mariatomain/CG_prj2/furnitures/privada_export.c
 CMakeFiles/dcce.dir/furnitures/privada_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/dcce.dir/furnitures/privada_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/privada_export.c.o -MF CMakeFiles/dcce.dir/furnitures/privada_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/privada_export.c.o -c /home/mint/DCCE_render/furnitures/privada_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/dcce.dir/furnitures/privada_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/privada_export.c.o -MF CMakeFiles/dcce.dir/furnitures/privada_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/privada_export.c.o -c /home/mariatomain/CG_prj2/furnitures/privada_export.c
 
 CMakeFiles/dcce.dir/furnitures/privada_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/privada_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/privada_export.c > CMakeFiles/dcce.dir/furnitures/privada_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/privada_export.c > CMakeFiles/dcce.dir/furnitures/privada_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/privada_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/privada_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/privada_export.c -o CMakeFiles/dcce.dir/furnitures/privada_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/privada_export.c -o CMakeFiles/dcce.dir/furnitures/privada_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o: /home/mint/DCCE_render/furnitures/mesaR_export.c
+CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o: /home/mariatomain/CG_prj2/furnitures/mesaR_export.c
 CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o -MF CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o -c /home/mint/DCCE_render/furnitures/mesaR_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o -MF CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/mesaR_export.c.o -c /home/mariatomain/CG_prj2/furnitures/mesaR_export.c
 
 CMakeFiles/dcce.dir/furnitures/mesaR_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/mesaR_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/mesaR_export.c > CMakeFiles/dcce.dir/furnitures/mesaR_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/mesaR_export.c > CMakeFiles/dcce.dir/furnitures/mesaR_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/mesaR_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/mesaR_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/mesaR_export.c -o CMakeFiles/dcce.dir/furnitures/mesaR_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/mesaR_export.c -o CMakeFiles/dcce.dir/furnitures/mesaR_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o: /home/mint/DCCE_render/furnitures/cadeiraU_export.c
+CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o: /home/mariatomain/CG_prj2/furnitures/cadeiraU_export.c
 CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o -MF CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o -c /home/mint/DCCE_render/furnitures/cadeiraU_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o -MF CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.o -c /home/mariatomain/CG_prj2/furnitures/cadeiraU_export.c
 
 CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/cadeiraU_export.c > CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/cadeiraU_export.c > CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/cadeiraU_export.c -o CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/cadeiraU_export.c -o CMakeFiles/dcce.dir/furnitures/cadeiraU_export.c.s
 
 CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o: /home/mint/DCCE_render/furnitures/cadeiraLow_export.c
+CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o: /home/mariatomain/CG_prj2/furnitures/cadeiraLow_export.c
 CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o -MF CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o -c /home/mint/DCCE_render/furnitures/cadeiraLow_export.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o -MF CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o.d -o CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.o -c /home/mariatomain/CG_prj2/furnitures/cadeiraLow_export.c
 
 CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/furnitures/cadeiraLow_export.c > CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/furnitures/cadeiraLow_export.c > CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.i
 
 CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/furnitures/cadeiraLow_export.c -o CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/furnitures/cadeiraLow_export.c -o CMakeFiles/dcce.dir/furnitures/cadeiraLow_export.c.s
 
 CMakeFiles/dcce.dir/src/furniture.c.o: CMakeFiles/dcce.dir/flags.make
-CMakeFiles/dcce.dir/src/furniture.c.o: /home/mint/DCCE_render/src/furniture.c
+CMakeFiles/dcce.dir/src/furniture.c.o: /home/mariatomain/CG_prj2/src/furniture.c
 CMakeFiles/dcce.dir/src/furniture.c.o: CMakeFiles/dcce.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/dcce.dir/src/furniture.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/furniture.c.o -MF CMakeFiles/dcce.dir/src/furniture.c.o.d -o CMakeFiles/dcce.dir/src/furniture.c.o -c /home/mint/DCCE_render/src/furniture.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/dcce.dir/src/furniture.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/dcce.dir/src/furniture.c.o -MF CMakeFiles/dcce.dir/src/furniture.c.o.d -o CMakeFiles/dcce.dir/src/furniture.c.o -c /home/mariatomain/CG_prj2/src/furniture.c
 
 CMakeFiles/dcce.dir/src/furniture.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/dcce.dir/src/furniture.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mint/DCCE_render/src/furniture.c > CMakeFiles/dcce.dir/src/furniture.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mariatomain/CG_prj2/src/furniture.c > CMakeFiles/dcce.dir/src/furniture.c.i
 
 CMakeFiles/dcce.dir/src/furniture.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/dcce.dir/src/furniture.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mint/DCCE_render/src/furniture.c -o CMakeFiles/dcce.dir/src/furniture.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mariatomain/CG_prj2/src/furniture.c -o CMakeFiles/dcce.dir/src/furniture.c.s
 
 # Object files for target dcce
 dcce_OBJECTS = \
@@ -447,8 +447,9 @@ dcce: CMakeFiles/dcce.dir/build.make
 dcce: /usr/lib/x86_64-linux-gnu/libGL.so
 dcce: /usr/lib/x86_64-linux-gnu/libGLU.so
 dcce: /usr/lib/x86_64-linux-gnu/libglut.so
+dcce: /usr/lib/x86_64-linux-gnu/libXi.so
 dcce: CMakeFiles/dcce.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mint/DCCE_render/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C executable dcce"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/mariatomain/CG_prj2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C executable dcce"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/dcce.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -460,6 +461,6 @@ CMakeFiles/dcce.dir/clean:
 .PHONY : CMakeFiles/dcce.dir/clean
 
 CMakeFiles/dcce.dir/depend:
-	cd /home/mint/DCCE_render/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mint/DCCE_render /home/mint/DCCE_render /home/mint/DCCE_render/build /home/mint/DCCE_render/build /home/mint/DCCE_render/build/CMakeFiles/dcce.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /home/mariatomain/CG_prj2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mariatomain/CG_prj2 /home/mariatomain/CG_prj2 /home/mariatomain/CG_prj2/build /home/mariatomain/CG_prj2/build /home/mariatomain/CG_prj2/build/CMakeFiles/dcce.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dcce.dir/depend
 

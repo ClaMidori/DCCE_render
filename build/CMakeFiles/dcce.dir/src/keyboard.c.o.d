@@ -1,7 +1,7 @@
 CMakeFiles/dcce.dir/src/keyboard.c.o: \
- /home/mint/DCCE_render/src/keyboard.c /usr/include/stdc-predef.h \
- /home/mint/DCCE_render/src/../include/keyboard.h \
- /home/mint/DCCE_render/src/../include/../include/commons.h \
+ /home/mariatomain/CG_prj2/src/keyboard.c /usr/include/stdc-predef.h \
+ /home/mariatomain/CG_prj2/src/../include/keyboard.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/commons.h \
  /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \
@@ -70,4 +70,4 @@ CMakeFiles/dcce.dir/src/keyboard.c.o: \
  /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
- /home/mint/DCCE_render/src/../include/controls.h
+ /home/mariatomain/CG_prj2/src/../include/controls.h

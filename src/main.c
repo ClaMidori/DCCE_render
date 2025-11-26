@@ -27,7 +27,7 @@ void Draw(){
     ground_floor();
     first_floor();
     second_floor();
-    primeiro_andar_moveis();
+    //primeiro_andar_moveis();
     
 
     //teste();

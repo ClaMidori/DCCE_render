@@ -4,7 +4,7 @@
 # compile C with /usr/bin/cc
 C_DEFINES = 
 
-C_INCLUDES = -I/home/mint/DCCE_render/include
+C_INCLUDES = -I/home/mariatomain/CG_prj2/include
 
 C_FLAGS =  -g -O0 -fno-omit-frame-pointer -fsanitize=address,undefined -std=gnu11
 

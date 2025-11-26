@@ -1,6 +1,7 @@
-CMakeFiles/dcce.dir/src/door.c.o: /home/mint/DCCE_render/src/door.c \
- /usr/include/stdc-predef.h /home/mint/DCCE_render/src/../include/door.h \
- /home/mint/DCCE_render/src/../include/../include/commons.h \
+CMakeFiles/dcce.dir/src/door.c.o: /home/mariatomain/CG_prj2/src/door.c \
+ /usr/include/stdc-predef.h \
+ /home/mariatomain/CG_prj2/src/../include/door.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/commons.h \
  /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \

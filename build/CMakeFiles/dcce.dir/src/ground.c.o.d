@@ -1,7 +1,7 @@
-CMakeFiles/dcce.dir/src/ground.c.o: /home/mint/DCCE_render/src/ground.c \
- /usr/include/stdc-predef.h \
- /home/mint/DCCE_render/src/../include/ground.h \
- /home/mint/DCCE_render/src/../include/../include/commons.h \
+CMakeFiles/dcce.dir/src/ground.c.o: \
+ /home/mariatomain/CG_prj2/src/ground.c /usr/include/stdc-predef.h \
+ /home/mariatomain/CG_prj2/src/../include/ground.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/commons.h \
  /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \

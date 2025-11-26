@@ -1,7 +1,7 @@
 CMakeFiles/dcce.dir/src/controls.c.o: \
- /home/mint/DCCE_render/src/controls.c /usr/include/stdc-predef.h \
- /home/mint/DCCE_render/src/../include/controls.h \
- /home/mint/DCCE_render/src/../include/../include/commons.h \
+ /home/mariatomain/CG_prj2/src/controls.c /usr/include/stdc-predef.h \
+ /home/mariatomain/CG_prj2/src/../include/controls.h \
+ /home/mariatomain/CG_prj2/src/../include/../include/commons.h \
  /usr/include/GL/glut.h /usr/include/GL/freeglut_std.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \
