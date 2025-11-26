@@ -427,8 +427,8 @@ int indexPriv_count = 174;
 void privada_draw()
 {
     glPushMatrix();
-    glScalef(10, 10, 10);
-    glRotatef(-90, 1, 0, 0);
+    glScalef(2, 5, 3);
+    glRotatef(270, 1, 0, 0);
     glBegin(GL_TRIANGLES);
 
     for (int i = 0; i < indexPriv_count; i++)
