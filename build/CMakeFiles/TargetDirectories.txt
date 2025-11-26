@@ -1,0 +1,3 @@
+/home/mint/DCCE_render/build/CMakeFiles/dcce.dir
+/home/mint/DCCE_render/build/CMakeFiles/edit_cache.dir
+/home/mint/DCCE_render/build/CMakeFiles/rebuild_cache.dir
