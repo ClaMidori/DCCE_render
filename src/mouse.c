@@ -8,7 +8,7 @@ int rotacao = 0; //Controla eixo de rotação do mouse
 // Defina estas constantes em algum lugar globalmente ou no topo do seu arquivo
 const int SCREEN_CENTER_X = 400;
 const int SCREEN_CENTER_Y = 300;
-const float SENSITIVITY = 0.25f; // Ajuste este valor para controlar a velocidade da câmera
+const float SENSITIVITY = 0.5f; // Ajuste este valor para controlar a velocidade da câmera
 
 void MOUSE(int x, int y)
 {
