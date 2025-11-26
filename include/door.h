@@ -5,5 +5,6 @@
 
 // cria uma porta gradeada
 void door(float angulo);
+void madeira_door(float angulo);
 
 #endif

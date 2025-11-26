@@ -3,6 +3,7 @@
 #include "../include/mouse.h"
 #include "../include/controls.h"
 #include "../include/building.h"
+#include "../include/texture.h"
 
 void Inicializa(void)
 {
@@ -12,6 +13,7 @@ void Inicializa(void)
     glEnable(GL_SMOOTH);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+    initTextures();
     glutWarpPointer(400,300);
     glutSetCursor(GLUT_CURSOR_NONE);
 }
@@ -84,7 +86,7 @@ int main(int argc, char**argv)
                                                                 //  Buffer que permite trablhar com profundidade e elimina faces escondidas.*/
     glutInitWindowSize(800,600);
     glutInitWindowPosition(10, 10);
-    glutCreateWindow("Projeto");
+    glutCreateWindow("DCCE");
     Inicializa();
     glutDisplayFunc(DISPLAY);
     glutKeyboardFunc(pressed_keys);

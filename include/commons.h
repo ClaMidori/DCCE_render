@@ -12,6 +12,7 @@
 
 //* constantes de cores
 
+#define marrom glColor3f(168, 76, 50); 
 #define white glColor3f(0.9f, 0.9f, 0.9f);
 #define white_shadow glColor3f(0.8f, 0.8f, 0.8f);
 #define gray glColor3f(0.6f, 0.6f, 0.6f);

@@ -1,3 +1,0 @@
-/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles/dcce.dir
-/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles/edit_cache.dir
-/home/midori_torres/mi_branch/DCCE_render/build/CMakeFiles/rebuild_cache.dir

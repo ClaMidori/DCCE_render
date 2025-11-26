@@ -1185,6 +1185,59 @@ void aux_wall_door(float tx, float ty, float tz,float angulo, float rx, float ry
    wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
 }
 
+void wall_with_wood_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+   float fy = 0.15;
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   marrom; //Define cor como marrom
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,base);
+      glVertex2f(0, base-base*fy);
+      glVertex2f( base, base-base*fy);
+      glVertex2f( base,base);
+   glEnd();
+
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( wall_thickness, base);
+      glVertex2f( wall_thickness,0);
+   glEnd();
+   glPopMatrix();
+
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx+wall_thickness,ty,tz);
+   madeira_door(0);
+   glPopMatrix();
+
+   wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
+}
+
+void aux_wall_wood_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
+    float fy = 0.15;
+   glPushMatrix();
+   glRotatef(angulo,rx,ry,rz);
+   glTranslatef(tx,ty,tz);
+   marrom; //Define cor como azul
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,base);
+      glVertex2f(0, base-base*fy);
+      glVertex2f( base, base-base*fy);
+      glVertex2f( base,base);
+   glEnd();
+
+   glBegin(GL_QUADS); //quadrado
+      glVertex2f(0,0);
+      glVertex2f(0, base);
+      glVertex2f( wall_thickness, base);
+      glVertex2f( wall_thickness,0);
+   glEnd();
+   glPopMatrix();
+   wall_short( tx+base/2+wall_thickness,  ty,  tz, angulo,  rx,  ry,  rz);
+}
+
 void wall_with_entrance_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){
    float fy = 0.15;
    glPushMatrix();

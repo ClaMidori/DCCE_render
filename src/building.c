@@ -546,6 +546,7 @@ void second_floor(){
         especial_ground(4*base, 3*base,ground_offset,7*base-base/2,my*base+betw_height,-base);
         especial_ground(4*base, 3*base,ground_offset,3*base,my*base+betw_height,2*base);
 }
-void teste(){
-         //ground(0,0,9*base);
+
+void roof_floor(){
+    
 }

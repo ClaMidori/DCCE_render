@@ -1,4 +1,5 @@
 #include "../include/door.h"
+#include "../include/texture.h"
 
 void door(float angulo){
    float fx = 0.85;
@@ -11,7 +12,7 @@ void door(float angulo){
    //coluna esquerda
    glPushMatrix();
    glRotatef(angulo,0,1,0);
-   glColor3f(1,0,0); //Define cor como azul
+   glColor3f(1,0,0); //Define cor como vermelha
    glBegin(GL_QUADS);
       glVertex2f(0,0);
       glVertex2f(0,base*fx);
@@ -71,7 +72,7 @@ void door(float angulo){
    glEnd();
    glPopMatrix();
 
-   //grades dverticais
+   //grades verticais
    for (int i=0;i<3;i++){
       glPushMatrix();
       glColor3f(1,0,0); //Define cor como azul
@@ -115,5 +116,32 @@ void door(float angulo){
       glEnd();
       glPopMatrix();
    }
+}
 
+void madeira_door(float angulo){
+   float fx = 0.85;
+   float fy = 0.1;
+   float offset_superior = 0.05;
+   float newbase = base/2;
+   float coef_window = 0.05;
+   float coef_grade = 0.01;
+
+   glPushMatrix();
+   glRotatef(angulo,0,1,0);
+   glBindTexture(GL_TEXTURE_2D, texID[0]);
+   marrom;
+   glBegin(GL_QUADS);
+      glTexCoord2f(0,0);glVertex2f(0,0);
+      glTexCoord2f(0,1);glVertex2f(0,base*fx);
+      glTexCoord2f(1,0);glVertex2f(newbase,base*fx);
+      glTexCoord2f(1,1);glVertex2f(newbase,0);
+   glEnd();
+   glPopMatrix();
+
+   //MaÃ§aneta simplezinha
+   glPushMatrix();
+   gray;
+   glTranslatef(newbase*fx, newbase, 0);
+   glutSolidSphere(fx, 30, 10);
+   glPopMatrix();
 }
