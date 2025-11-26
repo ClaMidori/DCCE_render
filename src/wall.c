@@ -1,3 +1,4 @@
+
 #include "../include/wall.h"
 
 void wall_short(float tx, float ty, float tz,float angulo, float rx, float ry, float rz){

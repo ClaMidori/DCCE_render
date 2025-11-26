@@ -42,7 +42,7 @@ void wall_with_door(float tx, float ty, float tz,float angulo, float rx, float r
 // cria o molde da parede ocm a porta
 void aux_wall_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz); 
 
-void wall_with_wood_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz)
+void wall_with_wood_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz);
 
 void aux_wall_wood_door(float tx, float ty, float tz,float angulo, float rx, float ry, float rz);
 

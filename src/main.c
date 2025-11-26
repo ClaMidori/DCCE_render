@@ -27,7 +27,6 @@ void Draw(){
     glPopMatrix();
     ground_floor();
     first_floor();
-    second_floor();
     //teste();
 }
 
@@ -95,6 +94,7 @@ int main(int argc, char**argv)
     glutSpecialFunc(TeclasEspeciais);
     glutSpecialUpFunc(TeclasEspeciaisUp);
     glutIdleFunc(update_moviment);
+    glEnable(GL_DEPTH_TEST);
     glutMainLoop();
     return 0;
 }
