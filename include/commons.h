@@ -15,6 +15,7 @@
 #define white glColor3f(0.9f, 0.9f, 0.9f);
 #define white_shadow glColor3f(0.8f, 0.8f, 0.8f);
 #define gray glColor3f(0.6f, 0.6f, 0.6f);
+#define cinza_claro glColor3f(0.8, 0.8, 0.8);
 #define red glColor3f(0.698, 0.133, 0.133);
 #define dark_red glColor3f(0.6f, 0, 0);
 #define areia glColor3f(0.741, 0.718, 0.420);
@@ -23,6 +24,7 @@
 #define blue glColor3f(0, 0, 1);
 #define black glColor3f(0, 0, 0);
 #define green glColor3f(0.06f, 0.0164f, 0.102f);
+#define green_flower glColor3f(0.2, 0.7, 0.2);
 
 //* A construção do prédio funciona como uma matriz tridimensional, pela escala, 10x10x3
 

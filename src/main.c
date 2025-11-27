@@ -5,6 +5,27 @@
 #include "../include/building.h"
 #include "../include/furniture.h"
 
+Door porta_ban_fem;
+Door porta_ban_masc;
+Door porta1;
+Door porta2;
+Door porta3;
+Door porta4;
+Door porta5;
+Door porta6;
+Door porta7;
+Door porta8;
+Door porta9;
+Door porta10;
+Door porta11;
+Door porta12;
+Door porta13;
+Door porta14;
+Door porta15;
+Door porta16;
+Door porta17;
+Door porta18;
+
 void Inicializa(void)
 {
     // Define a cor de fundo da janela de visualização como preta
@@ -13,24 +34,49 @@ void Inicializa(void)
     glEnable(GL_SMOOTH);
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    glutWarpPointer(400,300);
+    glutWarpPointer(400, 300);
     glutSetCursor(GLUT_CURSOR_NONE);
+    porta_ban_masc = createCustomDoor(&woodDoor, "Masculino");
+    porta_ban_fem = createCustomDoor(&woodDoor, "Feminino");
+
+    porta1 = createCustomDoor(&whiteDoor, "Lab. de Processamento \nde Sinais");
+    porta2 = createCustomDoor(&whiteDoor, "Lab. de Pesquisa");
+    porta3 = createCustomDoor(&whiteDoor, "Sala de Apoio");
+    porta4 = createCustomDoor(&whiteDoor, "Almoxarifado");
+    porta5 = createCustomDoor(&whiteDoor, "Prof. Dr. Arnaldo ");
+    porta6 = createCustomDoor(&whiteDoor, "Prof. Dr. Geraldo");
+    porta7 = createCustomDoor(&whiteDoor, "Prof. Dr. Aleardo");
+    porta8 = createCustomDoor(&whiteDoor, "Profa. Dra. Adriana");
+    porta9 = createCustomDoor(&whiteDoor, "Prof. Dr. Wallace");
+    porta10 = createCustomDoor(&whiteDoor, "Secretaria");
+    porta11 = createCustomDoor(&whiteDoor, "Profa. Dra. Renata");
+    porta12 = createCustomDoor(&whiteDoor, "Prof. Dr. Rodrigo");
+    porta13 = createCustomDoor(&whiteDoor, "Prof. Dr. Diego");
+    porta14 = createCustomDoor(&whiteDoor, "Profa. Dra. Rogéria");
+    porta15 = createCustomDoor(&whiteDoor, "Profa. Dra. Carina");
+    porta16 = createCustomDoor(&whiteDoor, "Profa. Dra. Marilaine");
+    porta17 = createCustomDoor(&whiteDoor, "Prof. Dr. Leandro");
+    porta18 = createCustomDoor(&whiteDoor, "Prof. Dr. Lucas");
 }
 
-void Draw(){
-    glColor3ub(100,200,0);
+void Draw()
+{
+    glColor3ub(100, 200, 0);
     glPushMatrix();
-    glTranslatef(0,-ground_offset,0);
-    glScalef(60,0.01,60);
+    glTranslatef(0, -ground_offset, 0);
+    glScalef(60, 0.01, 60);
     glutSolidCube(30);
     glPopMatrix();
     ground_floor();
     first_floor();
     second_floor();
-    //primeiro_andar_moveis();
-    
+    primeiro_andar_moveis();
+    mobilia_recepcao();
+    mobilia_banheiros();
+    mobilia_salas();
+    mobilia_corredor();
 
-    //teste();
+    // teste();
 }
 
 void DISPLAY(void)
@@ -67,26 +113,26 @@ void DISPLAY(void)
     // -----------------------------
 
     // Agora o gluLookAt usará os valores atualizados de ox, oy, oz
-    gluLookAt(posx, posy, posz,   // Posição do olho
-              ox, oy, oz,         // Ponto para onde o olho está olhando
+    gluLookAt(posx, posy, posz, // Posição do olho
+              ox, oy, oz,       // Ponto para onde o olho está olhando
               0.0, 1.0, 0.0);   // Vetor "para cima" (assumindo que seja esse)
 
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    
+
     Draw();
-    
+
     glutSwapBuffers();
     // Remova o glutPostRedisplay daqui, ele não é necessário dentro da própria função de display.
     // As funções MOUSE e update_moviment já o chamam quando algo muda.
 }
 
-int main(int argc, char**argv)
+int main(int argc, char **argv)
 {
-    glutInit(&argc,argv);
+    glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH | GLUT_STENCIL); /*Define as características do espaço vetorial.
                                                                         //  Nesse caso, permite animações (sem cintilações), cores compostas por Verm. Verde e Azul,
                                                                 //  Buffer que permite trablhar com profundidade e elimina faces escondidas.*/
-    glutInitWindowSize(800,600);
+    glutInitWindowSize(800, 600);
     glutInitWindowPosition(10, 10);
     glutCreateWindow("Projeto");
     Inicializa();

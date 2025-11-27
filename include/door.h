@@ -1,6 +1,8 @@
 #ifndef DOOR_H
 #define DOOR_H
 
+#include <GL/freeglut.h>
+#include <string.h>
 #include "../include/commons.h"
 
 typedef enum {
@@ -48,14 +50,21 @@ typedef struct {
     Color3 borderColor;
     Color3 color;
 
+    //nomes
+    char professorName[50]; 
+
     // maçaneta
     DoorHandle handle;
 
-    // textura (opcional)
+    // textura
     //GLuint textureID;    
     //int useTexture;
 } Door;
 
+//cria plaquinhas
+void drawPlaque(float width, float height, const char* name);
+//porta com placa e nome personalizado
+Door createCustomDoor(const Door *baseDoor, const char *professorName);
 //Cria uma porta genérica passando as struct com as características especicas
 void door(const Door *d);
 

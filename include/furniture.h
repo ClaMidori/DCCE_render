@@ -1,3 +1,5 @@
 #include <GL/gl.h>
-void geladeira_draw();
-void primeiro_andar_moveis();
+void teste_objetos();
+void mobilia_recepcao();
+void mobilia_banheiros();
+void mobilia_salas();

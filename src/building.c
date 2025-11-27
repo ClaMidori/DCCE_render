@@ -1,5 +1,26 @@
 #include "../include/building.h"
-#include "../include/roof.h"
+#include "../include/door.h"
+
+extern Door porta_ban_fem;
+extern Door porta_ban_masc;
+extern Door porta1;
+extern Door porta2;
+extern Door porta3;
+extern Door porta4;
+extern Door porta5;
+extern Door porta6;
+extern Door porta7;
+extern Door porta8;
+extern Door porta9;
+extern Door porta10;
+extern Door porta11;
+extern Door porta12;
+extern Door porta13;
+extern Door porta14;
+extern Door porta15;
+extern Door porta16;
+extern Door porta17;
+extern Door porta18;
 
 void ground_floor(){
         // fileira -1
@@ -65,7 +86,7 @@ void ground_floor(){
             glTranslatef(0,0,2*base); 
             big_window_block(1,0,1,0); //bloco 0x2
             glTranslatef(base,0,0); //bloco 1x2
-            lateral_door_block(&gradeDoor,1,1,0,0);
+            lateral_door_block(&woodDoor,1,1,0,0);
             glTranslatef(2*base,0,0); //bloco 3x2
             medium_window_block(0,1,1,1);
             glTranslatef(base,0,0); //bloco 4x2
@@ -333,9 +354,9 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&whiteDoor,0,0,1,0);
+        lateral_door_block(&porta1,0,0,1,0);
         glTranslatef(base,0,0); //bloco 1x0
-        lateral_door_block(&whiteDoor,1,0,1,1);
+        lateral_door_block(&porta10,1,0,1,1);
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
 
@@ -584,8 +605,5 @@ void second_floor(){
         especial_ground(4*base, 3*base,ground_offset,3*base,my*base+betw_height,2*base);
 
         //telhado
-        roof();
-}
-void teste(){
-         //ground(0,0,9*base);
+        //roof();
 }

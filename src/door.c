@@ -59,8 +59,64 @@ Door whiteDoor = {
     .hasBorders = 1,
     .borderSize = 1.5,
     .borderColor = {0.7, 0.7, 0.7},
-    .color = {0.9, 0.9, 0.9}
+    .color = {0.9, 0.9, 0.9},
+    .professorName = "Mimi matadora"
 };
+
+void drawPlaque(float width, float height, const char* name) {
+    glPushMatrix();
+    
+    // w*0.5: centro da largura
+    // h*0.75: um pouco acima da metade da altura
+    glTranslatef(width * 0.5, height * 0.75, 0.1); 
+    
+    cinza_claro;
+    
+    // Desenhar um pequeno retângulo de fundo para a placa
+    float plaqueWidth = width * 0.4;
+    float plaqueHeight = height * 0.1;
+    glBegin(GL_QUADS);
+        glVertex3f(-plaqueWidth/2, -plaqueHeight/2, 0);
+        glVertex3f( plaqueWidth/2, -plaqueHeight/2, 0);
+        glVertex3f( plaqueWidth/2,  plaqueHeight/2, 0);
+        glVertex3f(-plaqueWidth/2,  plaqueHeight/2, 0);
+    glEnd();
+    
+    glTranslatef(0, 0, 0.01); 
+    
+    black;
+
+    // Ajuste de escala para o texto caber na placa 
+    float scale = width * 0.0004; 
+    glScalef(scale, scale, scale);
+    
+    // Centralizar o texto:
+    // Calcula o comprimento da string no sistema de coordenadas da fonte GLUT_STROKE_ROMAN
+    int textLength = glutStrokeLength(GLUT_STROKE_ROMAN, (const unsigned char*)name);
+    
+    // Move a origem para a esquerda pela metade do comprimento do texto
+    // e ajusta a altura para o centro 
+    glTranslatef(-textLength / 2.0f, -100.0f, 0.0f);
+
+    // Renderiza o texto
+    glutStrokeString(GLUT_STROKE_ROMAN, (const unsigned char*)name);
+
+    glPopMatrix();
+}
+
+Door createCustomDoor(const Door *baseDoor, const char *professorName) {
+    // 1. Faz uma cópia byte-a-byte do modelo base (woodDoor, gradeDoor, etc.)
+    Door newDoor = *baseDoor; 
+    
+    // 2. Define o nome do professor no campo da nova cópia
+    // Usamos strncpy para copiar o nome de forma segura
+    strncpy(newDoor.professorName, professorName, sizeof(newDoor.professorName) - 1);
+    
+    // 3. Garante a terminação nula da string
+    newDoor.professorName[sizeof(newDoor.professorName) - 1] = '\0';
+    
+    return newDoor; // 4. Retorna a nova porta configurada
+}
 
 void door(const Door *d){
    glPushMatrix();
@@ -186,6 +242,10 @@ void door(const Door *d){
          glEnd();
       }
    }
+
+   if (d->professorName[0] != '\0') { // Checa se o nome não está vazio
+        drawPlaque(d->width, d->height, d->professorName);
+    }
 
    glPopMatrix();
 
