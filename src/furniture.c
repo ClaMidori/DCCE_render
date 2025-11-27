@@ -1389,24 +1389,126 @@ void primeiro_andar_moveis()
     estanteFerro_draw();
     glPopMatrix();
 }
+//------------------------------separação-------------------------------------------
+
+void placa_azul()
+{
+
+    // decoração parede esquerda
+    glPushMatrix();
+    blue_sing;
+    glTranslatef(0, 0, 0);
+    glScalef(15, 20, 2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(-7.5, 0, 0.3);
+    glScalef(1, 21, 2.2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(7.5, 0, 0.3);
+    glScalef(1, 21, 2.2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(0, 10, 0.3);
+    glScalef(16, 1, 2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(0, -10, 0.3);
+    glScalef(16, 1, 2);
+    drawCubeUnit();
+    glPopMatrix();
+}
+
+void cabine_recepção()
+{
+    // ---------------------------------------Recepção--------------------------------------
+    // Parede esquerda do balcão
+    glPushMatrix();
+    white;
+    glTranslatef(base * 3.85, (base + betw_height) + 25, base * 3);
+    glScalef(35, 50, 1);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base * 3.85, (base + betw_height) + 30, base * 3.011);
+    placa_azul();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base * 6.2, (base + betw_height) + 30, base * 3.011);
+    placa_azul();
+    glPopMatrix();
+
+    // parede baixa
+    glPushMatrix();
+    white;
+    glTranslatef(base * 5, (base + betw_height) + 10, base * 3);
+    glScalef(85, 20, 1);
+    drawCubeUnit();
+    glPopMatrix();
+    // mini balcão
+    glPushMatrix();
+    white;
+    glTranslatef(base * 5, (base + betw_height) + 20, base * 3.10);
+    glScalef(85, 2, 10);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // parede direita
+    glPushMatrix();
+    white;
+    glTranslatef(base * 6.15, (base + betw_height) + 25, base * 3);
+    glScalef(35, 50, 1);
+    drawCubeUnit();
+    glPopMatrix();
+    // parede alta
+    glPushMatrix();
+    white;
+    glTranslatef(base * 5, (base + betw_height) + 45, base * 3);
+    glScalef(85, 10, 1);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // vidro da recepção
+    glPushMatrix();
+    glColor4f(0.8, 0.9, 1, 0.4);
+    glTranslatef(base * 5, (base + betw_height) + 30, base * 3);
+    glScalef(85, 20, 1);
+    drawCubeUnit();
+    glPopMatrix();
+}
 
 void mobilia_recepcao()
 {
-    // ---------------------------------------Recepção--------------------------------------
+    // ---------------------------------------Cabine_Recepção--------------------------------------
+
+    //-----------------------------------------------------------------------------------
     //  Cadeiras lado esquerdo na frente
     glPushMatrix();
-    blue;
-    glTranslatef(3 * base, (base + betw_height) + (1.90 * ground_offset), 2.25 * base);
-    glRotatef(-90, 0, 1, 0);
-    tcad_draw();
+    glTranslatef(2.75 * base, (base + betw_height), 2.25 * base);
+    glScalef(20, 20, 20);
+    bancoEspera_draw();
     glPopMatrix();
 
     // Cadeiras lado direito da escada
     glPushMatrix();
-    blue;
-    glTranslatef(7.5 * base, (base + betw_height) + (1.90 * ground_offset), 4.80 * base);
-    glRotatef(90, 0, 1, 0);
-    tcad_draw();
+    glTranslatef(7.5 * base, (base + betw_height), 4.80 * base);
+    glScalef(20, 20, 20);
+    glRotatef(180, 0, 1, 0);
+    bancoEspera_draw();
     glPopMatrix();
 
     // Cesto da recepção
@@ -1438,7 +1540,7 @@ void mobilia_recepcao()
     glRotatef(45, 0, 1, 0);
     cadeiraL_draw();
     glPopMatrix();
-
+    //--------------------------------------------------------------------------
     // Armario recepção
     glPushMatrix();
     white_shadow;
@@ -1460,6 +1562,7 @@ void mobilia_recepcao()
     botoesP_draw();
     glPopMatrix();
 
+    //---------------------------------------------------------------------------
     // peineis vermelhos
     glPushMatrix();
     red;
@@ -1495,11 +1598,12 @@ void mobilia_recepcao()
     glScalef(1, 5, 3);
     drawCube(1, 5, 5);
     glPopMatrix();
+
+    cabine_recepção();
 }
 
 void mobilia_banheiros()
 {
-
     // -------------------------------------Banheiros ESQUERDO----------------------------------
 
     // Cesto de lixo
