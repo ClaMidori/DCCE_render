@@ -1,14 +1,14 @@
 #include "../include/mouse.h"
 #include "../include/controls.h"
 
-int x_temp=-1; //Armazena posição X do ponteiro do mouse
-int y_temp=-1; //Armazena posição Y do ponteiro do mouse
-int rotacao = 0; //Controla eixo de rotação do mouse 
+int x_temp = -1; // Armazena posição X do ponteiro do mouse
+int y_temp = -1; // Armazena posição Y do ponteiro do mouse
+int rotacao = 0; // Controla eixo de rotação do mouse
 
 // Defina estas constantes em algum lugar globalmente ou no topo do seu arquivo
 const int SCREEN_CENTER_X = 400;
 const int SCREEN_CENTER_Y = 300;
-const float SENSITIVITY = 0.005f; // Ajuste este valor para controlar a velocidade da câmera
+const float SENSITIVITY = 0.10f; // Ajuste este valor para controlar a velocidade da câmera
 
 void MOUSE(int x, int y)
 {
@@ -17,7 +17,8 @@ void MOUSE(int x, int y)
     int delta_y = y - SCREEN_CENTER_Y;
 
     // Se não houve movimento, não faça nada
-    if (delta_x == 0 && delta_y == 0) return;
+    if (delta_x == 0 && delta_y == 0)
+        return;
 
     // 2. Atualiza os ângulos com base no delta e na sensibilidade
     //    Multiplicamos delta_y por -1 se você quiser que mover o mouse para cima olhe para cima (inversão)
@@ -25,25 +26,29 @@ void MOUSE(int x, int y)
     angulox += (float)delta_y * SENSITIVITY;
 
     // 3. Normaliza o ângulo Y (rotação horizontal) para ficar entre 0 e 360
-    if (anguloy >= 360.0f) {
+    if (anguloy >= 360.0f)
+    {
         anguloy -= 360.0f;
     }
-    if (anguloy < 0.0f) {
+    if (anguloy < 0.0f)
+    {
         anguloy += 360.0f;
     }
 
     // 4. (Opcional) Limita o ângulo X (rotação vertical) para evitar que a câmera vire de cabeça para baixo
     //    Um limite comum é entre -89 e 89 graus.
-    if (angulox > 89.0f) {
+    if (angulox > 89.0f)
+    {
         angulox = 89.0f;
     }
-    if (angulox < -89.0f) {
+    if (angulox < -89.0f)
+    {
         angulox = -89.0f;
     }
 
     // 5. Reseta o cursor para o centro da tela para permitir rotação "infinita"
     glutWarpPointer(SCREEN_CENTER_X, SCREEN_CENTER_Y);
-    
+
     // 6. Solicita que a tela seja redesenhada com a nova perspectiva
     glutPostRedisplay();
 }
