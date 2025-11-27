@@ -7,6 +7,8 @@
 
 Door porta_ban_fem;
 Door porta_ban_masc;
+Door porta_vazia;
+Door porta_wood_vazia;
 Door porta1;
 Door porta2;
 Door porta3;
@@ -25,6 +27,10 @@ Door porta15;
 Door porta16;
 Door porta17;
 Door porta18;
+Door porta19;
+Door porta20;
+Door porta21;
+Door porta22;
 
 void Inicializa(void)
 {
@@ -38,6 +44,8 @@ void Inicializa(void)
     glutSetCursor(GLUT_CURSOR_NONE);
     porta_ban_masc = createCustomDoor(&woodDoor, "Masculino");
     porta_ban_fem = createCustomDoor(&woodDoor, "Feminino");
+    porta_vazia = createCustomDoor(&whiteDoor, " ");
+    porta_wood_vazia = createCustomDoor(&woodDoor, " ");
 
     porta1 = createCustomDoor(&whiteDoor, "Lab. de Processamento \nde Sinais");
     porta2 = createCustomDoor(&whiteDoor, "Lab. de Pesquisa");
@@ -57,6 +65,11 @@ void Inicializa(void)
     porta16 = createCustomDoor(&whiteDoor, "Profa. Dra. Marilaine");
     porta17 = createCustomDoor(&whiteDoor, "Prof. Dr. Leandro");
     porta18 = createCustomDoor(&whiteDoor, "Prof. Dr. Lucas");
+    porta19 = createCustomDoor(&whiteDoor, "Lipai");
+    porta20 = createCustomDoor(&woodDoor, "Copa");
+    porta21 = createCustomDoor(&whiteDoor, "Visum");
+    porta22 = createCustomDoor(&gradeDoor, "Lidia");
+
 }
 
 void Draw()

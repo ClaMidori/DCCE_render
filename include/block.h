@@ -28,12 +28,6 @@ void front_door_block(const Door *d, int front, int left, int right, int back);
 
 void lateral_door_block(const Door *d, int front, int left, int right, int back);
 
-/*
-void front_wood_door_block(int front, int left, int right, int back);
-
-void lateral_wood_door_block(int front, int left, int right, int back);
-*/
-
 void left_entrance_door_block(int front, int left, int right, int back);
 
 void right_entrance_door_block(int front, int left, int right, int back);

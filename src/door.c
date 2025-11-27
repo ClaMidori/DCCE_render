@@ -60,7 +60,7 @@ Door whiteDoor = {
     .borderSize = 1.5,
     .borderColor = {0.7, 0.7, 0.7},
     .color = {0.9, 0.9, 0.9},
-    .professorName = "Mimi matadora"
+    .professorName = ""
 };
 
 void drawPlaque(float width, float height, const char* name) {
@@ -87,7 +87,7 @@ void drawPlaque(float width, float height, const char* name) {
     black;
 
     // Ajuste de escala para o texto caber na placa 
-    float scale = width * 0.0004; 
+    float scale = width * 0.0003; 
     glScalef(scale, scale, scale);
     
     // Centralizar o texto:
@@ -105,17 +105,15 @@ void drawPlaque(float width, float height, const char* name) {
 }
 
 Door createCustomDoor(const Door *baseDoor, const char *professorName) {
-    // 1. Faz uma cópia byte-a-byte do modelo base (woodDoor, gradeDoor, etc.)
-    Door newDoor = *baseDoor; 
-    
-    // 2. Define o nome do professor no campo da nova cópia
-    // Usamos strncpy para copiar o nome de forma segura
-    strncpy(newDoor.professorName, professorName, sizeof(newDoor.professorName) - 1);
-    
-    // 3. Garante a terminação nula da string
-    newDoor.professorName[sizeof(newDoor.professorName) - 1] = '\0';
-    
-    return newDoor; // 4. Retorna a nova porta configurada
+   Door newDoor = *baseDoor; 
+
+   //Define o nome do professor no campo 
+   strncpy(newDoor.professorName, professorName, sizeof(newDoor.professorName) - 1);
+
+   //garante a terminação nula 
+   newDoor.professorName[sizeof(newDoor.professorName) - 1] = '\0';
+
+   return newDoor;
 }
 
 void door(const Door *d){
@@ -227,8 +225,8 @@ void door(const Door *d){
          float x = (i+1) * (w / (d->verticalBars + 1));
          glBegin(GL_QUADS);
                glVertex2f(x, 0);
-               glVertex2f(x+0.04, 0);
-               glVertex2f(x+0.04, h);
+               glVertex2f(x+0.4, 0);
+               glVertex2f(x+0.4, h);
                glVertex2f(x, h);
          glEnd();
       }
@@ -237,8 +235,8 @@ void door(const Door *d){
          glBegin(GL_QUADS);
                glVertex2f(0, y);
                glVertex2f(w, y);
-               glVertex2f(w, y+0.04);
-               glVertex2f(0, y+0.04);
+               glVertex2f(w, y+0.4);
+               glVertex2f(0, y+0.4);
          glEnd();
       }
    }
