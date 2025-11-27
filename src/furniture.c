@@ -766,7 +766,7 @@ void primeiro_andar_moveis()
 
     glPushMatrix(); // quadros de avisos
     blue
-        glTranslatef(base * 5.5, 30, base * 4);
+    glTranslatef(base * 5.5, 30, 175);
     glScalef(30, 10, 5);
     drawCube(1, 3, 1);
     glPopMatrix();
@@ -1721,7 +1721,7 @@ void mobilia_salas()
 
         // Pcs
         glPushMatrix();
-        glTranslatef(0.15 * base, (base + betw_height) + 20, (-0.45 + i) * base);
+        glTranslatef(0.15 * base, (base + betw_height) + 19, (-0.45 + i) * base);
         glRotatef(-135, 0, 1, 0);
         glScalef(10, 10, 10);
         monitor_draw();
@@ -1730,7 +1730,7 @@ void mobilia_salas()
         // Cadeira salas
         glPushMatrix();
         black;
-        glTranslatef(-0.15 * base, (base + betw_height) + (2 * ground_offset), (-0.70 + i) * base);
+        glTranslatef(-0.15 * base, (base + betw_height) + (2 * ground_offset) + 0.5, (-0.70 + i) * base);
         glRotatef(45, 0, 1, 0);
         cadeiraL_draw();
         glPopMatrix();
