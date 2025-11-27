@@ -222,8 +222,8 @@ void roof(){
         glBegin(GL_QUADS); //quadrado
             glVertex2f(0,0);
             glVertex2f(0, 0.5*base);
-            glVertex2f( 10.2*base, 0.5*base);
-            glVertex2f( 10.2*base,0);
+            glVertex2f( 4*base, 0.5*base);
+            glVertex2f( 4*base,0);
         glEnd();
         glPopMatrix();
 
@@ -235,11 +235,38 @@ void roof(){
         glBegin(GL_QUADS); //quadrado
             glVertex2f(0,0);
             glVertex2f(0, 0.5*base);
-            glVertex2f( 10.2*base, 0.5*base);
-            glVertex2f( 10.2*base,0);
+            glVertex2f( 4*base, 0.5*base);
+            glVertex2f( 4*base,0);
         glEnd();
         glPopMatrix();
 
+        //continuação
+            glPushMatrix();
+            glRotatef(90,0,1,0);
+            glTranslatef(-1.9*base,2.1*base,6*base);
+            areia
+            glBegin(GL_QUADS); //quadrado
+                glVertex2f(0,0);
+                glVertex2f(0, 0.5*base);
+                glVertex2f( 3*base, 0.5*base);
+                glVertex2f( 3*base,0);
+            glEnd();
+            glPopMatrix();
+
+            glPushMatrix();
+            glRotatef(90,0,1,0);
+            glTranslatef(-1.9*base,2.25*base,6*base);
+            glRotatef(90,1,0,0);
+            areia_shadow
+            glBegin(GL_QUADS); //quadrado
+                glVertex2f(0,0);
+                glVertex2f(0, 0.5*base);
+                glVertex2f( 3*base, 0.5*base);
+                glVertex2f( 3*base,0);
+            glEnd();
+            glPopMatrix();
+
+        //finalização
         glPushMatrix();
         glTranslatef(6*base,2.1*base,9.1*base);
         areia
@@ -270,8 +297,8 @@ void roof(){
         glBegin(GL_QUADS); //quadrado
             glVertex2f(0,0);
             glVertex2f(0, 0.5*base);
-            glVertex2f( 10.2*base, 0.5*base);
-            glVertex2f( 10.2*base,0);
+            glVertex2f( 4*base, 0.5*base);
+            glVertex2f( 4*base,0);
         glEnd();
         glPopMatrix();
 
@@ -283,8 +310,33 @@ void roof(){
         glBegin(GL_QUADS); //quadrado
             glVertex2f(0,0);
             glVertex2f(0, 0.5*base);
-            glVertex2f( 10.2*base, 0.5*base);
-            glVertex2f( 10.2*base,0);
+            glVertex2f( 4*base, 0.5*base);
+            glVertex2f( 4*base,0);
+        glEnd();
+        glPopMatrix();
+
+        glPushMatrix();
+        glRotatef(90,0,1,0);
+        glTranslatef(-1.9*base,2.1*base,4*base);
+        areia
+        glBegin(GL_QUADS); //quadrado
+            glVertex2f(0,0);
+            glVertex2f(0, 0.5*base);
+            glVertex2f( 3*base, 0.5*base);
+            glVertex2f( 3*base,0);
+        glEnd();
+        glPopMatrix();
+
+        glPushMatrix();
+        glRotatef(90,0,1,0);
+        glTranslatef(-1.9*base,2.25*base,3.5*base);
+        glRotatef(90,1,0,0);
+        areia_shadow
+        glBegin(GL_QUADS); //quadrado
+            glVertex2f(0,0);
+            glVertex2f(0, 0.5*base);
+            glVertex2f( 3*base, 0.5*base);
+            glVertex2f( 3*base,0);
         glEnd();
         glPopMatrix();
 

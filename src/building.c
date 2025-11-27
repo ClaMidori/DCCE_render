@@ -1,8 +1,6 @@
 #include "../include/building.h"
 #include "../include/roof.h"
 
-//#include "../include/door.h"
-
 void ground_floor(){
         // fileira -1
             glPushMatrix();
@@ -124,9 +122,9 @@ void ground_floor(){
             lateral_door_block(&woodDoor,0,0,1,0);
 
             glTranslatef(3*base,0,0); //bloco 4x5
-            block(1,1,1,0);
+            block(0,1,0,0); //!aq
             glTranslatef(base,0,0); //bloco 5x5
-            block(1,1,1,1);
+            block(0,0,1,0); //! aq
 
             glTranslatef(3*base,0,0); 
             lateral_door_block(&woodDoor,0,1,0,0); //bloco 0x5
@@ -243,6 +241,28 @@ void ground_floor(){
         // calçada em volta
             ground(base, 10*base,ground_offset,-base,-ground_offset,-base);
             ground(base, 10*base,ground_offset,10*base,-ground_offset,-base);
+        
+        //escada e estruturas extras
+            glPushMatrix();
+            glTranslatef(4*base+wall_thickness,0,3.5*base); //bloco 4x5
+            escada();
+            glPopMatrix();
+            glPushMatrix();
+            glTranslatef(4*base-wall_thickness,0,3.5*base); //bloco 4x5
+            pilar(wall_thickness, base/2,0,0,0);
+            glPopMatrix();
+            glPushMatrix();
+            glTranslatef(6*base-2*wall_thickness,0,3.5*base); //bloco 4x5
+            pilar(wall_thickness, base/2,0,0,0);
+            glPopMatrix();
+            glPushMatrix();
+            glTranslatef(4.25*base,0,3.5*base); //bloco 4x5
+            pilar(base*0.5, base*0.75,0,0,0);
+            glTranslatef(0,base,0); //bloco 4x5
+            pilar(base*0.5, base*0.75,0,0,0);
+            glTranslatef(0,base,0); //bloco 4x5
+            pilar(base*0.5, base*0.75,0,0,0);
+            glPopMatrix();
 }
 
 void first_floor(){
@@ -253,7 +273,7 @@ void first_floor(){
         ground(3.5*base, 6*base,betw_height,6.5*base,base,-base);
         ground(base, 4*base,betw_height,3*base,base,base);
         ground(base, 4*base,betw_height,6*base,base,base);
-        ground(2*base, 3*base,betw_height,4*base,base,base);
+        ground(2*base, 2.5*base,betw_height,4*base,base,base);
         especial_ground(4*base, 4*base+wall_thickness,betw_height,3*base,base,5*base);
 
     // fileira -1 : detalhes dos pilares
@@ -540,6 +560,19 @@ void first_floor(){
 
         glTranslatef(0,0,2*base); //bloco 1x0
         ground(base/2, p_thickness,betw_height,0.5*base,base,-0.5*p_thickness);
+        glPopMatrix();
+
+    //estruturas complementares
+        glPushMatrix();
+            glTranslatef(4*base,base+betw_height,3.5*base);
+            pilar(2*base,1.5*base,0,0,0);
+            glTranslatef(-4*base,0,0);
+            pilar(2*base,1.5*base,0,0,0);
+        glPopMatrix();
+
+        glPushMatrix();
+            glTranslatef(3*base,base+betw_height,3.5*base);
+            pilar(base,wall_thickness,0,0,0);
         glPopMatrix();
 }
 void second_floor(){

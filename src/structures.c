@@ -1,4 +1,5 @@
 #include "../include/structures.h"
+#include "../include/commons.h"
 
 void pilar(float x, float z, float tx, float ty, float tz){
 
@@ -54,4 +55,20 @@ void pilar(float x, float z, float tx, float ty, float tz){
       glVertex2f( x,0);
    glEnd();
    glPopMatrix();
+}
+
+void escada(){
+      ground(base*0.75-wall_thickness,base*0.15, base*0.15,0,0,0);
+      ground(base*0.75-wall_thickness,base*0.15, base*0.3,0,0,base*0.15);
+      ground(base*0.75-wall_thickness,base*0.15, base*0.45,0,0,base*0.3);
+      ground(base*0.75-wall_thickness,base*0.15, base*0.6,0,0,base*0.45);
+      ground(base*2-2*wall_thickness,base*0.9,  base*0.75,0,0,base*0.6);
+
+      glTranslatef(base*1.25-wall_thickness,0,0);
+      ground(base*0.75-wall_thickness,base*0.15, base*0.75,0,0,base*0.45);
+      ground(base*0.75-wall_thickness,base*0.15, base*0.6+base*0.15,0,0,0.45);
+      ground(base*0.75-wall_thickness,base*0.15, base*0.6+base*0.3,0,0,base*0.3);
+      ground(base*0.75-wall_thickness,base*0.15, base*0.6+base*0.45,0,0,base*0.15);
+      ground(base*0.75-wall_thickness,base*0.15, base*0.6+base*0.6,0,0,base*0.0);
+
 }
