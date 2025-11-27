@@ -19,20 +19,6 @@
 #include "../include/commons.h"
 #include <GL/gl.h>
 
-void teste_objetos()
-{
-    // referencia
-    // Y, Z, X
-
-    /*glPushMatrix();
-    glTranslatef(2.40 * base, (base + betw_height) + (3.5 * ground_offset), 5.17 * base);
-    glScalef(0.5, 0.5, 0.5);
-    glRotatef(-90, 0, 1, 0);
-    pia_draw();
-    glPopMatrix();
-    */
-}
-
 void drawCube(float w, float h, float d)
 {
     // desenha um cubo centrado na origem
@@ -706,6 +692,69 @@ void bancoEspera_draw()
     }
 }
 
+void placa_azul()
+
+{
+
+    // decoração parede esquerda
+    glPushMatrix();
+    blue_sing;
+    glTranslatef(0, 0, 0);
+    glScalef(15, 20, 2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(-7.5, 0, 0.3);
+    glScalef(1, 21, 2.2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(7.5, 0, 0.3);
+    glScalef(1, 21, 2.2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(0, 10, 0.3);
+    glScalef(16, 1, 2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(0, -10, 0.3);
+    glScalef(16, 1, 2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    white_shadow;
+    glTranslatef(4, 0, 1.4);
+    glScalef(2.5, 5, 0.5);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    white_shadow;
+    glTranslatef(-5, 4, 1.4);
+    glScalef(2, 5, 0.5);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    white_shadow;
+    glTranslatef(0, -7, 1.4);
+    glScalef(3, 2.5, 0.5);
+    drawCubeUnit();
+    glPopMatrix();
+}
+
+
 void primeiro_andar_moveis()
 {
     // refeitorio
@@ -765,15 +814,16 @@ void primeiro_andar_moveis()
     glPopMatrix();
 
     glPushMatrix(); // quadros de avisos
-    blue
-    glTranslatef(base * 5.5, 30, 175);
-    glScalef(30, 10, 5);
-    drawCube(1, 3, 1);
+    glTranslatef(base * 5.6, 30, base * 3.5);
+    glRotatef(180, 0, 1, 0);
+    glScalef(2, 1, 1);
+    placa_azul();
     glPopMatrix();
     glPushMatrix();
     glTranslatef(base * 3, 30, base * 3.5);
-    glScalef(5, 10, 30);
-    drawCube(1, 3, 1);
+    glScalef(1, 1, 2);
+    glRotatef(90, 0, 1, 0);
+    placa_azul();
     glPopMatrix();
 
     // cadeira recepção
@@ -1391,45 +1441,6 @@ void primeiro_andar_moveis()
 }
 //------------------------------separação-------------------------------------------
 
-void placa_azul()
-{
-
-    // decoração parede esquerda
-    glPushMatrix();
-    blue_sing;
-    glTranslatef(0, 0, 0);
-    glScalef(15, 20, 2);
-    drawCubeUnit();
-    glPopMatrix();
-
-    glPushMatrix();
-    black;
-    glTranslatef(-7.5, 0, 0.3);
-    glScalef(1, 21, 2.2);
-    drawCubeUnit();
-    glPopMatrix();
-
-    glPushMatrix();
-    black;
-    glTranslatef(7.5, 0, 0.3);
-    glScalef(1, 21, 2.2);
-    drawCubeUnit();
-    glPopMatrix();
-
-    glPushMatrix();
-    black;
-    glTranslatef(0, 10, 0.3);
-    glScalef(16, 1, 2);
-    drawCubeUnit();
-    glPopMatrix();
-
-    glPushMatrix();
-    black;
-    glTranslatef(0, -10, 0.3);
-    glScalef(16, 1, 2);
-    drawCubeUnit();
-    glPopMatrix();
-}
 
 void cabine_recepção()
 {
@@ -1485,8 +1496,231 @@ void cabine_recepção()
     // vidro da recepção
     glPushMatrix();
     glColor4f(0.8, 0.9, 1, 0.4);
-    glTranslatef(base * 5, (base + betw_height) + 30, base * 3);
-    glScalef(85, 20, 1);
+        glTranslatef(base * 5, (base + betw_height) + 35, base * 3);
+    glScalef(85, 20, 0.5);
+    drawCubeUnit();
+    glPopMatrix();
+}
+
+void draw_lightning()
+{
+
+    glColor3f(1.0f, 1.0f, 0.0f);
+
+    glBegin(GL_POLYGON);
+
+    glVertex2f(1.2, 1.91);
+    glVertex2f(0.18f, 1.67f);
+    glVertex2f(-0.82f, -0.09f);
+    glVertex2f(-0.25, 0.02f);
+    glVertex2f(-1.05, -1.32);
+    glVertex2f(-0.43, -1.21);
+
+    glVertex2f(-1.08, -2.46);
+
+    glVertex2f(0.64, -0.8);
+    glVertex2f(-0.08, -0.97);
+    glVertex2f(0.9, 0.56);
+    glVertex2f(0.27, 0.41);
+    glEnd();
+}
+
+void famele()
+{
+
+    // cabeça
+    glPushMatrix();
+    bege;
+    glTranslatef(0, 0, 0);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // olho E
+    glPushMatrix();
+    pistache;
+    glTranslatef(0.4, 0, 0.2);
+    glScalef(0.3, 0.3, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // olho d
+    glPushMatrix();
+    pistache;
+    glTranslatef(0.4, 0, -0.2);
+    glScalef(0.3, 0.3, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // cabelo
+    glPushMatrix();
+    loiro;
+    glTranslatef(-0.2, 0, 0);
+    glScalef(1.2, 1.5, 1.2);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // corpo
+    glPushMatrix();
+    green_flower;
+    glTranslatef(0, -1, 0);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    green_flower;
+    glTranslatef(0, -2, 0);
+    glScalef(1.5, 1, 1.5);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // braços
+    glPushMatrix();
+    bege;
+    glTranslatef(0, -1, 0.5);
+    glScalef(0.3, 0.5, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    bege;
+    glTranslatef(0, -1, -0.5);
+    glScalef(0.3, 0.5, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // pernas
+
+    glPushMatrix();
+    bege;
+    glTranslatef(0, -2.5, -0.5);
+    glScalef(0.4, 0.3, 0.4);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    bege;
+    glTranslatef(0, -2.5, 0.5);
+    glScalef(0.4, 0.3, 0.4);
+    drawCubeUnit();
+    glPopMatrix();
+}
+
+void male()
+{
+
+    // cabeça
+    glPushMatrix();
+    pardo;
+    glTranslatef(0, 0, 0);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // olho E
+    glPushMatrix();
+    brown;
+    glTranslatef(0.4, 0, 0.2);
+    glScalef(0.3, 0.3, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // olho d
+    glPushMatrix();
+    brown;
+    glTranslatef(0.4, 0, -0.2);
+    glScalef(0.3, 0.3, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // cabelo
+    glPushMatrix();
+    black;
+    glTranslatef(-0.1, 0.2, 0);
+    glScalef(1.1, 1, 1.1);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // corpo
+    glPushMatrix();
+    black;
+    glTranslatef(0, -1, 0);
+    glScalef(1, 1, 1.30);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(0, -2, 0);
+    // glScalef(1.5, 1, 1.5);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // braços
+    glPushMatrix();
+    pardo;
+    glTranslatef(0, -1, 0.75);
+    glScalef(0.3, 0.75, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    pardo;
+    glTranslatef(0, -1, -0.75);
+    glScalef(0.3, 0.75, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    // pernas
+
+    glPushMatrix();
+    pardo;
+    glTranslatef(0, -2.8, -0.25);
+    glScalef(0.4, 0.75, 0.4);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    pardo;
+    glTranslatef(0, -2.8, 0.25);
+    glScalef(0.4, 0.75, 0.4);
+    drawCubeUnit();
+    glPopMatrix();
+}
+
+void extintor()
+{
+
+    glPushMatrix();
+    red;
+    glTranslatef(0, 0, -0.25);
+    glScalef(1, 2.5, 1);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(0, 1, -0.25);
+    glScalef(0.3, 2, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(0.5, 2, -0.25);
+    glScalef(1.5, 0.3, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    black;
+    glTranslatef(1, 1.7, -0.25);
+    glScalef(0.3, 0.9, 0.3);
+    drawCubeUnit();
+    glPopMatrix();
+
+    glPushMatrix();
+    white_shadow;
+    glTranslatef(1, 0.9, -0.25);
+    glScalef(1, 0.5, 0.3);
     drawCubeUnit();
     glPopMatrix();
 }
@@ -1495,6 +1729,20 @@ void mobilia_recepcao()
 {
     // ---------------------------------------Cabine_Recepção--------------------------------------
 
+        // ---------------------------------------pessoinhas--------------------------------------
+
+    glPushMatrix();
+    glTranslatef(2.4 * base, (base + betw_height) + 20, 2.5 * base);
+    glScalef(5, 7, 5);
+    famele();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(2.9 * base, (base + betw_height) + 25, 2.5 * base);
+    glRotatef(180, 0, 1, 0);
+    glScalef(4, 8, 4);
+    male();
+    glPopMatrix();
     //-----------------------------------------------------------------------------------
     //  Cadeiras lado esquerdo na frente
     glPushMatrix();
@@ -1503,18 +1751,38 @@ void mobilia_recepcao()
     bancoEspera_draw();
     glPopMatrix();
 
+        // placa acima da cadeira
+    glPushMatrix();
+    glTranslatef(2.70 * base, (base + betw_height) + 30, 2.05 * base);
+    glScalef(2, 1, 1);
+    placa_azul();
+    glPopMatrix();
+
     // Cadeiras lado direito da escada
     glPushMatrix();
-    glTranslatef(7.5 * base, (base + betw_height), 4.80 * base);
+    glTranslatef(7.5 * base, (base + betw_height), 3.35 * base);
     glScalef(20, 20, 20);
     glRotatef(180, 0, 1, 0);
     bancoEspera_draw();
     glPopMatrix();
 
+        // extintor
+    glPushMatrix();
+    glTranslatef(7.40 * base, (base + betw_height) + 30, -1+3.5 * base);
+    glScalef(2, 3, 2);
+    extintor();
+    glPopMatrix();
+
+    glPushMatrix();
+    glTranslatef(base * 3.7, (base + betw_height) + 30, -1+base * 3.5);
+    glScalef(2, 3, 2);
+    extintor();
+    glPopMatrix();
+
     // Cesto da recepção
     glPushMatrix();
     black;
-    glTranslatef(3 * base, (base + betw_height) + (ground_offset - 1.9), 4.90 * base);
+    glTranslatef(3 * base, (base + betw_height) + (ground_offset - 1.9), 3.40 * base);
     cesto_draw();
     glPopMatrix();
 
@@ -1566,7 +1834,7 @@ void mobilia_recepcao()
     // peineis vermelhos
     glPushMatrix();
     red;
-    glTranslatef(6.3 * base, (base + betw_height) + (5 * ground_offset), 5 * base);
+    glTranslatef(6.3 * base, (base + betw_height) + (5 * ground_offset), 3.50 * base);
     glRotatef(90, 0, 1, 0);
     glScalef(1, 4, 4);
     drawCube(1, 5, 5);
@@ -1575,28 +1843,49 @@ void mobilia_recepcao()
     // painel retangular
     glPushMatrix();
     red;
-    glTranslatef(6.7 * base, (base + betw_height) + (5 * ground_offset), 5 * base);
+    glTranslatef(6.7 * base, (base + betw_height)+ (5 * ground_offset), -1+3.50 * base);
     glRotatef(90, 0, 1, 0);
     glScalef(1, 6, 2);
     drawCube(1, 5, 5);
     glPopMatrix();
 
+     // Raio
+    glPushMatrix();
+    glTranslatef(6.7 * base, (base + betw_height) + (5 * ground_offset), -1+3.489 * base);
+    glScalef(2, 2, 2);
+    draw_lightning();
+    glPopMatrix();
+
     // painel menor
     glPushMatrix();
     red;
-    glTranslatef(7 * base, (base + betw_height) + (5 * ground_offset), 5 * base);
+    glTranslatef(-2+7 * base, (base + betw_height) + (5 * ground_offset), -1+3.50 * base);
     glRotatef(90, 0, 1, 0);
     glScalef(1, 3, 3);
     drawCube(1, 5, 5);
     glPopMatrix();
 
+    // raio
+    glPushMatrix();
+    glTranslatef(7 * base, (base + betw_height) + (5 * ground_offset), -1+3.489 * base);
+    glScalef(2, 2, 2);
+    draw_lightning();
+    glPopMatrix();
+
     // painel retangular solitario
     glPushMatrix();
     red;
-    glTranslatef(3 * base, (base + betw_height) + (5 * ground_offset), 5 * base);
+    glTranslatef(-2+3 * base, (base + betw_height) + (5 * ground_offset), -5+3.5 * base);
     glRotatef(90, 0, 1, 0);
     glScalef(1, 5, 3);
     drawCube(1, 5, 5);
+    glPopMatrix();
+
+      // raio
+    glPushMatrix();
+    glTranslatef(3 * base, (base + betw_height) + (5 * ground_offset), -5+3.489 * base);
+    glScalef(2, 2, 2);
+    draw_lightning();
     glPopMatrix();
 
     cabine_recepção();
@@ -1630,6 +1919,14 @@ void mobilia_banheiros()
     privada_draw();
     glPopMatrix();
 
+     // divisória 1
+    glPushMatrix();
+    white_shadow;
+    glTranslatef(2.80 * base, (base + betw_height) + 25, 5.20 * base);
+    glScalef(1, 50, 20);
+    drawCubeUnit();
+    glPopMatrix();
+
     // Banheiro 2
     // Cesto de lixo 2
     glPushMatrix();
@@ -1653,6 +1950,14 @@ void mobilia_banheiros()
     glTranslatef(3.10 * base, (base + betw_height) + (2.10 * ground_offset), 7 * base);
     glRotatef(90, 0, 1, 0);
     privada_draw();
+    glPopMatrix();
+
+     // divisória 2
+    glPushMatrix();
+    white_shadow;
+    glTranslatef(2.80 * base, (base + betw_height) + 25, 6.80 * base);
+    glScalef(1, 50, 20);
+    drawCubeUnit();
     glPopMatrix();
 
     // --------------------------------------Banheiros DIREITO----------------------------------
@@ -1680,6 +1985,14 @@ void mobilia_banheiros()
     privada_draw();
     glPopMatrix();
 
+    // divisória 1
+    glPushMatrix();
+    white_shadow;
+    glTranslatef(7.20 * base, (base + betw_height) + 25, 5.20 * base);
+    glScalef(1, 50, 20);
+    drawCubeUnit();
+    glPopMatrix();
+
     // Banheiro 2
     // Cesto de lixo 2
     glPushMatrix();
@@ -1704,6 +2017,13 @@ void mobilia_banheiros()
     glRotatef(90, 0, 1, 0);
     privada_draw();
     glPopMatrix();
+    // divisória 2
+    glPushMatrix();
+    white_shadow;
+    glTranslatef(7.20 * base, (base + betw_height) + 25, 6.80 * base);
+    glScalef(1, 50, 20);
+    drawCubeUnit();
+    glPopMatrix();
 }
 
 void mobilia_salas()
@@ -1721,7 +2041,7 @@ void mobilia_salas()
 
         // Pcs
         glPushMatrix();
-        glTranslatef(0.15 * base, (base + betw_height) + 19, (-0.45 + i) * base);
+        glTranslatef(0.15 * base, (base + betw_height) + 18.5, (-0.45 + i) * base);
         glRotatef(-135, 0, 1, 0);
         glScalef(10, 10, 10);
         monitor_draw();
@@ -1752,7 +2072,7 @@ void mobilia_salas()
 
         // Pcs
         glPushMatrix();
-        glTranslatef(2.85 * base, (base + betw_height) + 20, (-0.50 + i) * base);
+        glTranslatef(2.85 * base, (base + betw_height) + 18.5, (-0.50 + i) * base);
         glRotatef(45, 0, 1, 0);
         glScalef(10, 10, 10);
         monitor_draw();
@@ -1780,7 +2100,7 @@ void mobilia_salas()
 
         // Pcs
         glPushMatrix();
-        glTranslatef(9.85 * base, (base + betw_height) + 20, (-0.50 + i) * base);
+        glTranslatef(9.85 * base, (base + betw_height) + 18.5, (-0.50 + i) * base);
         glRotatef(45, 0, 1, 0);
         glScalef(10, 10, 10);
         monitor_draw();
@@ -1809,7 +2129,7 @@ void mobilia_salas()
 
         // Pcs
         glPushMatrix();
-        glTranslatef(7.15 * base, (base + betw_height) + 20, (-0.45 + i) * base);
+        glTranslatef(7.15 * base, (base + betw_height) + 18.5, (-0.45 + i) * base);
         glRotatef(-135, 0, 1, 0);
         glScalef(10, 10, 10);
         monitor_draw();

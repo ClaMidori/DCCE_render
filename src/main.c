@@ -31,6 +31,9 @@ Door porta19;
 Door porta20;
 Door porta21;
 Door porta22;
+Door porta23;
+Door porta24;
+Door porta25;
 
 void Inicializa(void)
 {
@@ -47,7 +50,7 @@ void Inicializa(void)
     porta_vazia = createCustomDoor(&whiteDoor, " ");
     porta_wood_vazia = createCustomDoor(&woodDoor, " ");
 
-    porta1 = createCustomDoor(&whiteDoor, "Lab. de Processamento \nde Sinais");
+    porta1 = createCustomDoor(&whiteDoor, "Lab. de Proc. \nde Sinais");
     porta2 = createCustomDoor(&whiteDoor, "Lab. de Pesquisa");
     porta3 = createCustomDoor(&whiteDoor, "Sala de Apoio");
     porta4 = createCustomDoor(&whiteDoor, "Almoxarifado");
@@ -65,10 +68,13 @@ void Inicializa(void)
     porta16 = createCustomDoor(&whiteDoor, "Profa. Dra. Marilaine");
     porta17 = createCustomDoor(&whiteDoor, "Prof. Dr. Leandro");
     porta18 = createCustomDoor(&whiteDoor, "Prof. Dr. Lucas");
+    porta23 = createCustomDoor(&whiteDoor, "Prof. Dr. Valencio");
+    porta25 = createCustomDoor(&whiteDoor, "Prof. Dr. Adriano");
     porta19 = createCustomDoor(&whiteDoor, "Lipai");
     porta20 = createCustomDoor(&woodDoor, "Copa");
     porta21 = createCustomDoor(&whiteDoor, "Visum");
     porta22 = createCustomDoor(&gradeDoor, "Lidia");
+    porta24 = createCustomDoor(&whiteDoor, "Apoio");
 
 }
 

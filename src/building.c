@@ -28,6 +28,9 @@ extern Door porta19;
 extern Door porta20;
 extern Door porta21;
 extern Door porta22;
+extern Door porta23;
+extern Door porta24;
+extern Door porta25;
 
 void ground_floor(){
         // fileira -1
@@ -335,7 +338,7 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,0,0,-1,0);//primeira porta (vazia)
+        lateral_door_block(&porta25,0,0,-1,0);//primeira porta (vazia)
         tall_window_block(0,0,0,1);
         glTranslatef(base,0,0); //bloco 2x0
         lateral_door_block(&porta6,1,0,1,1);//geraldo
@@ -347,7 +350,7 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 8x0
-        lateral_door_block(&porta_vazia,0,0,-1,0); //mds é a primeira do outro lado
+        lateral_door_block(&porta18,0,0,-1,0); //mds é a primeira do outro lado
         tall_window_block(0,0,0,1);
         glTranslatef(base,0,0); //bloco 1x0
         lateral_door_block(&porta_vazia,1,0,1,1); //vazia outro lado
@@ -375,7 +378,7 @@ void first_floor(){
         glTranslatef(base*0.4,0,0); //bloco 1x0
         lateral_door_block(&porta_vazia,0,0,-1,0); //outro lado
         glTranslatef(base,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,1,0,1,1);//outro lado
+        lateral_door_block(&porta17,1,0,1,1);//outro lado
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
         glPopMatrix();
@@ -387,9 +390,9 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,0,0,-1,0);
+        lateral_door_block(&porta23,0,0,-1,0);
         glTranslatef(base,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,1,0,1,1);
+        lateral_door_block(&porta10,1,0,1,1);
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
 
@@ -423,7 +426,7 @@ void first_floor(){
         lateral_door_block(&porta10,0,-1,0,0);
 
         glTranslatef(3.4*base,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,1,0,1,1);
+        lateral_door_block(&porta13,1,0,1,1);
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
         glPopMatrix();
@@ -435,7 +438,7 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,0,0,-1,0);
+        lateral_door_block(&porta24,0,0,-1,0);
 
         glTranslatef(8*base,0,0); //bloco 1x0
         lateral_door_block(&porta_vazia,1,0,1,1);
@@ -450,10 +453,10 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,0,0,-1,0);
+        lateral_door_block(&porta5,0,0,-1,0);
 
         glTranslatef(8*base,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,1,0,1,1);
+        lateral_door_block(&porta14,1,0,1,1);
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
         glPopMatrix();    
@@ -483,9 +486,9 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&woodDoor,0,0,-1,0);
+        lateral_door_block(&porta_ban_fem,0,0,-1,0);
         glTranslatef(base,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,1,0,1,1);
+        lateral_door_block(&porta15,1,0,1,1);
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
         glPopMatrix();
@@ -507,9 +510,9 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&woodDoor,0,0,-1,0);
+        lateral_door_block(&porta_ban_masc,0,0,-1,0);
         glTranslatef(base,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,1,0,1,1);
+        lateral_door_block(&porta16,1,0,1,1);
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
         glPopMatrix();
@@ -521,7 +524,7 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,0,0,-1,0);
+        lateral_door_block(&porta9,0,0,-1,0);
         glTranslatef(base,0,0); //bloco 1x0
         lateral_door_block(&porta_vazia,1,0,1,1);
         glTranslatef(0.6*base,0,0);
@@ -534,7 +537,7 @@ void first_floor(){
         glTranslatef(base*0.4,0,0); //bloco 1x0
         lateral_door_block(&porta_vazia,0,0,-1,0);
         glTranslatef(base,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,1,0,1,1);
+        lateral_door_block(&porta1,1,0,1,1);
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
         glPopMatrix();
@@ -546,7 +549,7 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,0,0,-1,0);
+        lateral_door_block(&porta4,0,0,-1,0);
         tall_window_block(1,0,0,0);
         glTranslatef(base,0,0); //bloco 2x0
         lateral_door_block(&porta_vazia,1,0,1,1);
@@ -558,10 +561,10 @@ void first_floor(){
         glTranslatef(base,0,0);
         half_block(1,0,0,1);
         glTranslatef(base*0.4,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,0,0,-1,0);
+        lateral_door_block(&porta2,0,0,-1,0);
         tall_window_block(1,0,0,0);
         glTranslatef(base,0,0); //bloco 1x0
-        lateral_door_block(&porta_vazia,1,0,1,1);
+        lateral_door_block(&porta3,1,0,1,1);
         glTranslatef(0.6*base,0,0);
         big_window_block(1,1,0,1); //bloco 0x0
         glPopMatrix();

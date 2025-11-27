@@ -26,6 +26,10 @@
 #define green glColor3f(0.06f, 0.0164f, 0.102f);
 #define green_flower glColor3f(0.2, 0.7, 0.2);
 #define blue_sing glColor3f(0, 0, 0.5);
+#define bege glColor3f(0.97f, 0.89f, 0.62f);
+#define pistache glColor3f(0.6f, 0.9f, 0.4f);
+#define loiro glColor3f(0.9f, 0.8f, 0.4f);
+#define pardo glColor3f(0.60f, 0.42f, 0.26f);
 
 //* A construção do prédio funciona como uma matriz tridimensional, pela escala, 10x10x3
 
